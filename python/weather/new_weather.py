@@ -10,7 +10,7 @@ ZIP = '85326'
 DEGREE = u'\N{DEGREE SIGN}'
 API_KEY = open('api_key', 'r').read()
 FILENAME = "new_response.json"
-BASE_URL = "https://api.tomorrow.io/v4/timelines?location=6287603f8f191300088f84d9&fields=temperature&fields=temperatureApparent&fields=humidity&fields=windSpeed&fields=windDirection&fields=windGust&fields=sunriseTime&fields=sunsetTime&fields=weatherCode&units=imperial&timesteps=1d&timezone=America%2FPhoenix&apikey=VMBO9JZIll1pdp0B77KEI8BR9kFJOysN"
+BASE_URL = "https://api.tomorrow.io/v4/timelines?location=6287603f8f191300088f84d9&fields=temperature&fields=temperatureApparent&fields=humidity&fields=windSpeed&fields=windDirection&fields=windGust&fields=weatherCode&units=imperial&timesteps=current&timezone=America%2FPhoenix&apikey=VMBO9JZIll1pdp0B77KEI8BR9kFJOysN"
 
 headers = {
         "Accept": "application/json",

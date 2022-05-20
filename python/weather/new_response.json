@@ -1,1 +1,25 @@
-{"data": {"timelines": [{"timestep": "1d", "endTime": "2022-06-02T06:00:00-07:00", "startTime": "2022-05-19T06:00:00-07:00", "intervals": [{"startTime": "2022-05-19T06:00:00-07:00", "values": {"humidity": 27, "sunriseTime": "2022-05-19T12:34:00Z", "sunsetTime": "2022-05-20T02:19:00Z", "temperature": 96.58, "temperatureApparent": 91.74, "weatherCode": 1000, "windDirection": 222.77, "windGust": 23.77, "windSpeed": 12.58}}, {"startTime": "2022-05-20T06:00:00-07:00", "values": {"humidity": 49.62, "sunriseTime": "2022-05-20T12:34:00Z", "sunsetTime": "2022-05-21T02:19:00Z", "temperature": 93.02, "temperatureApparent": 88.96, "weatherCode": 1000, "windDirection": 236.12, "windGust": 31.63, "windSpeed": 19.17}}, {"startTime": "2022-05-21T06:00:00-07:00", "values": {"humidity": 46.34, "sunriseTime": "2022-05-21T12:33:00Z", "sunsetTime": "2022-05-22T02:20:00Z", "temperature": 91.21, "temperatureApparent": 87.36, "weatherCode": 1000, "windDirection": 207.58, "windGust": 25.07, "windSpeed": 11.89}}, {"startTime": "2022-05-22T06:00:00-07:00", "values": {"humidity": 31.79, "sunriseTime": "2022-05-22T12:33:00Z", "sunsetTime": "2022-05-23T02:20:00Z", "temperature": 95.05, "temperatureApparent": 90.24, "weatherCode": 1000, "windDirection": 191.24, "windGust": 21.03, "windSpeed": 9.4}}, {"startTime": "2022-05-23T06:00:00-07:00", "values": {"humidity": 26.51, "sunriseTime": "2022-05-23T12:33:00Z", "sunsetTime": "2022-05-24T02:21:00Z", "temperature": 94.79, "temperatureApparent": 89.99, "weatherCode": 1000, "windDirection": 215.62, "windGust": 12.86, "windSpeed": 11.95}}, {"startTime": "2022-05-24T06:00:00-07:00", "values": {"humidity": 33.72, "sunriseTime": "2022-05-24T12:33:00Z", "sunsetTime": "2022-05-25T02:21:00Z", "temperature": 97.64, "temperatureApparent": 92.45, "weatherCode": 1101, "windDirection": 229.3, "windGust": 11.82, "windSpeed": 11.82}}, {"startTime": "2022-05-25T06:00:00-07:00", "values": {"humidity": 30.51, "sunriseTime": "2022-05-25T12:32:00Z", "sunsetTime": "2022-05-26T02:22:00Z", "temperature": 100.08, "temperatureApparent": 94.5, "weatherCode": 1000, "windDirection": 249.61, "windGust": 11.62, "windSpeed": 11.45}}, {"startTime": "2022-05-26T06:00:00-07:00", "values": {"humidity": 29.16, "sunriseTime": "2022-05-26T12:32:00Z", "sunsetTime": "2022-05-27T02:22:00Z", "temperature": 101.51, "temperatureApparent": 95.65, "weatherCode": 1101, "windDirection": 192.53, "windGust": 24.69, "windSpeed": 18.85}}, {"startTime": "2022-05-27T06:00:00-07:00", "values": {"humidity": 27.47, "sunriseTime": "2022-05-27T12:32:00Z", "sunsetTime": "2022-05-28T02:23:00Z", "temperature": 99.61, "temperatureApparent": 94.13, "weatherCode": 1000, "windDirection": 199.49, "windGust": 22.74, "windSpeed": 18.44}}, {"startTime": "2022-05-28T06:00:00-07:00", "values": {"humidity": 34.29, "sunriseTime": "2022-05-28T12:32:00Z", "sunsetTime": "2022-05-29T02:23:00Z", "temperature": 98.17, "temperatureApparent": 92.84, "weatherCode": 1000, "windDirection": 203.43, "windGust": 18.22, "windSpeed": 17.28}}, {"startTime": "2022-05-29T06:00:00-07:00", "values": {"humidity": 22.12, "sunriseTime": "2022-05-29T12:32:00Z", "sunsetTime": "2022-05-30T02:24:00Z", "temperature": 95.28, "temperatureApparent": 90.57, "weatherCode": 1000, "windDirection": 208.27, "windGust": 22.27, "windSpeed": 16.8}}, {"startTime": "2022-05-30T06:00:00-07:00", "values": {"humidity": 49.08, "sunriseTime": "2022-05-30T12:31:00Z", "sunsetTime": "2022-05-31T02:24:00Z", "temperature": 86.46, "temperatureApparent": 83.03, "weatherCode": 1001, "windDirection": 215.1, "windGust": 17.67, "windSpeed": 15.74}}, {"startTime": "2022-05-31T06:00:00-07:00", "values": {"humidity": 66.06, "sunriseTime": "2022-05-31T12:31:00Z", "sunsetTime": "2022-06-01T02:24:00Z", "temperature": 88.8, "temperatureApparent": 85.21, "weatherCode": 1000, "windDirection": 206.44, "windGust": 28.55, "windSpeed": 20.57}}, {"startTime": "2022-06-01T06:00:00-07:00", "values": {"humidity": 74.57, "sunriseTime": "2022-06-01T12:31:00Z", "sunsetTime": "2022-06-02T02:25:00Z", "temperature": 74.96, "temperatureApparent": 74.96, "weatherCode": 1001, "windDirection": 188.1, "windGust": 16.85, "windSpeed": 16.85}}, {"startTime": "2022-06-02T06:00:00-07:00", "values": {"humidity": 47.25, "sunriseTime": "2022-06-02T12:31:00Z", "sunsetTime": "2022-06-03T02:25:00Z", "temperature": 88.35, "temperatureApparent": 84.53, "weatherCode": 1000, "windDirection": 237.1, "windGust": 7.86, "windSpeed": 6.84}}]}]}}
+{
+  "data": {
+    "timelines": [
+      {
+        "timestep": "current",
+        "endTime": "2022-05-20T03:27:00-07:00",
+        "startTime": "2022-05-20T03:27:00-07:00",
+        "intervals": [
+          {
+            "startTime": "2022-05-20T03:27:00-07:00",
+            "values": {
+              "humidity": 23,
+              "temperature": 70.14,
+              "temperatureApparent": 70.14,
+              "weatherCode": 1000,
+              "windDirection": 307.88,
+              "windGust": 5.17,
+              "windSpeed": 3.36
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
