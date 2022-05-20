@@ -1,1 +1,30 @@
-{"coord": {"lon": -112.5838, "lat": 33.3703}, "weather": [{"id": 800, "main": "Clear", "description": "clear sky", "icon": "01d"}], "base": "stations", "main": {"temp": 297.5, "feels_like": 296.83, "temp_min": 295.42, "temp_max": 299.49, "pressure": 1014, "humidity": 32}, "visibility": 10000, "wind": {"speed": 1.54, "deg": 20}, "clouds": {"all": 0}, "dt": 1652881671, "sys": {"type": 2, "id": 2004108, "country": "US", "sunrise": 1652876896, "sunset": 1652927132}, "timezone": -25200, "id": 0, "name": "Buckeye", "cod": 200}
+{
+  "coord": { "lon": -112.5838, "lat": 33.3703 },
+  "weather": [
+    { "id": 800, "main": "Clear", "description": "clear sky", "icon": "01n" }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 294.52,
+    "feels_like": 293.13,
+    "temp_min": 293.21,
+    "temp_max": 296.94,
+    "pressure": 1004,
+    "humidity": 16
+  },
+  "visibility": 10000,
+  "wind": { "speed": 2.57, "deg": 40 },
+  "clouds": { "all": 0 },
+  "dt": 1653041460,
+  "sys": {
+    "type": 1,
+    "id": 3534,
+    "country": "US",
+    "sunrise": 1653049623,
+    "sunset": 1653100018
+  },
+  "timezone": -25200,
+  "id": 0,
+  "name": "Buckeye",
+  "cod": 200
+}

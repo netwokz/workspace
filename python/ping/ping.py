@@ -10,7 +10,7 @@ plat = platform.system()
 def ping(host):
     global server_online
     param = '-n' if platform.system().lower() == 'windows' else '-c'
-    command = ['ping', param, '4', host]
+    command = ['ping', param, '4', host]  
     try:
         subprocess.call(command)
         server_online = True
