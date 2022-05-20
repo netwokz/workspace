@@ -8,7 +8,7 @@ CITY = 'Buckeye'
 ZIP = '85326'
 
 DEGREE = u'\N{DEGREE SIGN}'
-API_KEY = open('api_key', 'r').read()
+#API_KEY = open('api_key', 'r').read()
 FILENAME = "new_response.json"
 BASE_URL = "https://api.tomorrow.io/v4/timelines?location=6287603f8f191300088f84d9&fields=temperature&fields=temperatureApparent&fields=humidity&fields=windSpeed&fields=windDirection&fields=windGust&fields=weatherCode&units=imperial&timesteps=current&timezone=America%2FPhoenix&apikey=VMBO9JZIll1pdp0B77KEI8BR9kFJOysN"
 
@@ -61,19 +61,18 @@ check_first_run()
 #print(TIME_STAMP)
 check_response()
 
-temp_kelvin = report['main']['temp']
-temp_celsius, temp_fahrenheit = kelvin_to_celsius_fahrenheit(temp_kelvin)
-feels_like_kelvin = report['main']['feels_like']
-feels_like_celsius, feels_like_fahrenheit  =kelvin_to_celsius_fahrenheit(feels_like_kelvin)
-humidity = report['main']['humidity']
-description = report['weather'][0]['description']
-sunrise_time = dt.datetime.utcfromtimestamp(report['sys']['sunrise'] + report['timezone'])
-sunset_time = dt.datetime.utcfromtimestamp(report['sys']['sunset'] + report['timezone'])
-
-print(f"Temperature in {CITY}: {temp_fahrenheit:.0f}{DEGREE}F or {temp_celsius:.0f}{DEGREE}C")
-print(f"Temperature in {CITY} feels like: {feels_like_fahrenheit:.0f}{DEGREE}F or {feels_like_celsius:.0f}{DEGREE}C")
-print(f"Humidity in {CITY}: {humidity}%")
-print(f"Weather in {CITY}: {description}")
-print(f"Sunrise in {CITY} at {sunrise_time} local time.")
-print(f"Sunset in {CITY} at {sunset_time} local time.")
+temp = report['data']['timelines'][0]['intervals'][0]['values']['temperature']
+temperature_apparent = report['data']['timelines'][0]['intervals'][0]['values']['temperatureApparent']
+humidity = report['data']['timelines'][0]['intervals'][0]['values']['humidity']
+weather_code = report['data']['timelines'][0]['intervals'][0]['values']['weatherCode']
+wind_direction = report['data']['timelines'][0]['intervals'][0]['values']['windDirection']
+wind_gust = report['data']['timelines'][0]['intervals'][0]['values']['windGust']
+wind_speed = report['data']['timelines'][0]['intervals'][0]['values']['windSpeed']
+print(temp)
+print(temperature_apparent)
+print(humidity)
+print(weather_code)
+print(wind_direction)
+print(wind_gust)
+print(wind_speed)
 
