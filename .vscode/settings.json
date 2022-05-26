@@ -1,12 +1,6 @@
 {
-<<<<<<< HEAD
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "cSpell.words": ["speedtest"]
 }
-=======
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-}
->>>>>>> f3c21cccf9de1d98412744824bead53cc2d08a24
