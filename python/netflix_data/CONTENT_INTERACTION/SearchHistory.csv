@@ -1,0 +1,512 @@
+Profile Name,Country Iso Code,Device,Is Kids,Query Typed,Displayed Name,Action,Section,Utc Timestamp
+Stephen,US,Smart TV,0,,The Witcher,play,video_info,2022-04-17 03:01:00
+Stephen,US,Smart TV,0,,The Witcher,view_video_info,popularSearches,2022-04-17 03:00:57
+Stephen,US,Smart TV,0,,The Witcher,play,video_info,2022-04-16 05:22:46
+Stephen,US,Smart TV,0,,The Witcher,view_video_info,popularSearches,2022-04-16 05:22:39
+Stephen,US,Smart TV,0,pow,Project Power,play,video_info,2022-03-13 05:38:21
+Stephen,US,Smart TV,0,pow,Project Power,view_video_info,title_results,2022-03-13 05:38:12
+Stephen,US,Smart TV,0,last,The Last Kingdom,play,video_info,2022-01-07 19:30:25
+Stephen,US,Smart TV,0,last,The Last Kingdom,view_video_info,title_results,2022-01-07 19:30:23
+Stephen,US,Smart TV,0,ava,Ava,play,video_info,2021-06-11 05:06:21
+Stephen,US,Smart TV,0,ava,Ava,view_video_info,title_results,2021-06-11 05:06:19
+Stephen,US,Smart TV,0,black,Black Lightning,play,video_info,2021-05-16 04:38:48
+Stephen,US,Smart TV,0,black,Black Lightning,view_video_info,title_results,2021-05-16 04:38:45
+Stephen,US,Smart TV,0,hdr,Lost in Space,play,video_info,2021-03-06 02:33:53
+Stephen,US,Smart TV,0,hdr,Lost in Space,view_video_info,suggestion_title_results,2021-03-06 02:33:50
+Stephen,US,Smart TV,0,hdr,HDR,view_suggestion_info,suggestion_results,2021-03-06 02:33:26
+Stephen,US,Smart TV,0,exp,The Expanse,view_suggestion_info,suggestion_results,2021-02-26 03:30:48
+Stephen,US,Smart TV,0,kat,Katt Williams: The Pimp Chronicles: Pt. 1,play,video_info,2020-09-21 05:30:30
+Stephen,US,Smart TV,0,kat,Katt Williams: The Pimp Chronicles: Pt. 1,view_video_info,title_results,2020-09-21 05:30:26
+Stephen,US,Smart TV,0,m,Miraculous: Tales of Ladybug & Cat Noir,play,video_info,2020-03-09 20:39:42
+Stephen,US,Smart TV,0,m,Miraculous: Tales of Ladybug & Cat Noir,view_video_info,title_results,2020-03-09 20:39:40
+Stephen,US,Smart TV,0,st,Iliza Shlesinger: Elder Millennial,play,video_info,2020-02-23 07:20:41
+Stephen,US,Smart TV,0,st,Iliza Shlesinger: Elder Millennial,view_video_info,suggestion_title_results,2020-02-23 07:20:40
+Stephen,US,Smart TV,0,st,Stand-Up Comedy,view_suggestion_info,suggestion_results,2020-02-23 07:19:46
+Stephen,US,Smart TV,0,ware,Warehouse 13,view_suggestion_info,suggestion_results,2020-01-26 07:11:59
+Stephen,US,Android Phone,0,iliza,Iliza Shlesinger: War Paint,play,video_info,2020-01-14 03:51:49
+Stephen,US,Android Phone,0,iliza,Iliza Shlesinger: War Paint,view_video_info,title_results,2020-01-14 03:51:48
+Stephen,US,Smart TV,0,mumm,La Reina del Sur,play,video_info,2019-11-24 22:46:14
+Stephen,US,Smart TV,0,mumm,La Reina del Sur,view_video_info,suggestion_title_results,2019-11-24 22:46:12
+Stephen,US,Smart TV,0,mumm,Hisss,play,video_info,2019-11-24 22:45:54
+Stephen,US,Smart TV,0,mumm,Hisss,view_video_info,suggestion_title_results,2019-11-24 22:45:52
+Stephen,US,Smart TV,0,mumm,"10,000 B.C.",play,video_info,2019-11-24 22:45:46
+Stephen,US,Smart TV,0,mumm,"10,000 B.C.",view_video_info,suggestion_title_results,2019-11-24 22:45:44
+Stephen,US,Smart TV,0,mumm,The Mummy,view_suggestion_info,suggestion_results,2019-11-24 22:45:32
+Stephen,US,Smart TV,0,futur,Disenchantment,play,video_info,2019-10-31 18:37:45
+Stephen,US,Smart TV,0,futur,Disenchantment,view_video_info,suggestion_title_results,2019-10-31 18:37:42
+Stephen,US,Smart TV,0,futur,Futurama,view_suggestion_info,suggestion_results,2019-10-31 18:37:40
+Stephen,US,Smart TV,0,av,Avengers: Infinity War,play,video_info,2019-10-31 06:58:11
+Stephen,US,Smart TV,0,av,Avengers: Infinity War,view_video_info,suggestion_title_results,2019-10-31 06:58:09
+Stephen,US,Smart TV,0,av,Avengers: Infinity War,play,video_info,2019-10-31 06:57:56
+Stephen,US,Smart TV,0,av,Avengers: Infinity War,view_video_info,suggestion_title_results,2019-10-31 06:57:53
+Stephen,US,Smart TV,0,av,Avengers,view_suggestion_info,suggestion_results,2019-10-31 06:57:49
+Stephen,US,Smart TV,0,911,"9/11: Truth, Lies and Conspiracies",play,video_info,2019-10-31 06:26:48
+Stephen,US,Smart TV,0,911,"9/11: Truth, Lies and Conspiracies",view_video_info,suggestion_title_results,2019-10-31 06:26:46
+Stephen,US,Smart TV,0,911,9/11: Day That Changed the World,view_suggestion_info,suggestion_results,2019-10-31 06:26:45
+Stephen,US,Smart TV,0,panic,Panic Room,play,video_info,2019-10-31 06:25:24
+Stephen,US,Smart TV,0,panic,Panic Room,view_video_info,title_results,2019-10-31 06:25:21
+Stephen,US,Smart TV,0,the ,The Good Place,play,video_info,2019-10-31 06:21:03
+Stephen,US,Smart TV,0,the ,The Good Place,view_video_info,suggestion_title_results,2019-10-31 06:21:00
+Stephen,US,Smart TV,0,the ,The Good Doctor,view_suggestion_info,suggestion_results,2019-10-31 06:20:17
+Stephen,US,Smart TV,0,underworld,Underworld Trilogy,view_suggestion_info,suggestion_results,2019-10-31 06:15:28
+Stephen,US,Smart TV,0,underworld,Underworld,view_suggestion_info,suggestion_results,2019-10-31 06:15:12
+Stephen,US,Smart TV,0,u,Underworld,view_suggestion_info,suggestion_results,2019-10-31 06:13:48
+Stephen,US,Smart TV,0,,All American,play,video_info,2019-10-31 06:11:59
+Stephen,US,Smart TV,0,,All American,view_video_info,popularSearches,2019-10-31 06:11:56
+Stephen,US,Smart TV,0,,Goosebumps,play,video_info,2019-10-31 06:11:42
+Stephen,US,Smart TV,0,,Goosebumps,view_video_info,popularSearches,2019-10-31 06:11:40
+Stephen,US,Smart TV,0,ware,Real Warehouse 13: Inside Secret Government Warehouses,view_suggestion_info,suggestion_results,2019-10-31 06:08:31
+Stephen,US,Smart TV,0,ware,Warehouse 13,view_suggestion_info,suggestion_results,2019-10-31 06:08:22
+Stephen,US,Smart TV,0,ware,Haven,view_video_info,suggestion_title_results,2019-10-31 06:08:13
+Stephen,US,Smart TV,0,ware,Warehouse 13,view_suggestion_info,suggestion_results,2019-10-31 06:08:11
+Stephen,US,Smart TV,0,ros,Charmed,play,video_info,2019-10-30 17:00:45
+Stephen,US,Smart TV,0,ros,Charmed,view_video_info,suggestion_title_results,2019-10-30 17:00:42
+Stephen,US,Smart TV,0,ros,Roswell,view_suggestion_info,suggestion_results,2019-10-30 17:00:21
+Stephen,US,Smart TV,0,ocea,Ocean's Eleven,view_suggestion_info,suggestion_results,2019-10-26 02:28:02
+Stephen,US,Smart TV,0,ron,Bert Kreischer: Secret Time,play,video_info,2019-10-25 01:43:50
+Stephen,US,Smart TV,0,ron,Bert Kreischer: Secret Time,view_video_info,suggestion_title_results,2019-10-25 01:43:49
+Stephen,US,Smart TV,0,ron,Ron White,view_suggestion_info,suggestion_results,2019-10-25 01:43:46
+Stephen,US,Smart TV,0,ber,Bert Kreischer,view_suggestion_info,suggestion_results,2019-10-25 01:42:42
+Stephen,US,Smart TV,0,al,Altered Carbon,view_video_info,title_results,2019-08-18 20:53:01
+Stephen,US,Smart TV,0,al,Altered Carbon,play,video_info,2019-08-18 20:53:01
+Stephen,US,Android Phone,0,sham,Shameless (U.S.),play,video_info,2019-08-08 02:51:00
+Stephen,US,Android Phone,0,sham,Shameless (U.S.),view_video_info,title_results,2019-08-08 02:40:48
+Stephen,US,Smart TV,0,cl,The Cloverfield Paradox,view_video_info,title_results,2019-07-28 03:34:36
+Stephen,US,Smart TV,0,cl,The Cloverfield Paradox,play,video_info,2019-07-28 03:34:36
+Stephen,US,MVPD STB,0,mir,Miraculous: Tales of Ladybug & Cat Noir,view_video_info,title_results,2019-06-26 06:16:05
+Stephen,US,MVPD STB,0,mir,Miraculous: Tales of Ladybug & Cat Noir,play,video_info,2019-06-26 06:16:05
+Stephen,US,Smart TV,0,m,Miraculous: Tales of Ladybug & Cat Noir,view_video_info,title_results,2019-06-20 17:03:46
+Stephen,US,Smart TV,0,m,Miraculous: Tales of Ladybug & Cat Noir,play,video_info,2019-06-20 17:03:46
+Stephen,US,Smart TV,0,m,Miraculous: Tales of Ladybug & Cat Noir,play,video_info,2019-06-13 17:20:15
+Stephen,US,Smart TV,0,m,Miraculous: Tales of Ladybug & Cat Noir,view_video_info,title_results,2019-06-13 17:20:15
+Stephen,US,Smart TV,0,mi,Miraculous: Tales of Ladybug & Cat Noir,view_video_info,title_results,2019-06-13 17:19:17
+Stephen,US,Smart TV,0,lady,Miraculous: Tales of Ladybug & Cat Noir,view_video_info,title_results,2019-06-13 07:17:38
+Stephen,US,Smart TV,0,lady,Miraculous: Tales of Ladybug & Cat Noir,play,video_info,2019-06-13 07:17:38
+Stephen,US,Smart TV,0,c,Bill Burr: Let It Go,play,video_info,2019-06-08 05:01:47
+Stephen,US,Smart TV,0,c,Bill Burr: Let It Go,view_video_info,suggestion_title_results,2019-06-08 05:01:47
+Stephen,US,Smart TV,0,c,Stand-Up Comedy,view_suggestion_info,suggestion_results,2019-06-08 05:01:21
+Stephen,US,Smart TV,0,comedy,Louis C.K. 2017,view_video_info,suggestion_title_results,2019-06-07 02:35:55
+Stephen,US,Smart TV,0,comedy,Louis C.K. 2017,play,video_info,2019-06-07 02:35:55
+Stephen,US,Smart TV,0,comedy,Stand-Up Comedy,view_suggestion_info,suggestion_results,2019-06-07 02:35:40
+Stephen,US,Smart TV,0,mira,Miraculous: Tales of Ladybug & Cat Noir,play,video_info,2019-06-06 19:07:52
+Stephen,US,Smart TV,0,mira,Miraculous: Tales of Ladybug & Cat Noir,view_video_info,title_results,2019-06-06 19:07:52
+Stephen,US,Smart TV,0,lad,A Christmas Special: Miraculous: Tales of Ladybug & Cat Noir,play,video_info,2019-06-06 18:42:05
+Stephen,US,Smart TV,0,lad,A Christmas Special: Miraculous: Tales of Ladybug & Cat Noir,view_video_info,title_results,2019-06-06 18:42:05
+Stephen,US,Smart TV,0,mir,Miraculous: Tales of Ladybug & Cat Noir,view_video_info,title_results,2019-06-06 06:21:46
+Stephen,US,Smart TV,0,mir,Miraculous: Tales of Ladybug & Cat Noir,play,video_info,2019-06-06 06:21:46
+Stephen,US,Smart TV,0,oc,Octonauts,view_video_info,title_results,2019-05-30 04:44:39
+Stephen,US,Smart TV,0,oc,Octonauts,play,video_info,2019-05-30 04:44:39
+Stephen,US,Smart TV,0,oc,Octonauts,play,video_info,2019-05-29 21:44:59
+Stephen,US,Smart TV,0,oc,Octonauts,view_video_info,title_results,2019-05-29 21:44:59
+Stephen,US,Smart TV,0,oc,Octonauts,play,video_info,2019-05-23 16:59:10
+Stephen,US,Smart TV,0,oc,Octonauts,view_video_info,title_results,2019-05-23 16:59:10
+Stephen,US,Smart TV,0,oc,Octonauts,view_video_info,title_results,2019-05-23 05:20:43
+Stephen,US,Smart TV,0,oc,Octonauts,play,video_info,2019-05-23 05:20:43
+Stephen,US,Smart TV,0,cha,Charmed,play,video_info,2019-05-20 07:25:00
+Stephen,US,Smart TV,0,cha,Charmed,view_video_info,title_results,2019-05-20 07:25:00
+Stephen,US,Android Phone,0,captain,Captain America: Civil War,view_suggestion_info,suggestion_results,2019-04-16 15:24:28
+Stephen,US,Android Phone,0,charmed,Charmed,view_video_info,title_results,2019-03-20 05:14:32
+Stephen,US,Smart TV,0,co,Coraline,view_video_info,title_results,2019-03-12 03:17:42
+Stephen,US,Smart TV,0,co,Coraline,play,video_info,2019-03-12 03:17:42
+Stephen,US,Smart TV,0,co,Coraline,view_video_info,title_results,2019-03-12 03:17:11
+Stephen,US,Smart TV,0,co,Coraline,play,video_info,2019-03-12 03:17:11
+Stephen,US,Android Phone,0,frozen,Walt Disney Animation Studios Short Films Collection,view_video_info,title_results,2019-03-12 03:11:33
+Stephen,US,Smart TV,0,froz,Frozen,view_suggestion_info,suggestion_results,2019-03-12 03:10:37
+Stephen,US,Smart TV,0,stand,Iliza Shlesinger: Freezing Hot,view_video_info,suggestion_title_results,2019-02-20 03:36:27
+Stephen,US,Smart TV,0,stand,Iliza Shlesinger: Freezing Hot,play,video_info,2019-02-20 03:36:27
+Stephen,US,Smart TV,0,stand,Bert Kreischer: Secret Time,play,video_info,2019-02-20 03:36:10
+Stephen,US,Smart TV,0,stand,Bert Kreischer: Secret Time,view_video_info,suggestion_title_results,2019-02-20 03:36:10
+Stephen,US,Smart TV,0,stand,The Standups,view_video_info,suggestion_title_results,2019-02-20 03:35:15
+Stephen,US,Smart TV,0,stand,The Standups,play,video_info,2019-02-20 03:35:15
+Stephen,US,Smart TV,0,stand,Stand-Up Comedy,view_suggestion_info,suggestion_results,2019-02-20 03:35:04
+Stephen,US,Smart TV,0,bill,Bill Burr: You People Are All the Same,play,video_info,2019-01-07 02:48:24
+Stephen,US,Smart TV,0,bill,Bill Burr: You People Are All the Same,view_video_info,suggestion_title_results,2019-01-07 02:48:24
+Stephen,US,Smart TV,0,bill,Bill Burr: I'm Sorry You Feel That Way,view_video_info,suggestion_title_results,2019-01-07 02:45:10
+Stephen,US,Smart TV,0,bill,Bill Burr: I'm Sorry You Feel That Way,play,video_info,2019-01-07 02:45:10
+Stephen,US,Smart TV,0,bill,Bill Burr,view_suggestion_info,suggestion_results,2019-01-07 02:44:57
+Stephen,US,Smart TV,0,jim,Jim Jefferies: This Is Me Now,play,video_info,2018-12-31 07:11:28
+Stephen,US,Smart TV,0,jim,Jim Jefferies: This Is Me Now,view_video_info,title_results,2018-12-31 07:11:28
+Stephen,US,Smart TV,0,br,,view_video_info,title_results,2018-12-31 05:26:47
+Stephen,US,Smart TV,0,br,,play,video_info,2018-12-31 05:26:47
+Stephen,US,Smart TV,0,br,,view_video_info,title_results,2018-12-31 05:25:57
+Stephen,US,Smart TV,0,br,,play,video_info,2018-12-31 05:25:57
+Stephen,US,Smart TV,0,br,,play,video_info,2018-12-31 05:24:51
+Stephen,US,Smart TV,0,br,,view_video_info,title_results,2018-12-31 05:24:51
+Stephen,US,Smart TV,0,br,,play,video_info,2018-12-31 05:24:41
+Stephen,US,Smart TV,0,br,,view_video_info,title_results,2018-12-31 05:24:41
+Stephen,US,Smart TV,0,br,,view_video_info,title_results,2018-12-31 05:24:16
+Stephen,US,Smart TV,0,br,,play,video_info,2018-12-31 05:24:16
+Stephen,US,Smart TV,0,br,,view_video_info,title_results,2018-12-31 05:23:47
+Stephen,US,Smart TV,0,br,,play,video_info,2018-12-31 05:23:47
+Stephen,US,Smart TV,0,br,,play,video_info,2018-12-31 05:22:34
+Stephen,US,Smart TV,0,br,,view_video_info,title_results,2018-12-31 05:22:34
+Stephen,US,Smart TV,0,br,,view_video_info,title_results,2018-12-31 05:22:16
+Stephen,US,Smart TV,0,br,,play,video_info,2018-12-31 05:22:16
+Stephen,US,Smart TV,0,br,,view_video_info,title_results,2018-12-31 05:22:03
+Stephen,US,Smart TV,0,br,,play,video_info,2018-12-31 05:22:03
+Stephen,US,Smart TV,0,br,,play,video_info,2018-12-31 05:21:23
+Stephen,US,Smart TV,0,br,,view_video_info,title_results,2018-12-31 05:21:23
+Stephen,US,Smart TV,0,br,Bright,play,video_info,2018-12-31 03:12:04
+Stephen,US,Smart TV,0,br,Bright,play,title_results,2018-12-31 03:04:14
+Stephen,US,Smart TV,0,bill,Jim Jefferies: This Is Me Now,view_video_info,suggestion_title_results,2018-12-09 20:30:51
+Stephen,US,Smart TV,0,bill,Jim Jefferies: This Is Me Now,play,video_info,2018-12-09 20:30:51
+Stephen,US,Smart TV,0,bill,Bill Burr: Let It Go,play,video_info,2018-12-09 19:27:42
+Stephen,US,Smart TV,0,bill,Bill Burr: Let It Go,view_video_info,suggestion_title_results,2018-12-09 19:27:42
+Stephen,US,Smart TV,0,bill,Bill Burr,view_suggestion_info,suggestion_results,2018-12-09 19:27:37
+Stephen,US,Smart TV,0,bill,Bill Burr: I'm Sorry You Feel That Way,play,video_info,2018-12-09 05:36:15
+Stephen,US,Smart TV,0,bill,Bill Burr: I'm Sorry You Feel That Way,view_video_info,title_results,2018-12-09 05:36:15
+Stephen,US,Smart TV,0,bill,Bill Burr: Walk Your Way Out,view_video_info,suggestion_title_results,2018-12-08 07:20:00
+Stephen,US,Smart TV,0,bill,Bill Burr: Walk Your Way Out,play,video_info,2018-12-08 07:20:00
+Stephen,US,Android Phone,0,bill burr,Bill Burr: Walk Your Way Out,play,video_info,2018-12-08 07:18:23
+Stephen,US,Android Phone,0,bill burr,Bill Burr: Walk Your Way Out,view_video_info,title_results,2018-12-08 07:14:30
+Stephen,US,Smart TV,0,bill,Bill Burr: You People Are All the Same,play,video_info,2018-12-08 05:54:12
+Stephen,US,Smart TV,0,bill,Bill Burr: You People Are All the Same,view_video_info,suggestion_title_results,2018-12-08 05:54:12
+Stephen,US,Smart TV,0,bill,Bill Burr,view_suggestion_info,suggestion_results,2018-12-08 05:54:10
+Stephen,US,Smart TV,0,al,Altered Carbon,play,video_info,2018-10-28 22:02:41
+Stephen,US,Smart TV,0,al,Altered Carbon,view_video_info,title_results,2018-10-28 22:02:40
+Stephen,US,Smart TV,0,al,Altered Carbon,play,video_info,2018-10-28 19:31:36
+Stephen,US,Smart TV,0,al,Altered Carbon,view_video_info,title_results,2018-10-28 19:31:36
+Stephen,US,,0,synch,Synchronicity,play,video_info,2018-10-11 03:14:50
+Stephen,US,,0,synch,Synchronicity,view_video_info,title_results,2018-10-11 03:14:48
+Stephen,US,,0,bert kr,Gabriel lglesias: I’m Sorry For What I Said When I Was Hungry,play,video_info,2018-09-17 14:23:55
+Stephen,US,,0,bert kr,Gabriel lglesias: I’m Sorry For What I Said When I Was Hungry,view_video_info,title_results,2018-09-17 14:23:55
+Stephen,US,,0,bert kr,Bert Kreischer: Secret Time,view_video_info,title_results,2018-09-17 14:23:18
+Stephen,US,,0,bert kr,Bert Kreischer: Secret Time,play,video_info,2018-09-17 14:23:18
+Stephen,US,,0,bert,Iliza Shlesinger: Freezing Hot,play,video_info,2018-09-17 07:46:49
+Stephen,US,,0,bert,Iliza Shlesinger: Freezing Hot,view_video_info,title_results,2018-09-17 07:46:49
+Stephen,US,,0,bert,Iliza Shlesinger: War Paint,play,video_info,2018-09-17 06:20:33
+Stephen,US,,0,bert,Iliza Shlesinger: War Paint,view_video_info,title_results,2018-09-17 06:20:33
+Stephen,US,Smart TV,0,dej,the loft,view_video_info,suggestion_title_results,2018-08-01 23:02:02
+Stephen,US,Smart TV,0,dej,the loft,play,video_info,2018-08-01 23:02:02
+Stephen,US,Smart TV,0,dej,deja vu,view_suggestion_info,suggestion_results,2018-08-01 23:01:30
+Stephen,US,Smart TV,0,doctor,doctor who,view_suggestion_info,suggestion_results,2018-08-01 22:25:18
+Stephen,US,Smart TV,0,e,the emoji movie,play,video_info,2018-07-30 21:24:49
+Stephen,US,Smart TV,0,e,the emoji movie,view_video_info,title_results,2018-07-30 21:24:49
+Stephen,US,Smart TV,0,20,oceans rising,view_video_info,suggestion_title_results,2018-07-30 16:55:15
+Stephen,US,Smart TV,0,20,oceans rising,play,video_info,2018-07-30 16:55:15
+Stephen,US,Smart TV,0,20,2012,view_suggestion_info,suggestion_results,2018-07-30 16:55:11
+Stephen,US,Smart TV,0,magic,the magic school bus rides again,view_video_info,title_results,2018-07-26 19:25:27
+Stephen,US,Smart TV,0,magic,the magic school bus rides again,play,video_info,2018-07-26 19:25:27
+Stephen,US,Smart TV,0,fro,leap!,view_video_info,suggestion_title_results,2018-07-23 22:39:48
+Stephen,US,Smart TV,0,fro,ballerina,play,video_info,2018-07-23 22:39:48
+Stephen,US,Smart TV,0,fro,frozen,view_suggestion_info,suggestion_results,2018-07-23 22:39:31
+Stephen,US,Smart TV,0,dr who,doctor who,view_suggestion_info,suggestion_results,2018-07-19 01:49:31
+Stephen,US,Smart TV,0,dr who,sherlock,view_video_info,suggestion_title_results,2018-07-19 01:49:22
+Stephen,US,Smart TV,0,dr who,doctor who,view_suggestion_info,suggestion_results,2018-07-19 01:48:49
+Stephen,US,Smart TV,0,dr who,doctor who,view_suggestion_info,suggestion_results,2018-07-11 00:56:13
+Stephen,US,Smart TV,0,frin,helix,view_video_info,suggestion_title_results,2018-06-02 06:28:35
+Stephen,US,Smart TV,0,frin,helix,play,video_info,2018-06-02 06:28:35
+Stephen,US,Smart TV,0,frin,frequency,play,suggestion_title_results,2018-06-02 06:28:13
+Stephen,US,Smart TV,0,frin,frequency,view_video_info,suggestion_title_results,2018-06-02 06:28:13
+Stephen,US,Smart TV,0,frin,the magicians,view_video_info,suggestion_title_results,2018-06-02 06:26:52
+Stephen,US,Smart TV,0,frin,the magicians,play,video_info,2018-06-02 06:26:52
+Stephen,US,Smart TV,0,frin,fringe,view_suggestion_info,suggestion_results,2018-06-02 06:26:27
+Stephen,US,Smart TV,0,kid,barbie life in the dreamhouse,play,title_results,2018-05-30 19:17:38
+Stephen,US,Smart TV,0,kid,barbie life in the dreamhouse,view_video_info,title_results,2018-05-30 19:17:35
+Stephen,US,Smart TV,0,e,the emoji movie,play,video_info,2018-05-29 16:21:26
+Stephen,US,Smart TV,0,e,the emoji movie,view_video_info,title_results,2018-05-29 16:21:21
+Stephen,US,Smart TV,0,bo,the boss baby,play,video_info,2018-05-01 23:22:25
+Stephen,US,Smart TV,0,bo,the boss baby,view_video_info,title_results,2018-05-01 23:22:21
+Stephen,US,Smart TV,0,cha,-1,play,video_info,2018-04-30 07:54:16
+Stephen,US,Smart TV,0,cha,charmed,play,video_info,2018-04-30 07:04:31
+Stephen,US,Smart TV,0,cha,charmed,view_video_info,title_results,2018-04-30 07:04:23
+Stephen,US,Xbox One,0,thev,the voices,view_suggestion_info,suggestion_results,2018-04-22 03:48:59
+Stephen,US,Xbox One,0,i,lego marvel super heroes: avengers reassembled!,play,video_info,2018-03-31 19:53:19
+Stephen,US,Xbox One,0,i,lego marvel super heroes: avengers reassembled!,view_video_info,suggestion_title_results,2018-03-31 19:53:19
+Stephen,US,Xbox One,0,i,iron man,view_suggestion_info,suggestion_results,2018-03-31 19:53:00
+Stephen,US,Android Phone,0,iron man,iron man,view_suggestion_info,suggestion_results,2018-03-29 02:21:24
+Stephen,US,Smart TV,0,cop,alaska state troopers,add_to_list,video_info,2018-03-17 20:27:52
+Stephen,US,Smart TV,0,cop,alaska state troopers,play,video_info,2018-03-17 20:27:43
+Stephen,US,Smart TV,0,cop,alaska state troopers,view_video_info,title_results,2018-03-17 20:27:43
+Stephen,US,Smart TV,0,cop,alaska state troopers,view_video_info,title_results,2018-03-17 20:27:07
+Stephen,US,Smart TV,0,cop,alaska state troopers,play,video_info,2018-03-17 20:27:07
+Stephen,US,Smart TV,0,lil,lilo & stitch 2: stitch has a glitch,play,video_info,2018-03-15 06:33:33
+Stephen,US,Smart TV,0,lil,lilo & stitch 2: stitch has a glitch,view_video_info,title_results,2018-03-15 06:33:29
+Stephen,US,Smart TV,0,lil,lilo & stitch 2: stitch has a glitch,play,video_info,2018-03-14 04:51:17
+Stephen,US,Smart TV,0,lil,lilo & stitch 2: stitch has a glitch,view_video_info,title_results,2018-03-14 04:51:14
+Stephen,--,Smart TV,0,4,-1,play,video_info,2018-03-13 03:15:55
+Stephen,--,Smart TV,0,4,altered carbon,view_video_info,suggestion_title_results,2018-03-13 03:15:48
+Stephen,US,Smart TV,0,4,4k,view_suggestion_info,suggestion_results,2018-03-13 03:15:24
+Stephen,US,Android Phone,0,4k,marvel's jessica jones,view_video_info,suggestion_title_results,2018-03-12 16:34:12
+Stephen,US,Android Phone,0,4k,4k,view_suggestion_info,suggestion_results,2018-03-12 16:34:07
+Stephen,US,Android Phone,0,4k,bright,view_video_info,video_info,2018-03-12 16:33:52
+Stephen,US,Android Phone,0,4k,altered carbon,view_video_info,title_results,2018-03-12 16:33:42
+Stephen,US,Xbox One,0,bob,bob ross: beauty is everywhere,play,video_info,2018-03-11 05:56:25
+Stephen,US,Xbox One,0,bob,bob ross: beauty is everywhere,view_video_info,suggestion_title_results,2018-03-11 05:56:25
+Stephen,US,Xbox One,0,bob,bob ross,view_suggestion_info,suggestion_results,2018-03-11 05:56:19
+Stephen,US,Android Phone,0,de,death note,view_video_info,video_info,2018-02-20 02:58:28
+Stephen,US,Android Phone,0,de,death note,play,video_info,2018-02-20 02:58:27
+Stephen,US,Android Phone,0,de,-1,view_video_info,title_results,2018-02-20 02:56:33
+Stephen,US,Smart TV,0,b,the boss baby,play,video_info,2018-02-19 18:10:29
+Stephen,US,Smart TV,0,b,the boss baby,view_video_info,title_results,2018-02-19 18:10:27
+Stephen,US,Xbox One,0,sin,sinners,view_suggestion_info,suggestion_results,2018-01-31 01:43:52
+Stephen,US,Xbox One,0,si,sinister,view_suggestion_info,suggestion_results,2018-01-31 01:43:18
+Stephen,US,Xbox One,0,si,the sinner,view_suggestion_info,suggestion_results,2018-01-31 01:43:02
+Stephen,US,Xbox One,0,bon,criminal minds,play,suggestion_title_results,2018-01-21 04:19:28
+Stephen,US,Xbox One,0,bon,criminal minds,play,suggestion_title_results,2018-01-21 04:19:06
+Stephen,US,Xbox One,0,bon,criminal minds,view_video_info,suggestion_title_results,2018-01-21 04:19:06
+Stephen,US,Xbox One,0,bon,criminal minds,play,video_info,2018-01-21 04:19:02
+Stephen,US,Xbox One,0,bon,criminal minds,view_video_info,suggestion_title_results,2018-01-21 04:19:02
+Stephen,US,Xbox One,0,bon,bones,view_suggestion_info,suggestion_results,2018-01-21 04:18:36
+Stephen,US,Xbox One,0,luk,marvel's luke cage,view_video_info,title_results,2018-01-10 19:55:17
+Stephen,US,Xbox One,0,luk,marvel's luke cage,play,video_info,2018-01-10 19:55:17
+Stephen,US,Xbox One,0,lu,marvel's luke cage,play,video_info,2018-01-05 01:17:24
+Stephen,US,Xbox One,0,lu,marvel's luke cage,view_video_info,title_results,2018-01-05 01:17:24
+Stephen,US,Xbox One,0,jessica,marvel's jessica jones,view_video_info,title_results,2017-12-29 03:22:19
+Stephen,US,Xbox One,0,jessica,marvel's jessica jones,play,video_info,2017-12-29 03:22:19
+Stephen,US,Android Tablet,0,parad,paradox,view_video_info,video_info,2017-11-01 03:29:07
+Stephen,US,Android Tablet,0,parad,paradox,play,video_info,2017-11-01 03:25:09
+Stephen,US,Android Tablet,0,parad,paradox,view_video_info,title_results,2017-11-01 03:25:04
+Stephen,US,Xbox One,0,the,the purge,view_suggestion_info,suggestion_results,2017-10-29 03:28:29
+Stephen,US,Xbox One,0,the,the blind side,view_suggestion_info,suggestion_results,2017-10-29 03:28:23
+Stephen,US,Xbox One,0,the,the shining,view_suggestion_info,suggestion_results,2017-10-29 03:28:04
+Stephen,US,Xbox One,0,the,the purge,view_suggestion_info,suggestion_results,2017-10-29 03:27:50
+Stephen,US,Xbox One,0,the,the duff,view_suggestion_info,suggestion_results,2017-10-29 03:27:38
+Stephen,US,Xbox One,0,the,saw,view_video_info,suggestion_title_results,2017-10-29 03:26:32
+Stephen,US,Xbox One,0,the,saw,play,video_info,2017-10-29 03:26:32
+Stephen,US,Xbox One,0,the,the shining,view_suggestion_info,suggestion_results,2017-10-29 03:26:16
+Stephen,US,Xbox One,0,cos,cosmos: a spacetime odyssey,view_video_info,title_results,2017-10-15 00:55:58
+Stephen,US,Xbox One,0,cos,cosmos: a spacetime odyssey,play,video_info,2017-10-15 00:55:58
+Stephen,US,Android Tablet,0,planets,into the inferno,view_video_info,suggestion_title_results,2017-10-15 00:53:54
+Stephen,US,Xbox One,0,ni,a nightmare on elm street,view_suggestion_info,suggestion_results,2017-09-04 02:32:55
+Stephen,US,Xbox One,0,ni,nickelodeon,view_suggestion_info,suggestion_results,2017-09-04 02:32:51
+Stephen,US,Android Tablet,0,universe,the inexplicable universe with neil degrasse tyson,view_video_info,title_results,2017-08-19 02:20:52
+Mom,US,Smart TV,0,b,Bridgerton,play,video_info,2022-04-13 02:31:37
+Mom,US,Smart TV,0,b,Bridgerton,view_video_info,title_results,2022-04-13 02:31:30
+Mom,US,Smart TV,0,el,El Chapo,play,video_info,2022-04-11 01:59:56
+Mom,US,Smart TV,0,el,El Chapo,view_video_info,suggestion_title_results,2022-04-11 01:59:49
+Mom,US,Smart TV,0,el,El Capo,view_suggestion_info,suggestion_results,2022-04-11 01:59:48
+Mom,US,Smart TV,0,rec,Reckoning,play,video_info,2021-07-07 18:46:53
+Mom,US,Smart TV,0,rec,Reckoning,view_video_info,title_results,2021-07-07 18:46:49
+Mom,US,Smart TV,0,,CoComelon,play,video_info,2021-05-01 23:54:31
+Mom,US,Smart TV,0,,CoComelon,view_video_info,popularSearches,2021-05-01 23:54:27
+Mom,US,Smart TV,0,dow,Gilmore Girls,play,video_info,2021-01-25 22:40:24
+Mom,US,Smart TV,0,dow,Gilmore Girls,play,title_results,2021-01-25 22:40:15
+Mom,US,Smart TV,0,dow,The Great British Baking Show,play,title_results,2021-01-25 22:39:52
+Mom,US,Smart TV,0,dow,Selfless,play,video_info,2021-01-25 22:39:38
+Mom,US,Smart TV,0,dow,Selfless,view_video_info,title_results,2021-01-25 22:39:34
+Mom,US,Smart TV,0,dow,Land Girls,play,video_info,2021-01-25 22:38:55
+Mom,US,Smart TV,0,dow,Land Girls,view_video_info,title_results,2021-01-25 22:38:52
+Mom,US,Smart TV,0,dow,The English Game,play,video_info,2021-01-25 22:38:34
+Mom,US,Smart TV,0,dow,The English Game,view_video_info,title_results,2021-01-25 22:38:29
+Mom,US,Smart TV,0,dow,Down to Earth with Zac Efron,view_video_info,title_results,2021-01-25 22:38:14
+Mom,US,Smart TV,0,dow,The Borgias,play,suggestion_title_results,2021-01-25 22:37:49
+Mom,US,Smart TV,0,dow,Medici,play,video_info,2021-01-25 22:34:48
+Mom,US,Smart TV,0,dow,Medici,view_video_info,suggestion_title_results,2021-01-25 22:34:45
+Mom,US,Smart TV,0,dow,Unorthodox,play,video_info,2021-01-25 22:34:29
+Mom,US,Smart TV,0,dow,Unorthodox,view_video_info,suggestion_title_results,2021-01-25 22:34:21
+Mom,US,Smart TV,0,dow,The Two Popes,view_video_info,suggestion_title_results,2021-01-25 22:34:07
+Mom,US,Smart TV,0,dow,Alias Grace,play,video_info,2021-01-25 22:33:47
+Mom,US,Smart TV,0,dow,Alias Grace,view_video_info,suggestion_title_results,2021-01-25 22:33:42
+Mom,US,Smart TV,0,dow,The Bonfire of Destiny,play,video_info,2021-01-25 21:17:03
+Mom,US,Smart TV,0,dow,The Bonfire of Destiny,view_video_info,suggestion_title_results,2021-01-25 21:17:00
+Mom,US,Smart TV,0,dow,Alias Grace,view_video_info,suggestion_title_results,2021-01-25 21:16:54
+Mom,US,Smart TV,0,dow,The English Game,view_video_info,suggestion_title_results,2021-01-25 21:16:42
+Mom,US,Smart TV,0,dow,Outlander,play,video_info,2021-01-25 21:16:32
+Mom,US,Smart TV,0,dow,Outlander,view_video_info,suggestion_title_results,2021-01-25 21:16:28
+Mom,US,Smart TV,0,dow,Downton Abbey,view_suggestion_info,suggestion_results,2021-01-25 21:16:18
+Mom,US,Smart TV,0,k,The Adventures of Sharkboy and Lavagirl,play,video_info,2021-01-25 02:49:46
+Mom,US,Smart TV,0,k,The Adventures of Sharkboy and Lavagirl,view_video_info,suggestion_title_results,2021-01-25 02:49:39
+Mom,US,Smart TV,0,k,KIDS,view_suggestion_info,suggestion_results,2021-01-25 02:25:36
+Mom,US,Smart TV,0,r,Reign,play,video_info,2021-01-22 15:56:56
+Mom,US,Smart TV,0,r,Reign,view_video_info,title_results,2021-01-22 15:56:52
+Mom,US,Smart TV,0,ozar,Ozark,play,video_info,2021-01-13 04:12:00
+Mom,US,Smart TV,0,ozar,Ozark,view_video_info,title_results,2021-01-13 04:11:55
+Mom,US,Smart TV,0,crb,Bridgerton,play,video_info,2021-01-12 16:52:20
+Mom,US,Smart TV,0,crb,Bridgerton,view_video_info,title_results,2021-01-12 16:52:11
+Mom,US,Smart TV,0,cr,The Crown,play,video_info,2021-01-11 05:12:08
+Mom,US,Smart TV,0,cr,The Crown,play,video_info,2021-01-11 05:12:08
+Mom,US,Smart TV,0,cr,The Crown,view_video_info,title_results,2021-01-11 05:12:00
+Mom,US,Smart TV,0,cr,The Crown,view_video_info,title_results,2021-01-11 05:12:00
+Mom,US,Smart TV,0,cr,The Crown,play,video_info,2021-01-08 16:42:15
+Mom,US,Smart TV,0,cr,The Crown,view_video_info,title_results,2021-01-08 16:42:07
+Mom,US,Smart TV,0,cr,The Crown,play,video_info,2021-01-06 02:52:13
+Mom,US,Smart TV,0,cr,The Crown,view_video_info,title_results,2021-01-06 02:52:07
+Mom,US,Smart TV,0,han,The Crown,play,video_info,2021-01-05 02:04:07
+Mom,US,Smart TV,0,han,The Crown,view_video_info,suggestion_title_results,2021-01-05 02:04:02
+Mom,US,Smart TV,0,han,Alias Grace,view_video_info,suggestion_title_results,2021-01-05 02:03:36
+Mom,US,Smart TV,0,han,The Handmaid's Tale,view_suggestion_info,suggestion_results,2021-01-05 02:03:34
+Mom,US,Smart TV,0,he,Heartland,play,video_info,2020-08-26 02:36:42
+Mom,US,Smart TV,0,he,Heartland,view_video_info,title_results,2020-08-26 02:36:39
+Mom,US,Smart TV,0,pr,Pride & Prejudice,play,video_info,2020-07-30 01:49:26
+Mom,US,Smart TV,0,pr,Pride & Prejudice,view_video_info,suggestion_title_results,2020-07-30 01:49:24
+Mom,US,Smart TV,0,pr,Pride and Prejudice,view_suggestion_info,suggestion_results,2020-07-30 01:49:20
+Mom,US,Smart TV,0,pr,Pride & Prejudice,play,video_info,2020-07-25 01:22:08
+Mom,US,Smart TV,0,pr,Pride & Prejudice,view_video_info,suggestion_title_results,2020-07-25 01:22:05
+Mom,US,Smart TV,0,pr,Pride and Prejudice,view_suggestion_info,suggestion_results,2020-07-25 01:22:04
+Mom,US,Smart TV,0,two ,The Ranch,play,video_info,2020-06-24 03:04:10
+Mom,US,Smart TV,0,two ,The Ranch,view_video_info,suggestion_title_results,2020-06-24 03:04:05
+Mom,US,Smart TV,0,two ,Two and a Half Men,view_suggestion_info,suggestion_results,2020-06-24 03:04:03
+Mom,US,Smart TV,0,oct,octonauts,play,video_info,2018-05-29 01:48:17
+Mom,US,Smart TV,0,oct,octonauts,view_video_info,title_results,2018-05-29 01:47:59
+Zoie,US,Smart TV,0,mal,Malibu Rescue: The Series,play,video_info,2022-05-04 03:40:12
+Zoie,US,Smart TV,0,mal,Malibu Rescue: The Series,view_video_info,title_results,2022-05-04 03:40:08
+Zoie,US,Smart TV,0,mal,Malibu Rescue: The Next Wave,play,video_info,2022-05-04 03:39:33
+Zoie,US,Smart TV,0,mal,Malibu Rescue: The Next Wave,view_video_info,title_results,2022-05-04 03:39:27
+Zoie,US,Smart TV,0,mal,Malibu Rescue,play,video_info,2022-05-04 03:38:58
+Zoie,US,Smart TV,0,mal,Malibu Rescue,view_video_info,title_results,2022-05-04 03:38:51
+Zoie,US,Smart TV,0,mal,Malibu Rescue: The Next Wave,view_video_info,title_results,2022-05-04 03:38:36
+Zoie,US,Smart TV,0,v,Victorious,play,video_info,2022-04-21 03:58:58
+Zoie,US,Smart TV,0,v,Victorious,view_video_info,title_results,2022-04-21 03:58:55
+Zoie,US,Smart TV,0,v,Victorious,play,video_info,2022-04-21 03:28:32
+Zoie,US,Smart TV,0,v,Victorious,view_video_info,title_results,2022-04-21 03:28:29
+Zoie,US,Smart TV,0,the fu,Fuller House,play,video_info,2022-04-16 05:26:24
+Zoie,US,Smart TV,0,the fu,Fuller House,view_video_info,title_results,2022-04-16 05:26:22
+Zoie,US,Smart TV,0,sh,Shrek 2,play,video_info,2022-04-10 02:09:35
+Zoie,US,Smart TV,0,sh,Shrek 2,view_video_info,title_results,2022-04-10 02:09:33
+Zoie,US,Smart TV,0,sh,Shrek Forever After,play,video_info,2022-04-10 02:09:21
+Zoie,US,Smart TV,0,sh,Shrek Forever After,view_video_info,title_results,2022-04-10 02:09:19
+Zoie,US,Smart TV,0,po,Power Rangers Beast Morphers,play,video_info,2022-03-24 20:08:16
+Zoie,US,Smart TV,0,po,Power Rangers Beast Morphers,view_video_info,title_results,2022-03-24 20:08:13
+Zoie,US,Smart TV,0,,The Christmas Chronicles: Part Two,play,video_info,2022-03-24 15:51:32
+Zoie,US,Smart TV,0,,The Christmas Chronicles: Part Two,view_video_info,popularSearches,2022-03-24 15:51:29
+Zoie,US,Smart TV,0,,The Christmas Chronicles,play,video_info,2022-03-24 14:41:51
+Zoie,US,Smart TV,0,,The Christmas Chronicles,view_video_info,popularSearches,2022-03-24 14:41:47
+Zoie,US,Smart TV,0,,The Christmas Chronicles,play,video_info,2022-03-24 13:06:11
+Zoie,US,Smart TV,0,,The Christmas Chronicles,view_video_info,popularSearches,2022-03-24 13:06:08
+Zoie,US,Smart TV,0,red,Red Notice,play,video_info,2022-01-14 14:42:37
+Zoie,US,Smart TV,0,red,Red Notice,view_video_info,title_results,2022-01-14 14:42:33
+Zoie,US,Smart TV,0,,The Christmas Chronicles,play,video_info,2021-12-20 01:08:44
+Zoie,US,Smart TV,0,,The Christmas Chronicles,view_video_info,popularSearches,2021-12-20 01:08:41
+Zoie,US,Smart TV,0,,The Christmas Chronicles,play,video_info,2021-12-15 22:05:26
+Zoie,US,Smart TV,0,,The Christmas Chronicles,view_video_info,popularSearches,2021-12-15 22:05:23
+Zoie,US,Smart TV,0,sing,Sing 2,view_suggestion_info,suggestion_results,2021-11-09 03:44:13
+Zoie,US,Smart TV,0,chirstma,The Christmas Chronicles: Part Two,play,video_info,2021-11-06 19:30:04
+Zoie,US,Smart TV,0,chirstma,The Christmas Chronicles: Part Two,view_video_info,title_results,2021-11-06 19:30:02
+Zoie,US,Smart TV,0,dr,How to Train Your Dragon 2,play,video_info,2021-11-04 03:35:22
+Zoie,US,Smart TV,0,dr,How to Train Your Dragon 2,view_video_info,title_results,2021-11-04 03:35:20
+Zoie,US,Smart TV,0,t,Twilight,play,video_info,2021-10-22 01:16:00
+Zoie,US,Smart TV,0,t,Twilight,view_video_info,title_results,2021-10-22 01:15:55
+Zoie,US,Smart TV,0,nik,"Nicky, Ricky, Dicky & Dawn",play,video_info,2021-09-21 15:03:44
+Zoie,US,Smart TV,0,nik,"Nicky, Ricky, Dicky & Dawn",view_video_info,title_results,2021-09-21 15:03:41
+Zoie,US,Smart TV,0,h2,H2O: Mermaid Adventures,play,video_info,2021-09-05 18:53:09
+Zoie,US,Smart TV,0,h2,H2O: Mermaid Adventures,view_video_info,title_results,2021-09-05 18:53:05
+Zoie,US,Smart TV,0,,We Can Be Heroes,play,video_info,2021-08-26 03:22:26
+Zoie,US,Smart TV,0,,We Can Be Heroes,view_video_info,popularSearches,2021-08-26 03:22:22
+Zoie,US,Smart TV,0,de,Dennis the Menace,play,video_info,2021-08-04 17:28:10
+Zoie,US,Smart TV,0,de,Dennis the Menace,view_video_info,title_results,2021-08-04 17:28:06
+Zoie,US,Smart TV,0,17 a,17 Again,view_suggestion_info,suggestion_results,2021-08-03 03:49:37
+Zoie,US,Smart TV,0,po,Mighty Morphin Power Rangers,play,video_info,2021-08-01 14:05:05
+Zoie,US,Smart TV,0,po,Mighty Morphin Power Rangers,view_video_info,title_results,2021-08-01 14:05:02
+Zoie,US,Smart TV,0,barbie spy ,Barbie: Spy Squad,view_suggestion_info,suggestion_results,2021-07-30 06:17:47
+Zoie,US,Smart TV,0,h,Henry Danger,play,video_info,2021-07-29 06:39:42
+Zoie,US,Smart TV,0,h,Henry Danger,view_video_info,title_results,2021-07-29 06:39:33
+Zoie,US,Smart TV,0,tw,The Twilight Saga: Breaking Dawn: Part 2,play,video_info,2021-07-29 01:27:09
+Zoie,US,Smart TV,0,tw,The Twilight Saga: Breaking Dawn: Part 2,view_video_info,title_results,2021-07-29 01:27:05
+Zoie,US,Smart TV,0,tw,The Twilight Saga: Breaking Dawn: Part 2,play,video_info,2021-07-29 01:22:20
+Zoie,US,Smart TV,0,tw,The Twilight Saga: Breaking Dawn: Part 2,view_video_info,title_results,2021-07-29 01:22:17
+Zoie,US,Smart TV,0,tw,The Twilight Saga: Breaking Dawn: Part 2,play,video_info,2021-07-29 01:14:31
+Zoie,US,Smart TV,0,tw,The Twilight Saga: Breaking Dawn: Part 2,view_video_info,title_results,2021-07-29 01:14:28
+Zoie,US,Smart TV,0,tw,The Twilight Saga: Breaking Dawn: Part 2,play,video_info,2021-07-28 05:05:14
+Zoie,US,Smart TV,0,tw,The Twilight Saga: Breaking Dawn: Part 2,view_video_info,title_results,2021-07-28 05:05:10
+Zoie,US,Smart TV,0,tw,The Twilight Saga: Breaking Dawn: Part 1,play,video_info,2021-07-28 02:34:19
+Zoie,US,Smart TV,0,tw,The Twilight Saga: Breaking Dawn: Part 1,view_video_info,title_results,2021-07-28 02:34:15
+Zoie,US,Smart TV,0,de,Dennis the Menace,play,video_info,2021-07-26 03:22:46
+Zoie,US,Smart TV,0,de,Dennis the Menace,view_video_info,title_results,2021-07-26 03:22:44
+Zoie,US,Smart TV,0,mo,A Babysitter's Guide to Monster Hunting,play,video_info,2021-07-24 01:33:30
+Zoie,US,Smart TV,0,mo,A Babysitter's Guide to Monster Hunting,view_video_info,suggestion_title_results,2021-07-24 01:33:27
+Zoie,US,Smart TV,0,mo,"Monsters, Inc.",view_suggestion_info,suggestion_results,2021-07-24 01:32:59
+Zoie,US,Smart TV,0,henry,Henry Danger,play,video_info,2021-07-18 05:19:39
+Zoie,US,Smart TV,0,henry,Henry Danger,view_video_info,title_results,2021-07-18 05:19:36
+Zoie,US,Smart TV,0,h,Henry Danger,play,video_info,2021-07-13 08:25:46
+Zoie,US,Smart TV,0,h,Henry Danger,view_video_info,title_results,2021-07-13 08:25:42
+Zoie,US,Smart TV,0,cro,The Croods,play,video_info,2021-07-01 04:20:05
+Zoie,US,Smart TV,0,cro,The Croods,view_video_info,title_results,2021-07-01 04:20:02
+Zoie,US,Smart TV,0,san,The Christmas Chronicles: Part Two,play,video_info,2021-06-25 08:04:25
+Zoie,US,Smart TV,0,san,The Christmas Chronicles: Part Two,view_video_info,title_results,2021-06-25 08:04:23
+Zoie,US,Smart TV,0,san,The Christmas Chronicles,play,video_info,2021-06-25 06:25:38
+Zoie,US,Smart TV,0,san,The Christmas Chronicles,view_video_info,title_results,2021-06-25 06:25:35
+Zoie,US,Smart TV,0,stkl,The Christmas Chronicles,play,video_info,2021-06-24 08:26:28
+Zoie,US,Smart TV,0,stkl,The Christmas Chronicles,view_video_info,title_results,2021-06-24 08:26:26
+Zoie,US,Smart TV,0,ann,,play,video_info,2021-06-16 21:19:59
+Zoie,US,Smart TV,0,ann,,view_video_info,suggestion_title_results,2021-06-16 21:19:56
+Zoie,US,Smart TV,0,ann,Annabelle: Creation,view_suggestion_info,suggestion_results,2021-06-16 21:18:32
+Zoie,US,Smart TV,0,j,Julie and the Phantoms,play,video_info,2021-06-13 04:51:45
+Zoie,US,Smart TV,0,j,Julie and the Phantoms,view_video_info,title_results,2021-06-13 04:51:42
+Zoie,US,Smart TV,0,m,We Can Be Heroes,play,video_info,2021-06-11 06:19:27
+Zoie,US,Smart TV,0,m,We Can Be Heroes,view_video_info,title_results,2021-06-11 06:19:25
+Zoie,US,Smart TV,0,m,Henry Danger,play,video_info,2021-06-11 06:17:41
+Zoie,US,Smart TV,0,m,Henry Danger,view_video_info,title_results,2021-06-11 06:17:39
+Zoie,US,Smart TV,0,ra,Raising Dion,play,video_info,2021-05-31 05:17:21
+Zoie,US,Smart TV,0,ra,Raising Dion,view_video_info,title_results,2021-05-31 05:17:17
+Zoie,US,Smart TV,0,henr,Henry Danger,play,video_info,2021-05-21 02:58:51
+Zoie,US,Smart TV,0,henr,Henry Danger,view_video_info,title_results,2021-05-21 02:58:49
+Zoie,US,Smart TV,0,henr5,Henry Danger,play,video_info,2021-05-04 02:26:19
+Zoie,US,Smart TV,0,henr5,Henry Danger,view_video_info,title_results,2021-05-04 02:26:16
+Zoie,US,Smart TV,0,fr,Walt Disney Animation Studios Short Films Collection,play,video_info,2021-05-02 04:31:18
+Zoie,US,Smart TV,0,fr,Walt Disney Animation Studios Short Films Collection,view_video_info,suggestion_title_results,2021-05-02 04:31:15
+Zoie,US,Smart TV,0,fr,Frozen II,view_suggestion_info,suggestion_results,2021-05-02 04:31:11
+Zoie,US,Smart TV,0,full h,The Big Show Show,play,video_info,2021-04-24 22:22:29
+Zoie,US,Smart TV,0,full h,The Big Show Show,view_video_info,title_results,2021-04-24 22:22:26
+Zoie,US,Smart TV,0,pow,,play,video_info,2021-04-24 04:56:21
+Zoie,US,Smart TV,0,pow,,play,,2021-04-24 04:56:13
+Zoie,US,Smart TV,0,pow,Mighty Morphin Power Rangers,view_video_info,title_results,2021-04-24 04:56:10
+Zoie,US,Smart TV,0,h,Henry Danger,play,video_info,2021-04-08 03:27:38
+Zoie,US,Smart TV,0,h,Henry Danger,view_video_info,title_results,2021-04-08 03:27:34
+Zoie,US,Smart TV,0,ju,Julie and the Phantoms,play,video_info,2021-03-30 17:54:34
+Zoie,US,Smart TV,0,ju,Julie and the Phantoms,view_video_info,title_results,2021-03-30 17:54:31
+Zoie,US,Smart TV,0,ye,YES DAY,play,video_info,2021-03-26 04:43:25
+Zoie,US,Smart TV,0,ye,YES DAY,view_video_info,title_results,2021-03-26 04:43:22
+Zoie,US,Smart TV,0,grin,How the Grinch Stole Christmas,view_suggestion_info,suggestion_results,2021-02-26 18:33:34
+Zoie,US,Smart TV,0,paw,Super Wings,play,video_info,2021-02-26 14:08:42
+Zoie,US,Smart TV,0,paw,Super Wings,play,video_info,2021-02-26 14:08:42
+Zoie,US,Smart TV,0,paw,Super Wings,view_video_info,title_results,2021-02-26 14:08:40
+Zoie,US,Smart TV,0,paw,Super Wings,view_video_info,title_results,2021-02-26 14:08:40
+Taylor,US,Android Phone,0,chamber,,play,video_info,2022-05-15 04:55:44
+Taylor,US,Android Phone,0,chamber,,play,title_results,2022-05-15 04:35:09
+Taylor,US,Android Phone,0,chamber,,view_video_info,title_results,2022-05-15 04:34:59
+Taylor,US,Smart TV,0,cooking,The Big Family Cooking Showdown,play,video_info,2022-03-12 16:58:29
+Taylor,US,Smart TV,0,cooking,The Big Family Cooking Showdown,view_video_info,title_results,2022-03-12 16:58:27
+Taylor,US,Smart TV,0,cooking,Chef's Table,play,video_info,2022-03-12 16:50:03
+Taylor,US,Smart TV,0,cooking,Chef's Table,view_video_info,title_results,2022-03-12 16:50:00
+Taylor,US,Smart TV,0,thr,Through My Window,play,video_info,2022-03-02 20:43:54
+Taylor,US,Smart TV,0,thr,Through My Window,view_video_info,title_results,2022-03-02 20:43:50
+Taylor,US,Smart TV,0,th e l,The Last Kingdom,play,video_info,2022-01-07 07:21:48
+Taylor,US,Smart TV,0,th e l,The Last Kingdom,view_video_info,title_results,2022-01-07 07:21:45
+Taylor,US,Android Phone,0,set it u,,play,video_info,2022-01-03 01:23:37
+Taylor,US,Android Phone,0,set it u,,play,title_results,2022-01-03 01:23:33
+Taylor,US,Android Phone,0,set it u,,play,title_results,2022-01-03 01:22:48
+Taylor,US,Android Phone,0,set it u,If Anything Happens I Love You,view_video_info,title_results,2022-01-03 01:22:47
+Taylor,US,Android Phone,0,set it u,,play,video_info,2022-01-03 01:19:51
+Taylor,US,Android Phone,0,set it u,,play,title_results,2022-01-03 01:19:36
+Taylor,US,Android Phone,0,set it u,,play,title_results,2022-01-03 01:19:15
+Taylor,US,Android Phone,0,set it u,Always Be My Maybe,view_video_info,title_results,2022-01-03 01:19:14
+Taylor,US,Smart TV,0,br,Bruised,play,video_info,2021-12-08 03:06:48
+Taylor,US,Smart TV,0,br,Bruised,view_video_info,title_results,2021-12-08 03:06:45
+Taylor,US,Smart TV,0,fro,The Frozen Ground,play,video_info,2021-10-30 04:27:41
+Taylor,US,Smart TV,0,fro,The Frozen Ground,view_video_info,title_results,2021-10-30 04:27:38
+Taylor,US,Smart TV,0,john t,John Tucker Must Die,view_suggestion_info,suggestion_results,2021-10-12 03:59:21
+Taylor,US,Smart TV,0,aft,Aftermath,play,video_info,2021-09-30 04:55:40
+Taylor,US,Smart TV,0,aft,Aftermath,view_video_info,title_results,2021-09-30 04:55:37
+Taylor,US,Smart TV,0,int,Intrusion,play,video_info,2021-09-30 04:48:51
+Taylor,US,Smart TV,0,int,Intrusion,view_video_info,title_results,2021-09-30 04:48:47
+Taylor,US,Android Phone,0,good,,play,title_results,2021-09-13 05:39:00
+Taylor,US,Android Phone,0,good,,play,title_results,2021-09-13 05:38:59
+Taylor,US,Android Phone,0,good,,play,title_results,2021-09-13 05:38:42
+Taylor,US,Android Phone,0,good,,view_video_info,title_results,2021-09-13 05:38:38
+Taylor,US,Smart TV,0,hes ,He's All That,play,video_info,2021-08-30 03:13:19
+Taylor,US,Smart TV,0,hes ,He's All That,view_video_info,title_results,2021-08-30 03:13:16
+Taylor,US,Smart TV,0,hdr,Our Planet,play,video_info,2021-08-07 17:16:24
+Taylor,US,Smart TV,0,hdr,Our Planet,view_video_info,title_results,2021-08-07 17:16:21
+Taylor,US,Smart TV,0,hdr,HDR,view_suggestion_info,suggestion_results,2021-08-07 17:15:57
+Taylor,US,Smart TV,0,blue,Blue Planet II,view_suggestion_info,suggestion_results,2021-08-07 17:15:24
+Taylor,US,Smart TV,0,fiv,Five Feet Apart,play,video_info,2021-08-07 06:48:17
+Taylor,US,Smart TV,0,fiv,Five Feet Apart,view_video_info,title_results,2021-08-07 06:48:13
+Taylor,US,Smart TV,0,,The Twilight Saga: Eclipse,play,video_info,2021-07-23 16:15:29
+Taylor,US,Smart TV,0,,The Twilight Saga: Eclipse,view_video_info,popularSearches,2021-07-23 16:15:26
+Taylor,US,Smart TV,0,twy,The Twilight Saga: New Moon,play,video_info,2021-07-23 04:07:18
+Taylor,US,Smart TV,0,twy,The Twilight Saga: New Moon,view_video_info,title_results,2021-07-23 04:07:15
+Taylor,US,Smart TV,0,twy,Twilight,play,video_info,2021-07-23 00:31:50
+Taylor,US,Smart TV,0,twy,Twilight,view_video_info,title_results,2021-07-23 00:31:46
+Taylor,US,Smart TV,0,vi,Virgin River,play,video_info,2021-07-13 03:28:39
+Taylor,US,Smart TV,0,vi,Virgin River,view_video_info,title_results,2021-07-13 03:28:36
+Taylor,US,Smart TV,0,army,Army of the Dead,play,video_info,2021-07-10 02:46:00
+Taylor,US,Smart TV,0,army,Army of the Dead,view_video_info,title_results,2021-07-10 02:45:56
+Taylor,US,Smart TV,0,zoo,Zoo,play,video_info,2021-07-06 03:09:48
+Taylor,US,Smart TV,0,zoo,Zoo,view_video_info,title_results,2021-07-06 03:09:46
+Taylor,US,Smart TV,0,ye,"Yes, God, Yes",play,video_info,2021-06-17 06:37:59
+Taylor,US,Smart TV,0,ye,"Yes, God, Yes",view_video_info,title_results,2021-06-17 06:37:53
+Taylor,US,Smart TV,0,j,Julie and the Phantoms,play,video_info,2021-06-12 16:47:55
+Taylor,US,Smart TV,0,j,Julie and the Phantoms,view_video_info,title_results,2021-06-12 16:47:52
+Taylor,US,Smart TV,0,gin,Ginny & Georgia,play,video_info,2021-03-14 05:26:51
+Taylor,US,Smart TV,0,gin,Ginny & Georgia,view_video_info,title_results,2021-03-14 05:26:48

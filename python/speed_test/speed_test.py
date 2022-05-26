@@ -8,8 +8,7 @@ test.get_servers()
 print('Choosing best server')
 best_server = test.get_best_server()
 
-print(f"Found: {best_server['host']} located in {best_server['country']}")
-
+print(f"Found: {best_server['host']} located in {best_server['name']}")
 print('Performing download test...')
 download_result = test.download()
 
