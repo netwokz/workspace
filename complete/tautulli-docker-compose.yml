@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  tautulli:
+    image: ghcr.io/tautulli/tautulli
+    container_name: tautulli
+    restart: unless-stopped
+    volumes:
+      - /home/netwokz/tautulli/config:/config
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America\Phoenix
+    ports:
+      - 8181:8181
