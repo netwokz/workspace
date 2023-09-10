@@ -1,0 +1,25 @@
+{
+  "data": {
+    "timelines": [
+      {
+        "timestep": "current",
+        "endTime": "2022-05-20T03:27:00-07:00",
+        "startTime": "2022-05-20T03:27:00-07:00",
+        "intervals": [
+          {
+            "startTime": "2022-05-20T03:27:00-07:00",
+            "values": {
+              "humidity": 23,
+              "temperature": 70.14,
+              "temperatureApparent": 70.14,
+              "weatherCode": 1000,
+              "windDirection": 307.88,
+              "windGust": 5.17,
+              "windSpeed": 3.36
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
