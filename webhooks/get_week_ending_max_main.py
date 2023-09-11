@@ -1,27 +1,14 @@
 from time import sleep
 from selenium import webdriver
+import os
 import pandas as pd
 import requests
 from tabulate import tabulate
 import json
 from datetime import date, timedelta
-import os
-from dotenv import dotenv_values
 
-ALI_URL = "https://hooks.slack.com/workflows/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"  # variable = data
-SAUL_URL = "https://hooks.slack.com/workflows/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"  # variable = data
-CBM_URL = "https://hooks.slack.com/workflows/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"  # variable = Content
-FHD_URL = "https://hooks.slack.com/workflows/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"  # variable = data
-BHN_URL = "https://hooks.slack.com/workflows/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"  # variable = Content
-MY_TEST_URL = "https://hooks.slack.com/workflows/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"  # variable = data
-WEBHOOK_FAILED_MSG = f"get_week_ending_max webhook failed to send"
 
 dt = date.today()
-
-secrets = dotenv_values(
-    "C:\\Users\\deanejst\\Documents\\CODE\\workspace\\webhooks\\.env")
-USERNAME = secrets.get('username')
-PASSWORD = secrets.get('password')
 
 
 def get_week_start(day=dt):
@@ -49,9 +36,15 @@ def get_week_end(day=dt):
 END_OF_WEEK = get_week_end()
 START_OF_WEEK = get_week_start()
 
+MY_TEST_URL = "https://hooks.slack.com/workflows/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"  # variable = data
+WEBHOOK_FAILED_MSG = f"get_week_ending_max webhook failed to send"
+
 NORMAL_URL = f"https://portal.ez.na.rme.logistics.a2z.com/work-orders?organizationId=GYR1&customPreset=allOpen&preset=allOpen&dueDate=customDateRange,{START_OF_WEEK},{END_OF_WEEK}&primaryOwnerSort=asc,1&pmComplianceMaxDateSort=asc,2"
-CSV_FILE = "C:\\Users\\deanejst\\Documents\\WEBHOOK\\WorkOrderExport.csv"
-CSV_PATH = "C:\\Users\\deanejst\\Documents\\WEBHOOK\\"
+CSV_FILE = "C:\\Users\\gyr1-flowdesk\\Documents\\WO_CSV\\max_webhook\\WorkOrderExport.csv"
+CSV_PATH = 'C:\\Users\\gyr1-flowdesk\\Documents\\WO_CSV\\max_webhook\\'
+
+USERNAME = "gramigu@amazon.com"
+PASSWORD = "123456"
 
 dt = date.today()
 # Source
@@ -59,14 +52,12 @@ src = f'{CSV_PATH}WorkOrderExport.csv'
 # Destination
 dest = f'{CSV_PATH}hawk_pms_{dt}.csv'
 
-
-# EXCLUDED_COLUMNS = ['PM Compliance Min Date', 'Scheduled End Date', 'Priority', 'Equipment Criticality',
-#                     'Equipment Alias', 'Equipment Description', 'Completed date', 'Scheduled Start Date', 'Status', 'Equipment', 'Index']
-EXCLUDED_COLUMNS = ['PM Compliance Min Date', 'Scheduled Start Date', 'Scheduled End Date', 'Completed date', 'Priority', 'Equipment Criticality',
-                    'Equipment Alias', 'Equipment Description', 'Status', 'Equipment', 'Index']
+# EXCLUDED_COLUMNS = ['PM Compliance Min Date', 'Scheduled End Date', 'Priority', 'Equipment Criticality', 'Equipment Alias', 'Equipment Description', 'Completed date', 'Scheduled Start Date', 'Status', 'Equipment', 'Original PM due date', 'Organization', 'Precision WO', 'Created By', 'Shift ID', 'Index']
+EXCLUDED_COLUMNS = ['PM Compliance Min Date', 'Equipment Alias', 'Equipment Description', 'Completed date',
+                    'Scheduled Start Date', 'Status', 'Equipment', 'Original PM due date', 'Created By', 'Shift ID', 'Index']
 FHD_TECHS = ['ASHPFAF', 'EDURGR', 'GSALAEDW', 'HERTAJU', 'KIECLAR',
              'HRYATAYL', 'RMGAB', 'CLARKSSI', 'SAUVRGA', 'WLNJON', 'DEANEJST', 'DUNHCHAS']
-EXCLUDED_TYPES = ['CBM', 'PR', 'CM', 'BRKD', 'FPM', 'SEV']
+ALLOWED_TYPES = ['CBM', 'PR', 'CM', 'BRKD', 'FPM', 'SEV']
 
 
 def download_to_csv():
@@ -127,7 +118,7 @@ def send_fail_notification():
 
 
 def send_webhook(my_data):
-    URL = FHD_URL  # FHD Webhook URL
+    URL = "https://hooks.slack.com/workflows/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"  # FHD Webhook URL
     headers = {
         'Content-Type': 'application/json',
     }
@@ -135,12 +126,11 @@ def send_webhook(my_data):
     response = requests.post(URL, headers=headers, data=data)
     if response.status_code != 200:
         send_fail_notification()
-    # print(response.status_code)
 
 
-# def rename_file():
-#     os.rename(src, dest)
-#     print("The file has been renamed.")
+def rename_file():
+    os.rename(src, dest)
+    print("The file has been renamed.")
 
 
 if os.path.exists(CSV_FILE):
@@ -150,24 +140,21 @@ download_to_csv()
 df = pd.read_csv(CSV_FILE)
 df = df.sort_values(by='Original PM due date', ascending=True)
 for item in EXCLUDED_COLUMNS:
-    if item in df.columns:
+    if item in df:
         df = df.drop(columns=item)
-df = df.loc[~df["Description"].str.contains("DAILY")]
-df = df.loc[~df["Type"].isin(EXCLUDED_TYPES)]
+df = df.loc[~df["Type"].isin(ALLOWED_TYPES)]
+df = df.loc[~df["Description"].str.contains('DAILY')]
 df = df.loc[df["WO Owner"].isin(FHD_TECHS)]
-df.reset_index(inplace=True, drop=True)
+df.reset_index(drop=True, inplace=True)
 
 size = len(df.index)
+
 if size > 0:
     dataframe_chunk_size = 30
-
     list_df = [df[i:i+dataframe_chunk_size]
                for i in range(0, len(df), dataframe_chunk_size)]
-    for frame in list_df:
-        tab = (tabulate(frame, tablefmt="pipe", headers="keys", showindex=False))
+    for dataframe in list_df:
+        tab = (tabulate(dataframe, tablefmt="pipe",
+               headers="keys", showindex=False))
         # send_webhook(tab)
         print(tab)
-        # print("\n")
-
-# print(len(df.index))
-# df.to_csv(CSV_PATH + 'edited.csv', index=False)

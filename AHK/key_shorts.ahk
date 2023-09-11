@@ -36,7 +36,9 @@
         {
             Run win_name
             Sleep 2000
+            WinActivate("Password")
             WinWaitActive("Password")
+            ; Sleep 1000
             Send "User1"
             Send "{Tab down}{Tab up}"
             Send "Moaust"

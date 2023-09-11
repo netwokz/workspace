@@ -5,31 +5,33 @@ import pandas as pd
 import requests
 from tabulate import tabulate
 import json
-import chromedriver_autoinstaller
 from datetime import date, timedelta
 
 
 dt = date.today()
 
+
 def get_week_start(day=dt):
     my_dt_trunc = day
     if my_dt_trunc.weekday() == 6:
-        start_of_week = my_dt_trunc + timedelta(days = 3)
+        start_of_week = my_dt_trunc + timedelta(days=3)
     elif my_dt_trunc.weekday() == 0:
-        start_of_week = my_dt_trunc + timedelta(days = 2)
+        start_of_week = my_dt_trunc + timedelta(days=2)
     elif my_dt_trunc.weekday() == 1:
-        start_of_week = my_dt_trunc + timedelta(days = 1)
+        start_of_week = my_dt_trunc + timedelta(days=1)
     else:
         start_of_week = my_dt_trunc
     return start_of_week.strftime('%Y-%m-%d')
 
+
 def get_week_end(day=dt):
     my_dt_trunc = day
     if my_dt_trunc.weekday() == 6:
-        end_of_week = my_dt_trunc + timedelta(days = 6)
+        end_of_week = my_dt_trunc + timedelta(days=6)
     else:
-        end_of_week = my_dt_trunc + timedelta(days = (5 - my_dt_trunc.weekday()))
+        end_of_week = my_dt_trunc + timedelta(days=(5 - my_dt_trunc.weekday()))
     return end_of_week.strftime('%Y-%m-%d')
+
 
 END_OF_WEEK = get_week_end()
 START_OF_WEEK = get_week_start()
@@ -48,9 +50,12 @@ dest = f'{CSV_PATH}hawk_pms_{dt}.csv'
 
 chromedriver_autoinstaller.install(cwd=True)
 
-EXCLUDED_COLUMNS = ['PM Compliance Min Date', 'Scheduled End Date', 'Priority', 'Equipment Criticality', 'Equipment Alias', 'Index', 'Equipment Description', 'Completed date', 'Scheduled Start Date', 'Status', 'Equipment']
-FHD_TECHS = ['ASHPFAF', 'EDURGR', 'GSALAEDW', 'HERTAJU', 'KIECLAR', 'HRYATAYL', 'RMGAB', 'CLARKSSI', 'SAUVRGA', 'WLNJON', 'DEANEJST', 'DUNHCHAS']
+EXCLUDED_COLUMNS = ['PM Compliance Min Date', 'Scheduled End Date', 'Priority', 'Equipment Criticality',
+                    'Equipment Alias', 'Index', 'Equipment Description', 'Completed date', 'Scheduled Start Date', 'Status', 'Equipment']
+FHD_TECHS = ['ASHPFAF', 'EDURGR', 'GSALAEDW', 'HERTAJU', 'KIECLAR',
+             'HRYATAYL', 'RMGAB', 'CLARKSSI', 'SAUVRGA', 'WLNJON', 'DEANEJST', 'DUNHCHAS']
 ALLOWED_TYPES = ['CBM', 'PR', 'CM', 'BRKD', 'FPM', 'SEV']
+
 
 def download_to_csv():
     options = webdriver.ChromeOptions()
@@ -78,8 +83,9 @@ def download_to_csv():
     print("CSV Downloaded")
     sleep(5)
 
+
 def send_webhook(my_data):
-    URL = "https://hooks.slack.com/workflows/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" # FHD Webhook URL
+    URL = "https://hooks.slack.com/workflows/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"  # FHD Webhook URL
     headers = {
         'Content-Type': 'application/json',
     }
@@ -87,9 +93,11 @@ def send_webhook(my_data):
     response = requests.post(URL, headers=headers, data=data)
     print(response)
 
+
 def rename_file():
     os.rename(src, dest)
     print("The file has been renamed.")
+
 
 if os.path.exists(CSV_FILE):
     os.remove(CSV_FILE)
@@ -110,4 +118,3 @@ if len(df.index) > 0:
     send_webhook(tab)
 else:
     send_webhook("All PM's have been completed for today. YAY!")
-
