@@ -66,6 +66,9 @@ EXCLUDED_COLUMNS = ['PM Compliance Min Date', 'Scheduled Start Date', 'Scheduled
                     'Equipment Alias', 'Equipment Description', 'Status', 'Equipment', 'Index']
 FHD_TECHS = ['ASHPFAF', 'EDURGR', 'GSALAEDW', 'HERTAJU', 'KIECLAR',
              'HRYATAYL', 'RMGAB', 'CLARKSSI', 'SAUVRGA', 'WLNJON', 'DEANEJST', 'DUNHCHAS']
+
+FHD_CSX_TECHS = ['CMAYN', 'GEMCKEAG', 'BREADJ',
+                 'GRAMIGU', 'SAUVRGA', 'DEANEJST', 'AHUERTAJ']
 EXCLUDED_TYPES = ['CBM', 'PR', 'CM', 'BRKD', 'FPM', 'SEV']
 
 
@@ -127,7 +130,7 @@ def send_fail_notification():
 
 
 def send_webhook(my_data):
-    URL = FHD_URL  # FHD Webhook URL
+    URL = MY_TEST_URL  # FHD_URL  # FHD Webhook URL
     headers = {
         'Content-Type': 'application/json',
     }
@@ -154,7 +157,7 @@ for item in EXCLUDED_COLUMNS:
         df = df.drop(columns=item)
 df = df.loc[~df["Description"].str.contains("DAILY")]
 df = df.loc[~df["Type"].isin(EXCLUDED_TYPES)]
-df = df.loc[df["WO Owner"].isin(FHD_TECHS)]
+df = df.loc[df["WO Owner"].isin(FHD_CSX_TECHS)]
 df.reset_index(inplace=True, drop=True)
 
 size = len(df.index)

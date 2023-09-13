@@ -26,6 +26,11 @@
     Return
 }
 
+^+d::
+{
+    Send A_YYYY A_MM A_DD
+}
+
 #h::
 {
     win_name := "C:\Users\deanejst\Documents\software\RemoteHMI_IP=[10.79.216.18_8080].exe"
