@@ -6,9 +6,15 @@ import requests
 from tabulate import tabulate
 import json
 from datetime import date, timedelta
+from dotenv import dotenv_values
 
 
 dt = date.today()
+
+secrets = dotenv_values(
+    "C:\\Users\\deanejst\\Documents\\CODE\\workspace\\webhooks\\.env")
+USERNAME = secrets.get('username')
+PASSWORD = secrets.get('password')
 
 
 def get_week_start(day=dt):

@@ -1,20 +1,8 @@
-from time import sleep
-from selenium import webdriver
-import pandas as pd
-import requests
-from tabulate import tabulate
-import json
 from datetime import date, timedelta
 import os
 from dotenv import dotenv_values
-
-ALI_URL = "https://hooks.slack.com/workflows/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"  # variable = data
-SAUL_URL = "https://hooks.slack.com/workflows/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"  # variable = data
-CBM_URL = "https://hooks.slack.com/workflows/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"  # variable = Content
-FHD_URL = "https://hooks.slack.com/workflows/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"  # variable = data
-BHN_URL = "https://hooks.slack.com/workflows/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"  # variable = Content
-MY_TEST_URL = "https://hooks.slack.com/workflows/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"  # variable = data
-WEBHOOK_FAILED_MSG = f"get_week_ending_max webhook failed to send"
+from time import sleep
+from selenium import webdriver
 
 dt = date.today()
 
@@ -69,35 +57,12 @@ def get_back_half_days(today):
     return start, end
 
 
-dates = get_front_half_days(dt)
-
-
-START_OF_WEEK = dates[0]
-END_OF_WEEK = dates[1]
-
-NORMAL_URL = f"https://portal.ez.na.rme.logistics.a2z.com/work-orders?organizationId=GYR1&customPreset=allOpen&preset=allOpen&dueDate=customDateRange,{START_OF_WEEK},{END_OF_WEEK}&primaryOwnerSort=asc,1&pmComplianceMaxDateSort=asc,2"
 CSV_FILE = os.path.expanduser("~\\Documents\\WEBHOOK\\WorkOrderExport.csv")
 CSV_PATH = os.path.expanduser("~\\Documents\\WEBHOOK\\")
 
-EXCLUDED_COLUMNS = ['PM Compliance Min Date', 'Scheduled Start Date', 'Scheduled End Date', 'Completed date', 'Priority', 'Equipment Criticality',
-                    'Equipment Alias', 'Equipment Description', 'Status', 'Equipment', 'Index']
-FHD_TECHS = ['ASHPFAF', 'GSALAEDW', 'IXTAJ', 'HERTAJU',
-             'KIECLAR', 'WINNEMIC', 'HRYATAYL', 'CLARKSSI', 'FETICHER']
 
-FHN_TECHS = ['CANDRUEL', 'QMOYCHRI', 'JOPADEYI', 'WLNJON',
-             'JCSTROZ', 'MPEREZF', 'SHATPRAT', 'STUARTYL']
-
-BHD_TECHS = ['AREAARON', 'VANBUC', 'ZDHARR', 'FELSOLON', 'ISAIACON',
-             'JSONHU', 'JRRYCH', 'KKAMERJO', 'ANTOPLAC', 'LITTREDE']
-
-BHN_TECHS = ['ADELALBA', 'AUSNMAJO', 'BUTLEEBR', 'RMGAB',
-             'ACASJACO', 'REYESBJU', 'NATENEAL', 'JOVEROTL']
-
-FHD_CSX_TECHS = ['GEMCKEAG', 'BREADJ', 'SAUVRGA', 'DEANEJST', 'AHUERTAJ']
-EXCLUDED_TYPES = ['CBM', 'PR', 'CM', 'BRKD', 'FPM', 'SEV']
-
-
-def download_to_csv():
+def download_to_csv(start_date, end_date):
+    NORMAL_URL = f"https://portal.ez.na.rme.logistics.a2z.com/work-orders?organizationId=GYR1&customPreset=allOpen&preset=allOpen&dueDate=customDateRange,{start_date},{end_date}&primaryOwnerSort=asc,1&pmComplianceMaxDateSort=asc,2"
     options = webdriver.ChromeOptions()
     # options.add_argument("--headless=new")
     options.add_argument("--incognito")
@@ -142,54 +107,3 @@ def download_to_csv():
     CSVButton.click()
     print("CSV Downloaded")
     sleep(10)
-
-
-def send_fail_notification():
-    URL = MY_TEST_URL
-    headers = {
-        'Content-Type': 'application/json',
-    }
-    data = json.dumps({"data": WEBHOOK_FAILED_MSG})
-    response = requests.post(URL, headers=headers, data=data)
-    print(response.status_code)
-
-
-def send_webhook(my_data):
-    URL = MY_TEST_URL
-    headers = {
-        'Content-Type': 'application/json',
-    }
-    data = json.dumps({"data": my_data})
-    response = requests.post(URL, headers=headers, data=data)
-    if response.status_code != 200:
-        send_fail_notification()
-
-
-# def rename_file():
-#     os.rename(src, dest)
-#     print("The file has been renamed.")
-
-
-# if os.path.exists(CSV_FILE):
-#     os.remove(CSV_FILE)
-# download_to_csv()
-
-df = pd.read_csv(CSV_FILE)
-df = df.sort_values(by='Original PM due date', ascending=True)
-for item in EXCLUDED_COLUMNS:
-    if item in df.columns:
-        df = df.drop(columns=item)
-df = df.loc[~df["Description"].str.contains("DAILY")]
-df = df.loc[~df["Type"].isin(EXCLUDED_TYPES)]
-df = df.loc[df["WO Owner"].isin(BHD_TECHS)]
-df.reset_index(inplace=True, drop=True)
-
-size = len(df.index)
-if size > 0:
-    dataframe_chunk_size = 30
-    list_df = [df[i:i+dataframe_chunk_size]
-               for i in range(0, len(df), dataframe_chunk_size)]
-    for frame in list_df:
-        tab = (tabulate(frame, tablefmt="pipe", headers="keys", showindex=False))
-        # send_webhook(tab)
-        print(tab)
