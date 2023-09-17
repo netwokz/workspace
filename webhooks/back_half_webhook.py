@@ -45,13 +45,13 @@ def get_back_half_days():
     return start, end
 
 
-dates = get_back_half_days()
+start, end = get_back_half_days()
 
-start = dates[0]
-end = dates[1]
-# if os.path.exists(CSV_FILE):
-#     os.remove(CSV_FILE)
-# download_to_csv(start, end)
+# start = dates[0]
+# end = dates[1]
+if os.path.exists(CSV_FILE):
+    os.remove(CSV_FILE)
+download_to_csv(start, end)
 
 
 def parse_csv():

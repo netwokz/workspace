@@ -19,32 +19,42 @@ CSV_FILE = os.path.expanduser("~\\Documents\\WEBHOOK\\WorkOrderExport.csv")
 CSV_PATH = os.path.expanduser("~\\Documents\\WEBHOOK\\")
 
 
+# def get_front_half_days():
+#     today = date.today()
+#     if today.weekday() == 6:
+#         start_of_week = today + timedelta(days=3)
+#         end_of_week = today + timedelta(days=6)
+#     elif today.weekday() == 0:
+#         start_of_week = today + timedelta(days=2)
+#         end_of_week = today + timedelta(days=(5 - today.weekday()))
+#     elif today.weekday() == 1:
+#         start_of_week = today + timedelta(days=1)
+#         end_of_week = today + timedelta(days=(5 - today.weekday()))
+#     else:
+#         start_of_week = today
+#         end_of_week = today + timedelta(days=(5 - today.weekday()))
+#     start = start_of_week.strftime('%Y-%m-%d')
+#     end = end_of_week.strftime('%Y-%m-%d')
+#     return start, end
+
 def get_front_half_days():
     today = date.today()
-    if today.weekday() == 6:
+    print(today.isoweekday)
+    if today.isoweekday() == 6:
         start_of_week = today + timedelta(days=3)
         end_of_week = today + timedelta(days=6)
-    elif today.weekday() == 0:
-        start_of_week = today + timedelta(days=2)
-        end_of_week = today + timedelta(days=(5 - today.weekday()))
-    elif today.weekday() == 1:
-        start_of_week = today + timedelta(days=1)
-        end_of_week = today + timedelta(days=(5 - today.weekday()))
-    else:
-        start_of_week = today
-        end_of_week = today + timedelta(days=(5 - today.weekday()))
     start = start_of_week.strftime('%Y-%m-%d')
     end = end_of_week.strftime('%Y-%m-%d')
     return start, end
 
 
+print(get_front_half_days())
+
 start, end = get_front_half_days()
 
-# start = dates[0]
-# end = dates[1]
-if os.path.exists(CSV_FILE):
-    os.remove(CSV_FILE)
-download_to_csv(start, end)
+# if os.path.exists(CSV_FILE):
+#     os.remove(CSV_FILE)
+# download_to_csv(start, end)
 
 
 def parse_csv():
