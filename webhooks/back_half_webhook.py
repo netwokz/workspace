@@ -1,8 +1,8 @@
 from datetime import date, timedelta
-from download_wo import download_to_csv
 import os
 import pandas as pd
 from tabulate import tabulate
+import UTIL
 
 EXCLUDED_COLUMNS = ['PM Compliance Min Date', 'Scheduled Start Date', 'Scheduled End Date', 'Completed date', 'Priority', 'Equipment Criticality',
                     'Equipment Alias', 'Equipment Description', 'Status', 'Equipment', 'Index']
@@ -51,7 +51,7 @@ start, end = get_back_half_days()
 # end = dates[1]
 if os.path.exists(CSV_FILE):
     os.remove(CSV_FILE)
-download_to_csv(start, end)
+UTIL.download_to_csv(start, end)
 
 
 def parse_csv():

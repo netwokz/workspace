@@ -2,19 +2,19 @@
 
 #t::
 {
-	if WinExist("Windows PowerShell") or WinExist("Ubuntu")
+	if WinExist("Windows PowerShell")
 		WinActivate
-	Else Run 'C:\Users\netwokz\AppData\Local\Microsoft\WindowsApps\wt.exe -p `"Ubuntu`"'
+	Else Run 'C:\Users\netwokz\AppData\Local\Microsoft\WindowsApps\wt.exe
 	Return
 }
 
-#t::
-{
-	if WinExist("Windows PowerShell") or WinExist("Ubuntu")
-		WinActivate
-	Else Run 'C:\Users\netwokz\AppData\Local\Microsoft\WindowsApps\wt.exe -p `"Ubuntu`"'
-	Return
-}
+; #t::
+; {
+; 	if WinExist("Ubuntu")
+; 		WinActivate
+; 	Else Run 'C:\Users\netwokz\AppData\Local\Microsoft\WindowsApps\wt.exe -p `"Ubuntu`"'
+; 	Return
+; }
 
 #c::
 {
