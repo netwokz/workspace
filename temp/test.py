@@ -1,5 +1,6 @@
 from datetime import date, timedelta
 from dotenv import dotenv_values
+import pyshorteners
 
 
 config = dotenv_values(
@@ -72,3 +73,12 @@ BHN_TECHS = ['ADELALBA', 'AUSNMAJO', 'BUTLEEBR', 'RMGAB',
 # def all_upper(my_list):
 #     return [x.upper() for x in my_list]
 # print(all_upper(BHN_TECHS))
+
+type_tiny = pyshorteners.Shortener()
+
+
+short_url = type_tiny.tinyurl.short(
+    "https://portal.ez.na.rme.logistics.a2z.com/work-orders/91191202/details")
+
+print("https://portal.ez.na.rme.logistics.a2z.com/work-orders/91191202/details")
+print(short_url)

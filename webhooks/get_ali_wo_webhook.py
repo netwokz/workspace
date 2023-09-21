@@ -1,3 +1,4 @@
+from datetime import date, timedelta
 import os
 import pandas as pd
 from tabulate import tabulate
@@ -6,9 +7,9 @@ import UTIL
 
 type_tiny = pyshorteners.Shortener()
 
-if os.path.exists(UTIL.CSV_FILE):
-    os.remove(UTIL.CSV_FILE)
-UTIL.get_all_csv("SAUVRGA")
+# if os.path.exists(CSV_FILE):
+#     os.remove(CSV_FILE)
+# get_all_csv("AHUERTAJ")
 
 
 def parse_csv():
@@ -29,7 +30,7 @@ def parse_csv():
         for frame in list_df:
             tab = (tabulate(frame, tablefmt="pipe",
                    headers="keys", showindex=False))
-            UTIL.send_webhook(UTIL.SAUL_URL, tab)
+            UTIL.send_webhook(UTIL.ALI_URL, tab)
             print(tab)
     print(f"Total number of WO's: {size}")
 
