@@ -1,24 +1,13 @@
 from datetime import date, timedelta
-from download_wo import download_to_csv
 import os
 import pandas as pd
 from tabulate import tabulate
-
-EXCLUDED_COLUMNS = ['PM Compliance Min Date', 'Scheduled Start Date', 'Scheduled End Date', 'Completed date', 'Priority', 'Equipment Criticality',
-                    'Equipment Alias', 'Equipment Description', 'Status', 'Equipment', 'Index']
-EXCLUDED_TYPES = ['CBM', 'PR', 'CM', 'BRKD', 'FPM', 'SEV']
-BHD_TECHS = ['AREAARON', 'VANBUC', 'ZDHARR', 'FELSOLON', 'ISAIACON',
-             'JSONHU', 'JRRYCH', 'KKAMERJO', 'ANTOPLAC', 'LITTREDE']
-
-BHN_TECHS = ['ADELALBA', 'AUSNMAJO', 'BUTLEEBR', 'RMGAB',
-             'ACASJACO', 'REYESBJU', 'NATENEAL', 'JOVEROTL']
-
-CSV_FILE = os.path.expanduser("~\\Documents\\WEBHOOK\\WorkOrderExport.csv")
-CSV_PATH = os.path.expanduser("~\\Documents\\WEBHOOK\\")
+import UTIL
 
 
-def get_back_half_days():
+def get_front_half_days():
     today = date.today()
+    print(today.weekday())
     if today.weekday() == 0:
         start_of_week = today
         end_of_week = today + timedelta(days=2)
@@ -45,24 +34,22 @@ def get_back_half_days():
     return start, end
 
 
-start, end = get_back_half_days()
+start, end = get_front_half_days()
 
-# start = dates[0]
-# end = dates[1]
-if os.path.exists(CSV_FILE):
-    os.remove(CSV_FILE)
-download_to_csv(start, end)
+if os.path.exists(UTIL.CSV_FILE):
+    os.remove(UTIL.CSV_FILE)
+UTIL.download_to_csv(start, end)
 
 
 def parse_csv():
-    df = pd.read_csv(CSV_FILE)
+    df = pd.read_csv(UTIL.CSV_FILE)
 
-    for item in EXCLUDED_COLUMNS:
+    for item in UTIL.EXCLUDED_COLUMNS:
         if item in df.columns:
             df = df.drop(columns=item)
     df = df.loc[~df["Description"].str.contains("DAILY")]
-    df = df.loc[~df["Type"].isin(EXCLUDED_TYPES)]
-    df = df.loc[df["WO Owner"].isin(BHD_TECHS)]
+    # df = df.loc[~df["Type"].isin(UTIL.EXCLUDED_TYPES)]
+    df = df.loc[df["WO Owner"].isin(UTIL.FHD_TECHS)]
     df = df.sort_values(by='Original PM due date', ascending=True)
     df.reset_index(inplace=True, drop=True)
 
@@ -74,8 +61,9 @@ def parse_csv():
         for frame in list_df:
             tab = (tabulate(frame, tablefmt="pipe",
                    headers="keys", showindex=False))
-            # send_webhook(tab)
+            UTIL.send_webhook(UTIL.FHD_URL, tab)
             print(tab)
+    print(f"Total number of WO's: {size}")
 
 
 parse_csv()
