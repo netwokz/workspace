@@ -61,7 +61,7 @@ def parse_csv():
         for frame in list_df:
             tab = (tabulate(frame, tablefmt="pipe",
                    headers="keys", showindex=False))
-            UTIL.send_webhook(UTIL.FHD_URL, tab)
+            # UTIL.send_webhook(UTIL.FHD_URL, tab)
             print(tab)
     print(f"Total number of WO's: {size}")
 

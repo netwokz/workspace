@@ -17,6 +17,7 @@ PASSWORD = secrets.get('password')
 
 CSV_FILE = os.path.expanduser("~\\Documents\\WEBHOOK\\WorkOrderExport.csv")
 CSV_PATH = os.path.expanduser("~\\Documents\\WEBHOOK\\")
+CBM_PATH = os.path.expanduser("~\\Documents\\WEBHOOK\\cbm\\")
 
 ALI_URL = "https://hooks.slack.com/workflows/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"  # variable = data
 SAUL_URL = "https://hooks.slack.com/workflows/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"  # variable = data
@@ -59,6 +60,64 @@ def download_to_csv(start_date, end_date):
     driver = webdriver.Chrome(options=options)
     print("driver set to chrome")
     driver.get(NORMAL_URL)
+    print("Page LOADED")
+    sleep(1)
+    SignInASButton = driver.execute_script(
+        "return document.querySelector('ez-rme-app').shadowRoot.querySelector('ez-login-page').shadowRoot.querySelector('ez-login').shadowRoot.querySelector('mwc-button:nth-child(4)').shadowRoot.querySelector('#button')")
+    SignInASButton.click()
+    print("Sign On CLICKED")
+    sleep(3)
+
+    email = driver.execute_script(
+        "return document.querySelector('ez-rme-app').shadowRoot.querySelector('ez-login-page').shadowRoot.querySelector('ez-login').shadowRoot.querySelector('#user-id')")
+    email.click()
+    sleep(1)
+    email.send_keys(USERNAME)
+    sleep(5)
+
+    passwd = driver.execute_script(
+        "return document.querySelector('ez-rme-app').shadowRoot.querySelector('ez-login-page').shadowRoot.querySelector('ez-login').shadowRoot.querySelector('#password')")
+    passwd.click()
+    passwd.send_keys(PASSWORD)
+    sleep(5)
+
+    sign_on = driver.execute_script(
+        "return document.querySelector('ez-rme-app').shadowRoot.querySelector('ez-login-page').shadowRoot.querySelector('ez-login').shadowRoot.querySelector('#submit-login')")
+    sign_on.click()
+
+    sleep(1)
+    print("Sign On CLICKED")
+    sleep(15)
+
+    CSVButton = driver.execute_script(
+        "return document.querySelector('body > ez-rme-app').shadowRoot.querySelector('#content > main > ez-work-order-list-page').shadowRoot.querySelector('div > mwc-button:nth-child(1)').shadowRoot.querySelector('#button')")
+    CSVButton.click()
+    print("CSV Downloaded")
+    sleep(10)
+
+
+def get_cbm():
+    url = "https://portal.ez.na.rme.logistics.a2z.com/work-orders?organizationId=GYR1&customPreset=allOpen&preset=allOpen&type=CBM"
+    options = webdriver.ChromeOptions()
+    options.add_argument("--headless=new")
+    options.add_argument("--incognito")
+    options.add_argument("--window-size=1920,1080")
+    # prefs = {
+    #     "download.default_directory": CBM_PATH,
+    #     "savefile.default_directory": CBM_PATH
+    # }
+    # options.add_experimental_option('prefs', prefs)
+    print("options added")
+    driver = webdriver.Chrome(options=options)
+    driver.get(url)
+    # need to do this once instance has started
+    params = {'cmd': 'Page.setDownloadBehavior', 'params': {
+        'behavior': 'allow', 'downloadPath': CBM_PATH}}
+    driver.command_executor._commands["send_command"] = (
+        "POST", '/session/$sessionId/chromium/send_command')
+    driver.execute("send_command", params)
+    print("driver set to chrome")
+    driver.get(url)
     print("Page LOADED")
     sleep(1)
     SignInASButton = driver.execute_script(

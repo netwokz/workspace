@@ -31,6 +31,14 @@
     Send A_YYYY A_MM A_DD
 }
 
+^+l::
+{
+    Send "GYR1Admin"
+    Send "{Tab down}{Tab up}"
+    Send "AmazonGYR1"
+    Send "{Enter down} {Enter up}"
+}
+
 #h::
 {
     win_name := "C:\Users\deanejst\Documents\software\RemoteHMI_IP=[10.79.216.18_8080].exe"
