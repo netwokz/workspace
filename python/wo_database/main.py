@@ -100,6 +100,11 @@ def get_wo_from_db(wo_id):
     return workorder
 
 
+def compare_db_entries():
+    # Logic to get new WO's from CSV and compare against DB. Delete old out of DB, add new
+    pass
+
+
 populate_db()
 
 # all_workorders = get_all_entries()
