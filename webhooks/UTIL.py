@@ -51,13 +51,19 @@ EXCLUDED_TYPES = ['CBM', 'PR', 'CM', 'BRKD', 'FPM', 'SEV']
 def download_to_csv(start_date, end_date):
     NORMAL_URL = f"https://portal.ez.na.rme.logistics.a2z.com/work-orders?organizationId=GYR1&customPreset=allOpen&preset=allOpen&dueDate=customDateRange,{start_date},{end_date}&primaryOwnerSort=asc,1&pmComplianceMaxDateSort=asc,2"
     options = webdriver.ChromeOptions()
-    options.add_argument("--headless=new")
+    # options.add_argument("--headless=new")
     options.add_argument("--incognito")
     options.add_argument("--window-size=1920,1080")
-    prefs = {'download.default_directory': CSV_PATH}
-    options.add_experimental_option('prefs', prefs)
+    # prefs = {'download.default_directory': CSV_PATH}
+    # options.add_experimental_option('prefs', prefs)
     print("options added")
     driver = webdriver.Chrome(options=options)
+    driver.get(NORMAL_URL)
+    params = {'cmd': 'Page.setDownloadBehavior', 'params': {
+        'behavior': 'allow', 'downloadPath': CSV_PATH}}
+    driver.command_executor._commands["send_command"] = (
+        "POST", '/session/$sessionId/chromium/send_command')
+    driver.execute("send_command", params)
     print("driver set to chrome")
     driver.get(NORMAL_URL)
     print("Page LOADED")
