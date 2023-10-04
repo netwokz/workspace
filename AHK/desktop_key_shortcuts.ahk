@@ -4,7 +4,7 @@
 {
 	if WinExist("Windows PowerShell")
 		WinActivate
-	Else Run 'C:\Users\netwokz\AppData\Local\Microsoft\WindowsApps\wt.exe
+	Else Run 'C:\Users\netwokz\AppData\Local\Microsoft\WindowsApps\wt.exe'
 	Return
 }
 
