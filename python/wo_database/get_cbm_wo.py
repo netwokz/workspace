@@ -17,8 +17,10 @@ EXCLUDED_COLUMNS = ['Organization', 'Precision WO', 'Created By', 'Shift ID', 'P
 FINAL_EXCLUDED_COLUMNS = ['Equipment Criticality', 'Equipment Alias', 'Organization', 'Precision WO', 'Created By', 'Shift ID', 'PM Compliance Max Date', 'PM Compliance Min Date', 'Scheduled Start Date', 'Scheduled End Date', 'Completed date', 'Priority',
                           'Equipment Description', 'Status', 'Index']
 CBM_PATH = os.path.expanduser("~\\Documents\\WEBHOOK\\cbm\\")
+# CBM_FILE = os.path.expanduser(
+#     "~\\Documents\\WEBHOOK\\cbm\\WorkOrderExport.csv")
 CBM_FILE = os.path.expanduser(
-    "~\\Documents\\WEBHOOK\\cbm\\WorkOrderExport.csv")
+    "~\\CODE\\workspace\\python\\wo_database\\WorkOrderExport.csv")
 secrets = dotenv_values(os.path.expanduser(
     "~\\Documents\\CODE\\workspace\\webhooks\\.env"))
 USERNAME = secrets.get('username')
@@ -122,8 +124,10 @@ def get_cbm():
     sleep(10)
 
 
+# engine = create_engine(
+#     "sqlite:///C:/Users/deanejst/Documents/WEBHOOK/cbm/mydb.db", echo=True)
 engine = create_engine(
-    "sqlite:///C:/Users/deanejst/Documents/WEBHOOK/cbm/mydb.db", echo=True)
+    "sqlite:///C:/Users/netwokz/Documents/CODE/workspace/python/wo_database/mydb.db", echo=True)
 Base.metadata.create_all(engine)
 
 Session = sessionmaker(bind=engine)
