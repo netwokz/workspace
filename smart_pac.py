@@ -1,10 +1,15 @@
 from pylogix import PLC
-from datetime import datetime
+from datetime import datetime, timezone
 import asyncio
 import json
 import requests
+from sqlalchemy import create_engine, Column, String, Integer
+from sqlalchemy.orm import declarative_base
+from sqlalchemy.orm import sessionmaker
+from time import sleep
+import pandas as pd
 
-start = datetime.now()
+Base = declarative_base()
 
 tag_list = []
 
@@ -23,7 +28,8 @@ sp_dict = {
     "SP 7-12": "10.18.8.170",
     "SP 7-13": "10.18.8.173",
     "SP 7-14": "10.18.8.176",
-    "SP 7-15": "10.18.8.179"
+    "SP 7-15": "10.18.8.179",
+    "SP TEST": "10.18.8.180"
 }
 
 alarm_dict_1 = {
@@ -88,6 +94,94 @@ critical_alarms = {
 }
 
 
+class SmartPac(Base):
+    __tablename__ = 'smartpac'
+
+    sp_name = Column('Name', String, primary_key=True)
+    sp_alarm = Column('Alarm', String)
+    sp_timestamp = Column('Timestamp', String)
+
+    def __init__(self, sp_name, sp_alarm, sp_timestamp):
+        self.sp_name = sp_name
+        self.sp_alarm = sp_alarm
+        self.sp_timestamp = sp_timestamp
+
+    # def get_id(self):
+    #     return self.sp_id
+
+    def get_df_data(self):
+        sp_dict = {
+            # "ID": self.sp_id,
+            "Name": self.sp_name,
+            "Alarm": self.sp_alarm,
+            "Timestamp": self.sp_timestamp,
+        }
+        return sp_dict
+
+    def __repr__(self):
+        return f"Name: {self.sp_name}, Alarm: {self.sp_alarm}, Timestamp: {self.sp_timestamp}"
+
+    def __hash__(self):
+        return self.sp_id.__hash__
+
+    def __eq__(self, other):
+        # print("__eq__ called")
+        return str(self.sp_name) == str(other.sp_name) and str(self.sp_alarm) == str(other.sp_alarm)
+
+
+engine = create_engine(
+    "sqlite:///C:/Users/deanejst/Documents/WEBHOOK/sp/mydb.db", echo=True)
+Base.metadata.create_all(engine)
+
+Session = sessionmaker(bind=engine)
+session = Session()
+
+
+def compare_db_entries():
+    db_workorders = get_all_entries()
+    cur_workorders = get_cur_workorders()
+
+    if len(db_workorders) != 0:
+        for workorder in db_workorders:
+            if workorder not in cur_workorders:
+                delete_entry(workorder)
+                print(f"Workorder {workorder.get_id()} deleted successfully")
+            else:
+                print(f"Workorder {workorder.get_id()} kept")
+
+    for workorder in cur_workorders:
+        if workorder not in db_workorders:
+            add_entry(workorder)
+        else:
+            print(f"Workorder {workorder.get_id()} already exists")
+
+
+def delete_entry(sp_entry: SmartPac):
+    # workorder = session.query(Workorder).get("87150830")
+    session.delete(sp_entry)
+    session.commit()
+
+
+def add_entry(sp_entry: SmartPac):
+    session.add(sp_entry)
+    session.commit()
+
+
+def get_all_entries() -> list[SmartPac]:
+    results = session.query(SmartPac).all()
+    return results
+
+
+def get_df_values() -> pd.DataFrame:
+    work_orders = get_all_entries()
+    dict_list = []
+    for wo in work_orders:
+        # print(wo)
+        dict_list.append(wo.get_df_data())
+    wo_df = pd.DataFrame.from_dict(dict_list)
+    return wo_df
+
+
 def getDuration(then, now=datetime.now(), interval="default"):
     duration = now - then  # For build-in functions
     duration_in_s = duration.total_seconds()
@@ -132,6 +226,7 @@ def getDuration(then, now=datetime.now(), interval="default"):
 
 
 def ping_sp(sp, ip):
+    print(f"Ping {sp} with {ip}")
     with PLC(ip) as comm:
         no_alarm = comm.Read("Alarm_Faults_None")
         if no_alarm.Value == True:
@@ -145,6 +240,7 @@ def ping_sp(sp, ip):
 
 
 async def multi_ping(sp, ip):
+    sleep(2)
     with PLC(ip) as comm:
         print(f"Checking {sp}")
         no_alarm = comm.Read("Alarm_Faults_None")
@@ -158,8 +254,10 @@ async def multi_ping(sp, ip):
         for x, y in alarm_dict_1.items():
             temp = comm.Read(x)
             if temp.Value == True:
+                sp_data = SmartPac(
+                    sp, y, str(datetime.now().astimezone().timestamp()))
+                add_entry(sp_data)
                 print(f"{sp}: {y} is {temp.Value}")
-        print("\n")
 
 
 def send_webhook(my_data):
@@ -190,4 +288,5 @@ async def main():
 # print(f"Ran {count} times")
 
 # while True:
-asyncio.run(main())
+# asyncio.run(main())
+print(get_all_entries())
