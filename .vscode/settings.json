@@ -1,8 +1,10 @@
 {
     "[python]": {
-        "editor.defaultFormatter": "ms-python.python"
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": false,
+        "editor.formatOnSaveMode": "file"
     },
-    "python.formatting.provider": "none",
     "editor.scrollBeyondLastLine": false
 
 }

@@ -1,8 +1,8 @@
 import clr # the pythonnet module.
-clr.AddReference(r'C:\Users\netwokz\Documents\CODE\workspace\python\statistics\OpenHardwareMonitorLib') 
+clr.AddReference(r'C:\Users\deanejst\Documents\CODE\workspace\python\statistics\LibreHardwareMonitorLib') 
 # e.g. clr.AddReference(r'OpenHardwareMonitor/OpenHardwareMonitorLib'), without .dll
 
-from OpenHardwareMonitor import Hardware
+from LibreHardwareMonitor import Hardware
 
 def get_methods(data):
     list_of_methods = dir(data)
@@ -14,32 +14,20 @@ def get_sensors(item):
     for sensor in item:
         print(f"[{sensor.Name}], [{sensor.SensorType.ToString()}], [{sensor.Value}]")
 
-def get_hardware():
-    # Hardware.Mainboard.Mainboard
-    # Hardware.CPU.AMD17CPU
-    # Hardware.RAM.GenericRAM
-    # Hardware.ATI.ATIGPU
-    # Hardware.HDD.SSDMicron
-    # Hardware.HDD.GenericHarddisk
-    # Hardware.HDD.GenericHarddisk
-    # for i in c.Hardware: 
-    #     print(i)
-    pass
-
 def get_all_sensors():
     c = Hardware.Computer()
     c.MainboardEnabled = True
-    c.CPUEnabled = True
-    c.GPUEnabled = True
-    c.RAMEnabled = True
-    c.HDDEnabled = True
+    c.IsCpuEnabled = True
+    c.IsGpuEnabled = True
+    c.IsMemoryEnabled = True
+    c.IsMotherboardEnabled = True
     c.Open()
     
     CPU = c.Hardware[1]
     CPU.Update()
     cpu_temp = ''
     cpu_load = ''
-    # get_sensors(CPU.Sensors) 
+    get_sensors(CPU.Sensors) 
     for sensor in CPU.Sensors:
         if sensor.Name == "CPU Package" and sensor.SensorType.ToString() == "Temperature":
             cpu_temp = str(int(sensor.get_Value()))
@@ -52,9 +40,9 @@ def get_all_sensors():
     mem_avail = ''
     # get_sensors(MEM.Sensors)
     for sensor in MEM.Sensors:
-        if sensor.Name == "Used Memory" and sensor.SensorType.ToString() == "Data":
+        if sensor.Name == "Memory Used" and sensor.SensorType.ToString() == "Data":
             mem_used = str(int(sensor.get_Value()))
-        if sensor.Name == "Available Memory" and sensor.SensorType.ToString() == "Data":
+        if sensor.Name == "Memory Available" and sensor.SensorType.ToString() == "Data":
             mem_avail = str(int(sensor.get_Value()))
 
     GPU = c.Hardware[3]
@@ -69,13 +57,25 @@ def get_all_sensors():
             gpu_power_draw = str(int(sensor.get_Value()))
     c.Close()
     return cpu_temp, cpu_load, mem_used, mem_avail, gpu_temp, gpu_power_draw
-    # print(f"CPU Temp:  {cpu_temp}°C")
-    # print(f"CPU Load:  {cpu_load}%")
-    # print(f"MEM Used:  {mem_used}GB")
-    # print(f"MEM Avail: {mem_avail}GB")
-    # print(f"GPU Temp:  {gpu_temp}°C")
-    # print(f"GPU Draw:  {gpu_power_draw}W")
 
+def get_hardware():
+    c = Hardware.Computer()
+    c.IsCpuEnabled = True
+    c.IsGpuEnabled = True
+    c.IsMemoryEnabled = True
+    c.IsMotherboardEnabled = True
+    c.Open()
+    MEM = c.Hardware[2]
+    MEM.Update()
+    get_sensors(MEM.Sensors)
+    # OpenHardwareMonitor.Hardware.Mainboard.Mainboard
+    # OpenHardwareMonitor.Hardware.CPU.IntelCPU       
+    # OpenHardwareMonitor.Hardware.RAM.GenericRAM     
+    # OpenHardwareMonitor.Hardware.Nvidia.NvidiaGPU   
+    # OpenHardwareMonitor.Hardware.HDD.GenericHarddisk
+
+# get_hardware()
+# get_all_sensors()
 
 from tkinter import *
 from tkinter import ttk
@@ -127,6 +127,7 @@ def main():
     
     def update_labels():
         cpu_temp, cpu_load, mem_used, mem_avail, gpu_temp, gpu_power_draw = get_all_sensors()
+        # cpu_temp, cpu_load = get_all_sensors()
         cpu_temp_label.configure(text=f"CPU: {cpu_temp}°C")
         memusage = int(mem_used) / 64
         mem_usage.set(memusage)
@@ -177,4 +178,5 @@ def main():
     root.mainloop()
 
 if __name__ == '__main__':
+        # pass
         main()

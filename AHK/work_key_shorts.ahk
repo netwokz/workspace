@@ -31,7 +31,7 @@
     Send A_YYYY A_MM A_DD
 }
 
-^+l::
+^+w::
 {
     Send "GYR1Admin"
     Send "{Tab down}{Tab up}"

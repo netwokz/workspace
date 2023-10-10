@@ -1,17 +1,15 @@
 from pylogix import PLC
-from datetime import datetime, timezone
-import asyncio
+from datetime import datetime
 import json
 import requests
-from sqlalchemy import create_engine, Column, String, Integer
+from sqlalchemy import create_engine, Column, String
 from sqlalchemy.orm import declarative_base
 from sqlalchemy.orm import sessionmaker
-from time import sleep
 import pandas as pd
 
 Base = declarative_base()
 
-tag_list = []
+cur_sp_errors = []
 
 sp_dict = {
     "SP 5-1": "10.18.8.137",
@@ -32,18 +30,28 @@ sp_dict = {
     "SP TEST": "10.18.8.180"
 }
 
-alarm_dict_1 = {
+non_critical_alarms = {
+    "Alarm_Fault[0].5": "Nip Not Closed",
+    "Alarm_Fault[0].6": "Nip Interference",
+    "Alarm_Fault[0].10": "Bag Material Roll Out of Position",
+    "Alarm_Fault[0].20": "Printer Faulted",
+    "Alarm_Fault[0].21": "Applicator Tamp Failed To Return",
+    "Alarm_Fault[0].22": "Labeler Cycle Too Long",
+    "Alarm_Fault[0].26": "Verify Camera Offline",
+    "Alarm_Fault[0].27": "Verify Camera Cycle too Long",
+    "Alarm_Fault[0].28": "Fault Sealer Bar Temperature Too Low",
+    
+}
+
+critical_alarms = {
     "Alarm_Fault[0].0": "Area Not Clear",
     "Alarm_Fault[0].1": "Jaw Not Clear",
     "Alarm_Fault[0].2": "Feed Fault",
     "Alarm_Fault[0].3": "Gripper Servo Current High",
     "Alarm_Fault[0].4": "Nip Fault",
-    "Alarm_Fault[0].5": "Nip Not Closed",
-    "Alarm_Fault[0].6": "Nip Interference",
     "Alarm_Fault[0].7": "Product Sensor Fault",
     "Alarm_Fault[0].8": "Gripper Fault Movement Overtime",
     "Alarm_Fault[0].9": "Cycle Fault",
-    "Alarm_Fault[0].10": "Bag Material Roll Out of Position",
     "Alarm_Fault[0].12": "Air Pressure Low",
     "Alarm_Fault[0].14": "Grip Obstructing Seal Cycle",
     "Alarm_Fault[0].15": "Takeaway Conveyor Motor Fault",
@@ -51,15 +59,9 @@ alarm_dict_1 = {
     "Alarm_Fault[0].17": "Takeaway Conveyor PE Jam Fault",
     "Alarm_Fault[0].18": "Kickout Conveyor PE Jam Fault",
     "Alarm_Fault[0].19": "Tote Barcode Reader Offline",
-    "Alarm_Fault[0].20": "Printer Faulted",
-    "Alarm_Fault[0].21": "Applicator Tamp Failed To Return",
-    "Alarm_Fault[0].22": "Labeler Cycle Too Long",
     "Alarm_Fault[0].23": "Labeler Printing Failed Fault",
     "Alarm_Fault[0].24": "Labeler Tamp Head Vacuum Fault",
     "Alarm_Fault[0].25": "Applicator Failed to Tamp Fault",
-    "Alarm_Fault[0].26": "Verify Camera Offline",
-    "Alarm_Fault[0].27": "Verify Camera Cycle too Long",
-    "Alarm_Fault[0].28": "Fault Sealer Bar Temperature Too Low",
     "Alarm_Fault[0].29": "Divert Position Timeout Fault",
     "Alarm_Fault[0].30": "Package Lost After Sealing Cycle",
     "Alarm_Fault[1].2": "Printer Not In FWD Position",
@@ -89,11 +91,6 @@ alarm_dict_1 = {
 }
 
 
-critical_alarms = {
-
-}
-
-
 class SmartPac(Base):
     __tablename__ = 'smartpac'
 
@@ -106,8 +103,8 @@ class SmartPac(Base):
         self.sp_alarm = sp_alarm
         self.sp_timestamp = sp_timestamp
 
-    # def get_id(self):
-    #     return self.sp_id
+    def get_name(self):
+        return self.sp_name
 
     def get_df_data(self):
         sp_dict = {
@@ -138,33 +135,38 @@ session = Session()
 
 
 def compare_db_entries():
-    db_workorders = get_all_entries()
-    cur_workorders = get_cur_workorders()
+    db_sp_errors = get_all_entries()
+    # cur_sp_errors = get_sp_data()
 
-    if len(db_workorders) != 0:
-        for workorder in db_workorders:
-            if workorder not in cur_workorders:
-                delete_entry(workorder)
-                print(f"Workorder {workorder.get_id()} deleted successfully")
+    if len(db_sp_errors) != 0 and len(cur_sp_errors) != 0:
+        for smartpac in db_sp_errors:
+            if smartpac not in cur_sp_errors:
+                delete_entry(smartpac)
+                print(f"SP {smartpac.getName()} deleted successfully")
             else:
-                print(f"Workorder {workorder.get_id()} kept")
+                print(f"SP {smartpac.getName()} kept")
 
-    for workorder in cur_workorders:
-        if workorder not in db_workorders:
-            add_entry(workorder)
-        else:
-            print(f"Workorder {workorder.get_id()} already exists")
+    # for smartpac in cur_sp_errors:
+    #     if smartpac not in db_sp_errors:
+    #         add_entry(smartpac)
+    #     else:
+    #         print(f"SP {smartpac.getName()} already exists")
 
 
 def delete_entry(sp_entry: SmartPac):
-    # workorder = session.query(Workorder).get("87150830")
     session.delete(sp_entry)
     session.commit()
 
 
 def add_entry(sp_entry: SmartPac):
-    session.add(sp_entry)
-    session.commit()
+    db_sp_errors = get_all_entries()
+    if len(db_sp_errors) != 0:
+        if sp_entry not in db_sp_errors:
+            print(f"SP {sp_entry.getName()} added to DB")
+            session.add(sp_entry)
+            session.commit()
+        else:
+            print(f"SP {sp_entry.getName()} already exists")
 
 
 def get_all_entries() -> list[SmartPac]:
@@ -226,38 +228,35 @@ def getDuration(then, now=datetime.now(), interval="default"):
 
 
 def ping_sp(sp, ip):
-    print(f"Ping {sp} with {ip}")
     with PLC(ip) as comm:
-        no_alarm = comm.Read("Alarm_Faults_None")
-        if no_alarm.Value == True:
-            # print("No alarms currently active")
-            return
-        for x, y in alarm_dict_1.items():
-            temp = comm.Read(x)
-            if temp.Value == True:
-                print(f"{sp}: {y} is {temp.Value}")
-        print("\n")
+        no_alarm = comm.Read("CONST_ESP_USE_THIS.SUCCESS").Value
+        if no_alarm == "SUCCESS":
+            print(f"Connected to {sp} successfully")
+        else:
+            print(f"Could not connect to {sp}")
 
+dum_alarms = ["Alarm_Faults_None","Operational_Mode_Manual_Active"]# "Operational_Mode_Auto_Active"
 
-async def multi_ping(sp, ip):
-    sleep(2)
-    with PLC(ip) as comm:
-        print(f"Checking {sp}")
-        no_alarm = comm.Read("Alarm_Faults_None")
-        manual_mode = comm.Read("Operational_Mode_Manual_Active")
-
-        if manual_mode.Value == True:
-            print(f"SmartPac {sp} is in Manual!")
-        if no_alarm.Value == True:
-            # print("No alarms currently active")
-            return
-        for x, y in alarm_dict_1.items():
-            temp = comm.Read(x)
-            if temp.Value == True:
-                sp_data = SmartPac(
-                    sp, y, str(datetime.now().astimezone().timestamp()))
-                add_entry(sp_data)
-                print(f"{sp}: {y} is {temp.Value}")
+def get_sp_data():
+    for sp, ip in sp_dict.items():
+        with PLC(ip, timeout=2) as comm:
+            test_connect = comm.Read("CONST_ESP_USE_THIS.SUCCESS").Value
+            if test_connect == "SUCCESS":
+                # Can successfully ping SmartPac
+                values = comm.Read(dum_alarms)
+                for ret in values:
+                    if ret.Value == True:
+                        print(f"{sp} has no issues. {ret.TagName}:{ret.Value}")
+                        break
+                else:
+                    print(f"{sp} has issues.")
+                    for x, y in critical_alarms.items():
+                        temp = comm.Read(x)
+                        if temp.Value == True:
+                            smartpac = SmartPac(sp, y, str(datetime.now().astimezone().timestamp()))
+                            # add_entry(smartpac)
+                            cur_sp_errors.append(smartpac)
+                            print(f"{sp}: {y} is {temp.Value}")
 
 
 def send_webhook(my_data):
@@ -270,23 +269,9 @@ def send_webhook(my_data):
     response = requests.post(URL, headers=headers, data=data)
     print(response)
 
+get_sp_data()
+# compare_db_entries()
+# print(get_all_entries())
 
-async def main():
-    for sp, ip in sp_dict.items():
-        await multi_ping(sp, ip)
-
-# count = 0
-# while count < 38:
-#     for sp, ip in sp_dict.items():
-#         ping_sp(sp, ip)
-#     count += 1
-#     sleep(5)
-
-# end = datetime.now()
-
-# print(getDuration(start, end))
-# print(f"Ran {count} times")
-
-# while True:
-# asyncio.run(main())
-print(get_all_entries())
+# for sp, ip in sp_dict.items():
+#     ping_sp(sp, ip)
