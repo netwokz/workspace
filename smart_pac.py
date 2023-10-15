@@ -6,6 +6,8 @@ from sqlalchemy import create_engine, Column, String
 from sqlalchemy.orm import declarative_base
 from sqlalchemy.orm import sessionmaker
 import pandas as pd
+from plyer import notification
+from os.path import join, dirname, realpath
 
 Base = declarative_base()
 
@@ -90,6 +92,7 @@ critical_alarms = {
     "Alarm_Fault[1].30": "Estop Relay Fault"
 }
 
+dum_alarms = ["Alarm_Faults_None","Operational_Mode_Manual_Active"]# "Operational_Mode_Auto_Active"
 
 class SmartPac(Base):
     __tablename__ = 'smartpac'
@@ -226,6 +229,13 @@ def getDuration(then, now=datetime.now(), interval="default"):
         'default': totalDuration()
     }[interval]
 
+def send_notification(title, msg, timeout=10):
+    notification.notify(
+        title = title,
+        message = msg,
+        app_icon = r"C:\Users\deanejst\Documents\CODE\workspace\aws-iot-thing-generic.ico",
+        timeout = timeout,
+    )
 
 def ping_sp(sp, ip):
     with PLC(ip) as comm:
@@ -234,8 +244,6 @@ def ping_sp(sp, ip):
             print(f"Connected to {sp} successfully")
         else:
             print(f"Could not connect to {sp}")
-
-dum_alarms = ["Alarm_Faults_None","Operational_Mode_Manual_Active"]# "Operational_Mode_Auto_Active"
 
 def get_sp_data():
     for sp, ip in sp_dict.items():
@@ -246,15 +254,18 @@ def get_sp_data():
                 values = comm.Read(dum_alarms)
                 for ret in values:
                     if ret.Value == True:
-                        print(f"{sp} has no issues. {ret.TagName}:{ret.Value}")
+                        # print(f"{sp} has no issues. {ret.TagName}:{ret.Value}")
                         break
+                    if ret.TagName == "Operational_Mode_Manual_Active" and ret.Value == True:
+                        send_notification("SmatPac", f"{sp} is in manual")
                 else:
                     print(f"{sp} has issues.")
                     for x, y in critical_alarms.items():
                         temp = comm.Read(x)
                         if temp.Value == True:
                             smartpac = SmartPac(sp, y, str(datetime.now().astimezone().timestamp()))
-                            # add_entry(smartpac)
+                            send_notification("SmartPac",f"{sp}: {y}")
+                            add_entry(smartpac)
                             cur_sp_errors.append(smartpac)
                             print(f"{sp}: {y} is {temp.Value}")
 
@@ -275,3 +286,4 @@ get_sp_data()
 
 # for sp, ip in sp_dict.items():
 #     ping_sp(sp, ip)
+# send_notification("Hi!", "Hello there!")
