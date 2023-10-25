@@ -3,7 +3,7 @@ from util import import_folder
 
 
 class Player(pygame.sprite.Sprite):
-    def __init__(self, pos, surface):
+    def __init__(self, pos, surface, create_jump_particles):
         super().__init__()
         self.load_character_assets()
         self.frame_index = 0
@@ -16,6 +16,7 @@ class Player(pygame.sprite.Sprite):
         self.dust_frame_index = 0
         self.dust_animation_speed = 0.15
         self.display_surface = surface
+        self.create_jump_particles = create_jump_particles
 
         # Player movement
         self.direction = pygame.math.Vector2(0, 0)
@@ -37,7 +38,6 @@ class Player(pygame.sprite.Sprite):
 
         for animation in self.animations.keys():
             full_path = character_path + animation
-            print(full_path)
             self.animations[animation] = import_folder(full_path)
 
     def load_run_particles(self):
@@ -100,8 +100,10 @@ class Player(pygame.sprite.Sprite):
             self.facing_right = True
         else:
             self.direction.x = 0
+
         if keys[pygame.K_SPACE] and self.on_ground:
             self.jump()
+            self.create_jump_particles(self.rect.midbottom)
         if keys[pygame.K_ESCAPE]:
             pygame.quit()
 
