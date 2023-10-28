@@ -1,5 +1,8 @@
 import pygame
 from util import import_folder
+import os
+
+BASE_DIR_PATH = os.path.expanduser("~" + "/Documents")
 
 
 class Tile(pygame.sprite.Sprite):
@@ -20,7 +23,7 @@ class StaticTile(Tile):
 
 class Crate(StaticTile):
     def __init__(self, size, x, y):
-        full_path = "C:/Users/deanejst/Documents/CODE/workspace/python/pygame/graphics/terrain/crate.png"
+        full_path = BASE_DIR_PATH + "/CODE/workspace/python/pygame/graphics/terrain/crate.png"
         super().__init__(size, x, y, pygame.image.load(full_path).convert_alpha())
         offset_y = y + size
         self.rect = self.image.get_rect(bottomleft=(x, offset_y))

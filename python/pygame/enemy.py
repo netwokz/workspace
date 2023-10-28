@@ -1,11 +1,14 @@
 import pygame
 from tiles import AnimatedTile
 from random import randint
+import os
+
+BASE_DIR_PATH = os.path.expanduser("~" + "/Documents")
 
 
 class Enemy(AnimatedTile):
     def __init__(self, size, x, y):
-        super().__init__(size, x, y, "C:/Users/deanejst/Documents/CODE/workspace/python/pygame/graphics/enemy/run")
+        super().__init__(size, x, y, BASE_DIR_PATH + "/CODE/workspace/python/pygame/graphics/enemy/run")
         self.rect.y += size - self.image.get_size()[1]
         self.speed = randint(3, 5)
 
