@@ -1,22 +1,35 @@
 import pygame
-from tiles import *
-from player import Player
-from enemy import Enemy
-from settings import tile_size, screen_width, screen_height
-from particles import ParticleEffect
 from decoration import *
+from enemy import Enemy
+from game_data import levels
+from particles import ParticleEffect
+from player import Player
+from settings import screen_height, screen_width, tile_size
+from tiles import *
 from util import import_csv_layout, import_cut_graphic
 
 
 class Level:
     EDGE_SCROLL_DELTA = 0.45
 
-    def __init__(self, level_data, surface):
+    def __init__(self, current_level, surface, create_overworld):
         # Level setup
         self.display_surface = surface
-        self.world_shift = -4
+        self.world_shift = 0
+        self.current_x = 0
 
-        # self.setup_level(level_data)
+        # Overworld setup
+        self.current_level = current_level
+        self.create_overworld = create_overworld
+        level_data = levels[self.current_level]
+        self.new_max_level = level_data["unlock"]
+
+        # Player setup
+        player_layout = import_csv_layout(level_data["player"])
+        self.player = pygame.sprite.GroupSingle()
+        self.goal = pygame.sprite.GroupSingle()
+        self.player_setup(player_layout)
+
         # Terrain setup
         terrain_layout = import_csv_layout(level_data["terrain"])
         self.terrain_sprites = self.create_tile_group(terrain_layout, "terrain")
@@ -24,8 +37,6 @@ class Level:
         # Grass setup
         grass_layout = import_csv_layout(level_data["grass"])
         self.grass_sprites = self.create_tile_group(grass_layout, "grass")
-
-        self.current_x = 0
 
         # Dust
         self.dust_sprite = pygame.sprite.GroupSingle()
@@ -85,18 +96,18 @@ class Level:
 
                     if type == "coins":
                         if val == "0":
-                            sprite = Coin(tile_size, x, y, "graphics/coins/gold", 5)
+                            sprite = Coin(tile_size, x, y, "C:/Users/deanejst/Documents/CODE/workspace/python/pygame/graphics/coins/gold", 5)
                         if val == "1":
-                            sprite = Coin(tile_size, x, y, "graphics/coins/silver", 1)
+                            sprite = Coin(tile_size, x, y, "C:/Users/deanejst/Documents/CODE/workspace/python/pygame/graphics/coins/silver", 1)
                     if type == "fg_palms":
-                        if val == "5":
-                            sprite = Palm(tile_size, x, y, "graphics/terrain/palm_small", 38)
+                        if val == "5" or val == "1":
+                            sprite = Palm(tile_size, x, y, "C:/Users/deanejst/Documents/CODE/workspace/python/pygame/graphics/terrain/palm_small", 38)
                         if val == "4":
-                            sprite = Palm(tile_size, x, y, "graphics/terrain/palm_large", 64)
+                            sprite = Palm(tile_size, x, y, "C:/Users/deanejst/Documents/CODE/workspace/python/pygame/graphics/terrain/palm_large", 64)
                         if val == "0":
-                            sprite = Palm(tile_size, x, y, "graphics/terrain/palm_bg", 64)
+                            sprite = Palm(tile_size, x, y, "C:/Users/deanejst/Documents/CODE/workspace/python/pygame/graphics/terrain/palm_bg", 64)
                     if type == "bg_palms":
-                        sprite = Palm(tile_size, x, y, "graphics/terrain/palm_bg", 64)
+                        sprite = Palm(tile_size, x, y, "C:/Users/deanejst/Documents/CODE/workspace/python/pygame/graphics/terrain/palm_bg", 64)
                     if type == "enemies":
                         sprite = Enemy(tile_size, x, y)
                     if type == "constraint":
@@ -162,8 +173,9 @@ class Level:
     def horizontal_movement_collision(self):
         player = self.player.sprite
         player.rect.x += player.direction.x * player.speed
+        colilidable_sprites = self.terrain_sprites.sprites() + self.crate_sprites.sprites() + self.fg_palm_sprites.sprites()
 
-        for sprite in self.tiles.sprites():
+        for sprite in colilidable_sprites:
             if sprite.rect.colliderect(player.rect):
                 if player.direction.x < 0:
                     player.rect.left = sprite.rect.right
@@ -183,8 +195,9 @@ class Level:
     def vertical_movement_collision(self):
         player = self.player.sprite
         player.apply_gravity()
+        colilidable_sprites = self.terrain_sprites.sprites() + self.crate_sprites.sprites() + self.fg_palm_sprites.sprites()
 
-        for sprite in self.tiles.sprites():
+        for sprite in colilidable_sprites:
             if sprite.rect.colliderect(player.rect):
                 if player.direction.y > 0:
                     player.rect.bottom = sprite.rect.top
@@ -200,11 +213,40 @@ class Level:
         if player.on_ceiling and player.direction.y > 0:
             player.on_ceiling = False
 
-    def run(self):
-        # Dust
-        # self.dust_sprite.update(self.world_shift)
-        # self.dust_sprite.draw(self.display_surface)
+    def player_setup(self, layout):
+        for row_index, row in enumerate(layout):
+            for col_index, val in enumerate(row):
+                x = col_index * tile_size
+                y = row_index * tile_size
+                if val == "0":
+                    sprite = Player((x, y), self.display_surface, self.create_jump_partical)
+                    self.player.add(sprite)
+                if val == "1":
+                    hat_surface = pygame.image.load("C:/Users/deanejst/Documents/CODE/workspace/python/pygame/graphics/character/hat.png").convert_alpha()
+                    sprite = StaticTile(x, y, tile_size, hat_surface)
+                    self.goal.add(sprite)
 
+    def enemy_collision_reverse(self):
+        for enemy in self.enemy_sprites.sprites():
+            if pygame.sprite.spritecollide(enemy, self.constraint_sprites, False):
+                enemy.reverse()
+
+    def check_death(self):
+        if self.player.sprite.rect.top > screen_height:
+            self.create_overworld(self.current_level, 0)
+
+    def check_win(self):
+        if pygame.sprite.spritecollide(self.player.sprite, self.goal, False):
+            self.create_overworld(self.current_level, self.new_max_level)
+
+    def get_input(self):
+        keys = pygame.key.get_pressed()
+
+        if keys[pygame.K_p]:
+            self.create_overworld(self.current_level, self.new_max_level)
+
+    def run(self):
+        self.get_input()
         # sky
         self.sky.draw(self.display_surface)
         self.clouds.draw(self.display_surface, self.world_shift)
@@ -224,9 +266,9 @@ class Level:
         # enemy
         self.enemy_sprites.update(self.world_shift)
         self.constraint_sprites.update(self.world_shift)
-
-        # self.enemy_collision_reverse()
+        self.enemy_collision_reverse()
         self.enemy_sprites.draw(self.display_surface)
+
         # self.explosion_sprites.update(self.world_shift)
         # self.explosion_sprites.draw(self.display_surface)
 
@@ -242,16 +284,23 @@ class Level:
         self.coin_sprites.update(self.world_shift)
         self.coin_sprites.draw(self.display_surface)
 
+        # player sprites
+        self.scroll_x()
+        self.goal.update(self.world_shift)
+        self.goal.draw(self.display_surface)
+        self.player.update()
+        self.horizontal_movement_collision()
+        self.get_player_on_ground()
+        self.vertical_movement_collision()
+        self.create_landing_partical()
+        self.player.draw(self.display_surface)
+
+        self.check_death()
+        self.check_win()
+
+        # Water
+        self.water.draw(self.display_surface, self.world_shift)
+
         # foreground palms
         self.fg_palm_sprites.update(self.world_shift)
         self.fg_palm_sprites.draw(self.display_surface)
-
-        # self.scroll_x()
-
-        # Level Player
-        # self.player.update()
-        # self.horizontal_movement_collision()
-        # self.get_player_on_ground()
-        # self.vertical_movement_collision()
-        # self.create_landing_partical()
-        # self.player.draw(self.display_surface)

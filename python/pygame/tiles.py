@@ -20,7 +20,8 @@ class StaticTile(Tile):
 
 class Crate(StaticTile):
     def __init__(self, size, x, y):
-        super().__init__(size, x, y, pygame.image.load("graphics/terrain/crate.png").convert_alpha())
+        full_path = "C:/Users/deanejst/Documents/CODE/workspace/python/pygame/graphics/terrain/crate.png"
+        super().__init__(size, x, y, pygame.image.load(full_path).convert_alpha())
         offset_y = y + size
         self.rect = self.image.get_rect(bottomleft=(x, offset_y))
 
