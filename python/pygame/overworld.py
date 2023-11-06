@@ -2,6 +2,9 @@ import pygame
 from decoration import Sky
 from game_data import levels
 from util import import_folder
+import os
+
+BASE_DIR_PATH = os.path.expanduser("~")
 
 
 class Node(pygame.sprite.Sprite):
@@ -37,7 +40,10 @@ class Icon(pygame.sprite.Sprite):
     def __init__(self, pos):
         super().__init__()
         self.pos = pos
-        self.image = pygame.image.load("C:/Users/deanejst/Documents/CODE/workspace/python/pygame/graphics/character/hat.png").convert_alpha()
+        path = os.path.join(BASE_DIR_PATH + "/Documents/CODE/workspace/python/pygame/graphics/character/hat.png")
+        print(path)
+        print(os.getcwd())
+        self.image = pygame.image.load(path).convert_alpha()
         self.rect = self.image.get_rect(center=pos)
 
     def update(self):

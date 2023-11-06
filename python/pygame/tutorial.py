@@ -1,5 +1,4 @@
 import pygame
-from icecream import ic
 from os import listdir
 from os.path import join, isfile
 
@@ -284,10 +283,7 @@ def main(window):
     background, bj_image = get_background("Gray.png")
     block_size = 96
 
-    floor = [
-        Block(i * block_size, HEIGHT - block_size, block_size)
-        for i in range(-WIDTH // block_size, (WIDTH * 2) // block_size)
-    ]
+    floor = [Block(i * block_size, HEIGHT - block_size, block_size) for i in range(-WIDTH // block_size, (WIDTH * 2) // block_size)]
     player = Player(100, 100, 50, 50)
     fire = Fire(600, HEIGHT - block_size - 64, 16, 32)
     objects = [
@@ -323,9 +319,7 @@ def main(window):
         handle_move(player, objects)
         draw(window, background, bj_image, player, objects, offset_x)
 
-        if ((player.rect.right - offset_x >= WIDTH - scroll_delta) and player.x_vel > 0) or (
-            (player.rect.left - offset_x <= scroll_delta) and player.x_vel < 0
-        ):
+        if ((player.rect.right - offset_x >= WIDTH - scroll_delta) and player.x_vel > 0) or ((player.rect.left - offset_x <= scroll_delta) and player.x_vel < 0):
             offset_x += player.x_vel
 
     pygame.quit()

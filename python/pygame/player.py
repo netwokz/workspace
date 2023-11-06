@@ -1,6 +1,8 @@
 import pygame
 from util import import_folder
+import os
 
+BASE_DIR_PATH = os.path.expanduser("~" + "/Documents")
 
 class Player(pygame.sprite.Sprite):
     def __init__(self, pos, surface, create_jump_particles):
@@ -33,7 +35,7 @@ class Player(pygame.sprite.Sprite):
         self.on_right = False
 
     def load_character_assets(self):
-        character_path = "C:/Users/deanejst/Documents/CODE/workspace/python/pygame/graphics/character/"
+        character_path = BASE_DIR_PATH + "/CODE/workspace/python/pygame/graphics/character/"
         self.animations = {"idle": [], "run": [], "jump": [], "fall": []}
 
         for animation in self.animations.keys():
@@ -41,7 +43,7 @@ class Player(pygame.sprite.Sprite):
             self.animations[animation] = import_folder(full_path)
 
     def load_run_particles(self):
-        self.particles_run = import_folder("C:/Users/deanejst/Documents/CODE/workspace/python/pygame/graphics/character/dust_particles/run")
+        self.particles_run = import_folder(BASE_DIR_PATH + "/CODE/workspace/python/pygame/graphics/character/dust_particles/run")
 
     def animate(self):
         animation = self.animations[self.status]

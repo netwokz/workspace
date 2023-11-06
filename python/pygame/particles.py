@@ -1,5 +1,8 @@
 import pygame
 from util import import_folder
+import os
+
+BASE_DIR_PATH = os.path.expanduser("~" + "/Documents")
 
 
 class ParticleEffect(pygame.sprite.Sprite):
@@ -9,10 +12,10 @@ class ParticleEffect(pygame.sprite.Sprite):
         self.animation_speed = 0.5
 
         if type_of_particle == "jump":
-            self.frames = import_folder("C:/Users/deanejst/Documents/CODE/workspace/python/pygame/graphics/character/dust_particles/jump")
+            self.frames = import_folder(BASE_DIR_PATH + "/CODE/workspace/python/pygame/graphics/character/dust_particles/jump")
 
         if type_of_particle == "land":
-            self.frames = import_folder("C:/Users/deanejst/Documents/CODE/workspace/python/pygame/graphics/character/dust_particles/land")
+            self.frames = import_folder(BASE_DIR_PATH + "/CODE/workspace/python/pygame/graphics/character/dust_particles/land")
 
         self.image = self.frames[self.frame_index]
         self.rect = self.image.get_rect(center=position)

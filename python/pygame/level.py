@@ -7,6 +7,9 @@ from player import Player
 from settings import screen_height, screen_width, tile_size
 from tiles import *
 from util import import_csv_layout, import_cut_graphic
+import os
+
+BASE_DIR_PATH = os.path.expanduser("~" + "/Documents")
 
 
 class Level:
@@ -82,12 +85,12 @@ class Level:
                     y = row_index * tile_size
 
                     if type == "terrain":
-                        terrain_tile_list = import_cut_graphic("C:/Users/deanejst/Documents/CODE/workspace/python/pygame/graphics/terrain/terrain_tiles.png")
+                        terrain_tile_list = import_cut_graphic(BASE_DIR_PATH + "/CODE/workspace/python/pygame/graphics/terrain/terrain_tiles.png")
                         tile_surface = terrain_tile_list[int(val)]
                         sprite = StaticTile(x, y, tile_size, tile_surface)
 
                     if type == "grass":
-                        grass_tile_list = import_cut_graphic("C:/Users/deanejst/Documents/CODE/workspace/python/pygame/graphics/decoration/grass/grass.png")
+                        grass_tile_list = import_cut_graphic(BASE_DIR_PATH + "/CODE/workspace/python/pygame/graphics/decoration/grass/grass.png")
                         grass_tile_surface = grass_tile_list[int(val)]
                         sprite = StaticTile(x, y, tile_size, grass_tile_surface)
 
@@ -96,18 +99,18 @@ class Level:
 
                     if type == "coins":
                         if val == "0":
-                            sprite = Coin(tile_size, x, y, "C:/Users/deanejst/Documents/CODE/workspace/python/pygame/graphics/coins/gold", 5)
+                            sprite = Coin(tile_size, x, y, BASE_DIR_PATH + "/CODE/workspace/python/pygame/graphics/coins/gold", 5)
                         if val == "1":
-                            sprite = Coin(tile_size, x, y, "C:/Users/deanejst/Documents/CODE/workspace/python/pygame/graphics/coins/silver", 1)
+                            sprite = Coin(tile_size, x, y, BASE_DIR_PATH + "/CODE/workspace/python/pygame/graphics/coins/silver", 1)
                     if type == "fg_palms":
                         if val == "5" or val == "1":
-                            sprite = Palm(tile_size, x, y, "C:/Users/deanejst/Documents/CODE/workspace/python/pygame/graphics/terrain/palm_small", 38)
+                            sprite = Palm(tile_size, x, y, BASE_DIR_PATH + "/CODE/workspace/python/pygame/graphics/terrain/palm_small", 38)
                         if val == "4":
-                            sprite = Palm(tile_size, x, y, "C:/Users/deanejst/Documents/CODE/workspace/python/pygame/graphics/terrain/palm_large", 64)
+                            sprite = Palm(tile_size, x, y, BASE_DIR_PATH + "/CODE/workspace/python/pygame/graphics/terrain/palm_large", 64)
                         if val == "0":
-                            sprite = Palm(tile_size, x, y, "C:/Users/deanejst/Documents/CODE/workspace/python/pygame/graphics/terrain/palm_bg", 64)
+                            sprite = Palm(tile_size, x, y, BASE_DIR_PATH + "/CODE/workspace/python/pygame/graphics/terrain/palm_bg", 64)
                     if type == "bg_palms":
-                        sprite = Palm(tile_size, x, y, "C:/Users/deanejst/Documents/CODE/workspace/python/pygame/graphics/terrain/palm_bg", 64)
+                        sprite = Palm(tile_size, x, y, BASE_DIR_PATH + "/CODE/workspace/python/pygame/graphics/terrain/palm_bg", 64)
                     if type == "enemies":
                         sprite = Enemy(tile_size, x, y)
                     if type == "constraint":
@@ -222,7 +225,7 @@ class Level:
                     sprite = Player((x, y), self.display_surface, self.create_jump_partical)
                     self.player.add(sprite)
                 if val == "1":
-                    hat_surface = pygame.image.load("C:/Users/deanejst/Documents/CODE/workspace/python/pygame/graphics/character/hat.png").convert_alpha()
+                    hat_surface = pygame.image.load(BASE_DIR_PATH + "/CODE/workspace/python/pygame/graphics/character/hat.png").convert_alpha()
                     sprite = StaticTile(x, y, tile_size, hat_surface)
                     self.goal.add(sprite)
 

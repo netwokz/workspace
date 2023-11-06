@@ -2,12 +2,14 @@ import tkinter as Tk
 from PIL import Image, ImageTk
 import random
 import glob
+import os
+
+BASE_DIR_PATH = os.path.expanduser("~")
 
 
 class GUI:
-    
     last_5_filenames = []
-    
+
     def __init__(self, mainwin):
         self.mainwin = mainwin
         self.mainwin.title("Our Photos")
@@ -15,13 +17,13 @@ class GUI:
         self.counter = 0
 
         self.frame = Tk.Frame(mainwin)
-        self.frame.place(relx = 0.5,rely=0.5, anchor=Tk.CENTER)
+        self.frame.place(relx=0.5, rely=0.5, anchor=Tk.CENTER)
 
         self.img = Tk.Label(self.frame)
         self.img.pack()
 
         # directory = r"C:\Users\netwokz\Documents\CODE\workspace\python\photo_gallery\images"
-        directory = r"C:\Users\deanejst\Documents\CODE\workspace\python\photo_gallery\images"
+        directory = BASE_DIR_PATH + "\CODE\workspace\python\photo_gallery\images"
         self.pic_list = glob.glob(f"{directory}/*")
         self.pic()
 
@@ -39,7 +41,6 @@ class GUI:
                 return filename
         else:
             return filename
-
 
     def pic(self):
         # filename = random.choice(self.pic_list)

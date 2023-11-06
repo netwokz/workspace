@@ -4,6 +4,8 @@ import pygame
 from csv import reader
 from settings import tile_size
 
+BASE_DIR_PATH = os.path.expanduser("~")
+
 
 def import_folder(path):
     surface_list = []
@@ -18,7 +20,8 @@ def import_folder(path):
 
 
 def import_csv_layout(path):
-    full_path = os.path.join("C:/Users/deanejst/Documents/CODE/workspace/python/pygame/", path)
+    # full_path = os.path.join(BASE_DIR_PATH, "/Documents/CODE/workspace/python/pygame/", path)
+    full_path = BASE_DIR_PATH + "/Documents/CODE/workspace/python/pygame/" + path
     terrian_map = []
     with open(full_path, "r") as map:
         level = reader(map, delimiter=",")
