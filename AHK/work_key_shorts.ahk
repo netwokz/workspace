@@ -31,14 +31,6 @@
     Send A_YYYY A_MM A_DD
 }
 
-^+w::
-{
-    Send "GYR1Admin"
-    Send "{Tab down}{Tab up}"
-    Send "AmazonGYR1"
-    Send "{Enter down} {Enter up}"
-}
-
 ^+c::
 {
     Send "GYR1Admin"
