@@ -52,13 +52,8 @@ def parse_csv():
     for item in UTIL.EXCLUDED_COLUMNS:
         if item in df.columns:
             df = df.drop(columns=item)
-    # df = df.loc[~df["Description"].str.contains("DAILY")]
-    # for tech in UTIL.FHD_TECHS and UTIL.FHD_CSX_TECHS:
-    #     if tech in df.columns:
-    #         df = df.drop(columns="WO Owner")
-    df = df.loc[df["WO Owner"].isin(UTIL.FHD_TECHS or UTIL.FHD_CSX_TECHS or "JNEAUS")]
-    # df = df.loc[df["WO Owner"].isin(UTIL.FHD_CSX_TECHS)]
-    # df = df.sort_values(by="Original PM due date", ascending=True)
+    df = df.loc[df["WO Owner"].isin(UTIL.FHD_TECHS or UTIL.FHD_CSX_TECHS)]
+    df = df.sort_values(by="Original PM due date", ascending=True)
     df.reset_index(inplace=True, drop=True)
 
     size = len(df.index)

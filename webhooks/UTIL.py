@@ -21,7 +21,7 @@ CBM_PATH = os.path.expanduser("~\\Documents\\WEBHOOK\\cbm\\")
 
 ALI_URL = "https://hooks.slack.com/workflows/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"  # variable = data
 SAUL_URL = "https://hooks.slack.com/workflows/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"  # variable = data
-CBM_URL = "https://hooks.slack.com/workflows/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"  # variable = Content
+CBM_URL = "https://hooks.slack.com/workflows/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"  # variable = data
 FHD_URL = "https://hooks.slack.com/workflows/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"  # variable = data
 BHN_URL = "https://hooks.slack.com/workflows/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"  # variable = Content
 MY_TEST_URL = "https://hooks.slack.com/workflows/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"  # variable = data
@@ -47,7 +47,7 @@ EXCLUDED_COLUMNS = [
 ]
 
 
-FHD_TECHS = ["ASHPFAF", "GSALAEDW", "IXTAJ", "HERTAJU", "KIECLAR", "WINNEMIC", "HRYATAYL", "CLARKSSI", "AUSNMAJO", "DEANEJST", "SAUVRGA"]
+FHD_TECHS = ["JNEAUS", "ASHPFAF", "GSALAEDW", "IXTAJ", "HERTAJU", "KIECLAR", "WINNEMIC", "HRYATAYL", "CLARKSSI", "AUSNMAJO", "DEANEJST", "SAUVRGA"]
 
 FHN_TECHS = ["CANDRUEL", "QMOYCHRI", "JOPADEYI", "WLNJON", "JCSTROZ", "MPEREZF", "SHATPRAT", "STUARTYL"]
 
