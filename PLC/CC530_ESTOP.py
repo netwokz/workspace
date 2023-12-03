@@ -8,7 +8,7 @@ from pylogix import PLC
 
 MY_TEST_URL = "https://hooks.slack.com/workflows/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"  # variable = data
 
-found_estops = []
+found_estops = {}
 regex_pattern = "IS[0-9]+"
 regex_pattern_gate = "MAINT[0-9]+"
 
@@ -144,9 +144,9 @@ def check_estops(ip):
                     if curr_milliseconds - found_estops[tag.TagName] > 300000:
                         send_notification("E-Stop!", f"E-Stop condition at {parse_name(tag.TagName)}")
                         break
+                print(f"E-Stop condition at {parse_name(tag.TagName)}")
                 milliseconds = int(time() * 1000)
                 found_estops[tag.TagName] = milliseconds
-                print(f"E-Stop condition at {parse_name(tag.TagName)}")
 
         maint_gate_ret = comm.Read(is_maint_gates)
         # send_notification("SmartPac", f"ESTOP condition is {stat.Value}")

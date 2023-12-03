@@ -1,62 +1,78 @@
 import pprint
+from time import sleep
 
 from humanfriendly import format_timespan
 from nut2 import PyNUTClient as clientNut
-from PyNUT import PyNUTClient
 
-client = clientNut()
-client.help()
-client.list_ups()
-client.list_vars("rack-ups")
-
-HOST_ADDR = "10.10.10.152"
+HOST_ADDR = "ups.computeerror.com"
 HOST_USER = "netwokz"
 HOST_PASS = "emagdnim9"
 
+
 """
-    "battery.charge": "100",
-    "battery.charge.low": "10",
-    "battery.charge.warning": "50",
-    "battery.runtime": "2254",
-    "battery.runtime.low": "150",
-    "battery.type": "PbAc",
-    "battery.voltage": "54.8",
-    "battery.voltage.nominal": "48.0",
-    "device.mfr": "American Power Conversion ",
-    "device.model": "Smart-UPS X 1500",
-    "device.serial": "AS1624236675  ",
-    "device.type": "ups",
-    "driver.name": "usbhid-ups",
-    "driver.parameter.pollfreq": "30",
-    "driver.parameter.pollinterval": "1",
-    "driver.parameter.port": "auto",
-    "driver.parameter.productid": "0003",
-    "driver.parameter.serial": "AS1624236675",
-    "driver.parameter.synchronous": "auto",
-    "driver.parameter.vendorid": "051D",
-    "driver.version": "2.8.0",
-    "driver.version.data": "APC HID 0.98",
-    "driver.version.internal": "0.47",
-    "driver.version.usb": "libusb-1.0.26 (API: 0x1000109)",
-    "ups.beeper.status": "enabled",
-    "ups.delay.shutdown": "20",
-    "ups.firmware": "UPS 09.1 / ID=20",
-    "ups.mfr": "American Power Conversion ",
-    "ups.mfr.date": "2016/06/20",
-    "ups.model": "Smart-UPS X 1500",
-    "ups.productid": "0003",
-    "ups.serial": "AS1624236675  ",
-    "ups.status": "OL",
-    "ups.timer.reboot": "-1",
-    "ups.timer.shutdown": "-1",
-    "ups.vendorid": "051d",
+'battery.charge': '100',
+'battery.runtime': '2254',
+'battery.voltage': '54.80',
+'input.voltage': '121.60',
+'output.current': '3',
+'output.voltage': '121.60',
+'ups.load': '30.10',
+'ups.model': 'Smart-UPS X 1500',
+'ups.power': '378',
+'ups.realpower': '361',
+'ups.serial': 'AS1624236675',
+'ups.status': 'OL',
+'ups.temperature': '20.40',
+'ups.test.date': '11/29/2023',
+'ups.test.result': 'Ok'
 """
+
+
+def parse_ups_stats(stats):
+    ups_battery_charge = stats["battery.charge"]
+    ups_battery_runtime = stats["battery.runtime"]
+    ups_battery_voltage = stats["battery.voltage"]
+
+    ups_input_voltage = stats["input.voltage"]
+
+    ups_output_voltage = stats["output.voltage"]
+    ups_output_current = stats["output.current"]
+
+    ups_load = stats["ups.load"]
+    ups_model = stats["ups.model"]
+    ups_power = stats["ups.power"]
+    ups_real_power = stats["ups.realpower"]
+    ups_serial = stats["ups.serial"]
+    ups_status = stats["ups.status"]
+    ups_temp = stats["ups.temperature"]
+    ups_last_test_date = stats["ups.test.date"]
+    ups_last_test_result = stats["ups.test.result"]
+
+    print(f"Battery is at {ups_battery_charge}%")
+    print(f"Server will run for {ups_battery_runtime} mins")
+    print(f"Batterys are at {ups_battery_voltage}v")
+
+    print(f"Input Voltage is {ups_input_voltage}v")
+
+    print(f"Output Voltage is {ups_output_voltage}v")
+    print(f"Output Current is {ups_output_current}A")
+
+    print(f"Load is {ups_load}%")
+    print(f"Model is {ups_model}%")
+    print(f"Power is {ups_power}%")
+    print(f"Real Power is {ups_real_power}%")
+    print(f"Serial is {ups_serial}")
+    print(f"Status is {ups_status}")
+    print(f"Temperature is {ups_temp}°")
+    print(f"Last Test Date is {ups_last_test_date}")
+    print(f"Last Test Result was {ups_last_test_result}")
 
 
 def get_ups_stats():
-    ups = PyNUTClient(host=HOST_ADDR, login=HOST_USER, password=HOST_PASS)
-    ups_stats = ups.GetUPSVars(ups="rack-ups")
-    return ups_stats
+    client = clientNut(host=HOST_ADDR, login=HOST_USER, password=HOST_PASS, debug=True)
+    ups_all_stats = client.list_vars("rack-ups")
+    sleep(2)
+    parse_ups_stats(ups_all_stats)
 
 
-# pprint.pprint(get_ups_stats())
+get_ups_stats()
