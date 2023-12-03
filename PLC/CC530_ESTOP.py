@@ -1,11 +1,16 @@
+import json
 import re
-from time import sleep
+from time import sleep, time
 
+import requests
 from plyer import notification
 from pylogix import PLC
 
+MY_TEST_URL = "https://hooks.slack.com/workflows/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"  # variable = data
+
 found_estops = []
 regex_pattern = "IS[0-9]+"
+regex_pattern_gate = "MAINT[0-9]+"
 
 
 def send_notification(title, msg, timeout=5):
@@ -69,9 +74,40 @@ is_gates = [
     "IS28_GATE_OPEN",
 ]
 
+is_maint_gates = [
+    "MAINT1_GATE_OPEN",
+    "MAINT2_GATE_OPEN",
+]
+
+
+def send_fail_notification():
+    URL = MY_TEST_URL
+    headers = {
+        "Content-Type": "application/json",
+    }
+    data = json.dumps({"data": "E-Stop Webhook failed"})
+    response = requests.post(URL, headers=headers, data=data)
+    # print(response.status_code)
+
+
+def send_webhook(url, my_data):
+    headers = {
+        "Content-Type": "application/json",
+    }
+    data = json.dumps({"data": my_data})
+    response = requests.post(url, headers=headers, data=data)
+    print(response.status_code)
+    if response.status_code != 200:
+        send_fail_notification()
+
 
 def parse_name(name):
     result = re.findall(regex_pattern, name)
+    return result[0]
+
+
+def parse_maint_name(name):
+    result = re.findall(regex_pattern_gate, name)
     return result[0]
 
 
@@ -80,22 +116,53 @@ def save_estop_state(state):
         file1.writelines(state)
 
 
-def get_stats(ip):
+def check_estops(ip):
+    no_faults = True
     with PLC(ip) as comm:
         # while True:
         nc_ret = comm.Read(is_estops)
         # send_notification("SmartPac", f"ESTOP condition is {stat.Value}")
         for tag in nc_ret:
             if tag.Value == False:
+                no_faults = False
+                if tag.TagName in found_estops:
+                    curr_milliseconds = int(time() * 1000)
+                    if curr_milliseconds - found_estops[tag.TagName] > 300000:
+                        send_notification("E-Stop!", f"E-Stop condition at {parse_name(tag.TagName)}")
+                        break
+                milliseconds = int(time() * 1000)
+                found_estops[tag.TagName] = milliseconds
                 print(f"E-Stop condition at {parse_name(tag.TagName)}")
-                save_estop_state(tag.TagName)
+
         gate_ret = comm.Read(is_gates)
         # send_notification("SmartPac", f"ESTOP condition is {stat.Value}")
         for tag in gate_ret:
             if tag.Value == True:
+                no_faults = False
+                if tag.TagName in found_estops:
+                    curr_milliseconds = int(time() * 1000)
+                    if curr_milliseconds - found_estops[tag.TagName] > 300000:
+                        send_notification("E-Stop!", f"E-Stop condition at {parse_name(tag.TagName)}")
+                        break
+                milliseconds = int(time() * 1000)
+                found_estops[tag.TagName] = milliseconds
                 print(f"E-Stop condition at {parse_name(tag.TagName)}")
-                save_estop_state(tag.TagName)
-        sleep(0.5)
+
+        maint_gate_ret = comm.Read(is_maint_gates)
+        # send_notification("SmartPac", f"ESTOP condition is {stat.Value}")
+        for tag in maint_gate_ret:
+            no_faults = False
+            if tag.Value == True:
+                if tag.TagName in found_estops:
+                    curr_milliseconds = int(time() * 1000)
+                    if curr_milliseconds - found_estops[tag.TagName] > 300000:
+                        send_notification("E-Stop!", f"E-Stop condition at {parse_maint_name(tag.TagName)}")
+                        break
+                milliseconds = int(time() * 1000)
+                found_estops[tag.TagName] = milliseconds
+                print(f"E-Stop condition at {parse_maint_name(tag.TagName)}")
+        if no_faults:
+            found_estops.clear()
 
 
-get_stats("10.79.216.223")
+check_estops("10.79.216.223")

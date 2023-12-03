@@ -1,7 +1,13 @@
 import pprint
 
 from humanfriendly import format_timespan
+from nut2 import PyNUTClient as clientNut
 from PyNUT import PyNUTClient
+
+client = clientNut()
+client.help()
+client.list_ups()
+client.list_vars("rack-ups")
 
 HOST_ADDR = "10.10.10.152"
 HOST_USER = "netwokz"
@@ -53,4 +59,4 @@ def get_ups_stats():
     return ups_stats
 
 
-pprint.pprint(get_ups_stats())
+# pprint.pprint(get_ups_stats())
