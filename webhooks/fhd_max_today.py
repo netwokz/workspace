@@ -41,9 +41,9 @@ def get_front_half_days():
 start = date.today().strftime("%Y-%m-%d")
 end = date.today().strftime("%Y-%m-%d")
 
-# if os.path.exists(UTIL.CSV_FILE):
-#     os.remove(UTIL.CSV_FILE)
-# UTIL.download_to_csv(start, end)
+if os.path.exists(UTIL.CSV_FILE):
+    os.remove(UTIL.CSV_FILE)
+UTIL.download_to_csv(start, end)
 
 
 def parse_csv():

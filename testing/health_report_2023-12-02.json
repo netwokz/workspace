@@ -1,0 +1,3204 @@
+{
+  "status": "success",
+  "whid": "GYR1",
+  "controllers": [
+    {
+      "StationID": "GYR1-AFE-101",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/10",
+      "InstanceInfo": {
+        "InstanceId": "mi-07e951159e40b7b35",
+        "Name": "GYR1-AFE-101",
+        "ComputerName": "GYR1-AFE-101",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:19",
+        "RegistrationDate": "2021-01-08 13:52:20",
+        "IPAddress": "10.24.220.11",
+        "ImageVersion": "",
+        "ControllerVersion": ""
+      },
+      "NumRowsExpected": 10
+    },
+    {
+      "StationID": "GYR1-AFE-101A",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0de1e4d14d208c6a1",
+        "Name": "GYR1-AFE-101A",
+        "ComputerName": "GYR1-AFE-101A",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:28",
+        "RegistrationDate": "2021-01-12 01:51:41",
+        "IPAddress": "10.24.220.12",
+        "ImageVersion": "UNKNOWN",
+        "ControllerVersion": "UNKNOWN"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-101B",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0626d7ad113663de8",
+        "Name": "GYR1-AFE-101B",
+        "ComputerName": "GYR1-AFE-101B",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:49:54",
+        "RegistrationDate": "2021-01-12 01:55:54",
+        "IPAddress": "10.24.220.13",
+        "ImageVersion": "",
+        "ControllerVersion": ""
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-101C",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0a3df6608c52254c8",
+        "Name": "GYR1-AFE-101C",
+        "ComputerName": "GYR1-AFE-101C",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:53:46",
+        "RegistrationDate": "2021-01-12 01:58:26",
+        "IPAddress": "10.24.220.14",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-101D",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-037ff32b95be80062",
+        "Name": "GYR1-AFE-101D",
+        "ComputerName": "GYR1-AFE-101D",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:49:27",
+        "RegistrationDate": "2021-03-09 21:37:55",
+        "IPAddress": "10.24.220.15",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-102",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/10",
+      "InstanceInfo": {
+        "InstanceId": "mi-079148273f1ee85c7",
+        "Name": "GYR1-AFE-102",
+        "ComputerName": "GYR1-AFE-102",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:44",
+        "RegistrationDate": "2021-01-08 13:48:31",
+        "IPAddress": "10.24.220.16",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 10
+    },
+    {
+      "StationID": "GYR1-AFE-102A",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0252bde64b1fcc130",
+        "Name": "GYR1-AFE-102A",
+        "ComputerName": "GYR1-AFE-102A",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:55",
+        "RegistrationDate": "2021-01-12 01:51:28",
+        "IPAddress": "10.24.220.17",
+        "ImageVersion": "",
+        "ControllerVersion": ""
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-102B",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-09b34d5ba92912ed6",
+        "Name": "GYR1-AFE-102B",
+        "ComputerName": "GYR1-AFE-102B",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:54:10",
+        "RegistrationDate": "2021-01-12 01:54:44",
+        "IPAddress": "10.24.220.18",
+        "ImageVersion": "",
+        "ControllerVersion": ""
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-102C",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-003e190adbc9a4cfe",
+        "Name": "GYR1-AFE-102C",
+        "ComputerName": "GYR1-AFE-102C",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:50:17",
+        "RegistrationDate": "2021-01-12 01:58:00",
+        "IPAddress": "192.168.0.250",
+        "ImageVersion": "",
+        "ControllerVersion": ""
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-102D",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-04673425d9258b684",
+        "Name": "GYR1-AFE-102D",
+        "ComputerName": "GYR1-AFE-102D",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:12",
+        "RegistrationDate": "2021-01-18 18:03:23",
+        "IPAddress": "10.24.220.20",
+        "ImageVersion": "",
+        "ControllerVersion": ""
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-103",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/10",
+      "InstanceInfo": {
+        "InstanceId": "mi-0f3758c7fc23890de",
+        "Name": "GYR1-AFE-103",
+        "ComputerName": "GYR1-AFE-103",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:17",
+        "RegistrationDate": "2021-01-09 13:34:02",
+        "IPAddress": "10.24.220.21",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 10
+    },
+    {
+      "StationID": "GYR1-AFE-103A",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0bf4790fdb0877fed",
+        "Name": "GYR1-AFE-103A",
+        "ComputerName": "GYR1-AFE-103A",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:53:16",
+        "RegistrationDate": "2022-01-31 07:16:10",
+        "IPAddress": "10.24.220.22",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-103B",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-01e7f1435efec2196",
+        "Name": "GYR1-AFE-103B",
+        "ComputerName": "GYR1-AFE-103B",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:31",
+        "RegistrationDate": "2021-01-12 01:28:33",
+        "IPAddress": "10.24.220.23",
+        "ImageVersion": "UNKNOWN",
+        "ControllerVersion": "UNKNOWN"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-103C",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0b1e56490817ad3ce",
+        "Name": "GYR1-AFE-103C",
+        "ComputerName": "GYR1-AFE-103C",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:35",
+        "RegistrationDate": "2021-01-14 21:29:44",
+        "IPAddress": "10.24.220.24",
+        "ImageVersion": "",
+        "ControllerVersion": ""
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-103D",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-07f233709242c2c67",
+        "Name": "GYR1-AFE-103D",
+        "ComputerName": "GYR1-AFE-103D",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:49:31",
+        "RegistrationDate": "2021-01-12 01:41:25",
+        "IPAddress": "10.24.220.25",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-104",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/10",
+      "InstanceInfo": {
+        "InstanceId": "mi-0145cb963fd3d2bd3",
+        "Name": "GYR1-AFE-104",
+        "ComputerName": "GYR1-AFE-104",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:29",
+        "RegistrationDate": "2021-01-08 14:08:58",
+        "IPAddress": "10.24.220.26",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 10
+    },
+    {
+      "StationID": "GYR1-AFE-104A",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0ec4319e47f1e7c1c",
+        "Name": "GYR1-AFE-104A",
+        "ComputerName": "GYR1-AFE-104A",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:16",
+        "RegistrationDate": "2021-01-12 01:42:38",
+        "IPAddress": "10.24.220.27",
+        "ImageVersion": "UNKNOWN",
+        "ControllerVersion": "UNKNOWN"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-104B",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0e15609198e188c61",
+        "Name": "GYR1-AFE-104B",
+        "ComputerName": "GYR1-AFE-104B",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:49:29",
+        "RegistrationDate": "2021-01-12 01:41:49",
+        "IPAddress": "10.24.220.28",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-104C",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0f3a2225c43d6bee5",
+        "Name": "GYR1-AFE-104C",
+        "ComputerName": "GYR1-AFE-104C",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:53:16",
+        "RegistrationDate": "2021-01-12 01:35:15",
+        "IPAddress": "10.24.220.29",
+        "ImageVersion": "UNKNOWN",
+        "ControllerVersion": "UNKNOWN"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-104D",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-00612aa0160cbd458",
+        "Name": "GYR1-AFE-104D",
+        "ComputerName": "GYR1-AFE-104D",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:49:35",
+        "RegistrationDate": "2021-01-12 01:39:38",
+        "IPAddress": "10.24.220.30",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-105",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/10",
+      "InstanceInfo": {
+        "InstanceId": "mi-0da755cef29381ab9",
+        "Name": "GYR1-AFE-105",
+        "ComputerName": "GYR1-AFE-105",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:04",
+        "RegistrationDate": "2021-01-09 13:25:56",
+        "IPAddress": "10.24.220.31",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 10
+    },
+    {
+      "StationID": "GYR1-AFE-105A",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-06342ff7377258162",
+        "Name": "GYR1-AFE-105A",
+        "ComputerName": "GYR1-AFE-105A",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:54:05",
+        "RegistrationDate": "2021-01-19 17:10:58",
+        "IPAddress": "10.24.220.32",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-105B",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-08f2b6d2e5f56899c",
+        "Name": "GYR1-AFE-105B",
+        "ComputerName": "GYR1-AFE-105B",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:54:17",
+        "RegistrationDate": "2023-06-25 16:18:31",
+        "IPAddress": "10.24.220.33",
+        "ImageVersion": "1.1",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-105C",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-014b7e071fda7636b",
+        "Name": "GYR1-AFE-105C",
+        "ComputerName": "GYR1-AFE-105C",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:11",
+        "RegistrationDate": "2021-01-18 18:07:58",
+        "IPAddress": "10.24.220.34",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-105D",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-07e3d70402779cc1f",
+        "Name": "GYR1-AFE-105D",
+        "ComputerName": "GYR1-AFE-105D",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:08",
+        "RegistrationDate": "2021-01-12 01:13:26",
+        "IPAddress": "10.24.220.35",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-106",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/10",
+      "InstanceInfo": {
+        "InstanceId": "mi-03b816ae599aa2333",
+        "Name": "GYR1-AFE-106",
+        "ComputerName": "GYR1-AFE-106",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:01",
+        "RegistrationDate": "2021-01-15 12:36:00",
+        "IPAddress": "10.24.220.36",
+        "ImageVersion": "",
+        "ControllerVersion": ""
+      },
+      "NumRowsExpected": 10
+    },
+    {
+      "StationID": "GYR1-AFE-106A",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-04915dc60f4417a36",
+        "Name": "GYR1-AFE-106A",
+        "ComputerName": "GYR1-AFE-106A",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:21",
+        "RegistrationDate": "2021-01-12 01:06:21",
+        "IPAddress": "10.24.220.37",
+        "ImageVersion": "",
+        "ControllerVersion": ""
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-106B",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0f2de2cb7af19a954",
+        "Name": "GYR1-AFE-106B",
+        "ComputerName": "GYR1-AFE-106B",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:23",
+        "RegistrationDate": "2021-01-12 01:13:33",
+        "IPAddress": "10.24.220.38",
+        "ImageVersion": "",
+        "ControllerVersion": ""
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-106C",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0ea9eab109c4a1973",
+        "Name": "GYR1-AFE-106C",
+        "ComputerName": "GYR1-AFE-106C",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:12",
+        "RegistrationDate": "2021-01-12 01:00:12",
+        "IPAddress": "10.24.220.39",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-106D",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0c5bc1d07d992737a",
+        "Name": "GYR1-AFE-106D",
+        "ComputerName": "GYR1-AFE-106D",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:50:30",
+        "RegistrationDate": "2021-01-12 00:56:40",
+        "IPAddress": "10.24.220.40",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-107",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/10",
+      "InstanceInfo": {
+        "InstanceId": "mi-0b79203a317973972",
+        "Name": "GYR1-AFE-107",
+        "ComputerName": "GYR1-AFE-107",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:30",
+        "RegistrationDate": "2021-01-13 21:14:21",
+        "IPAddress": "10.24.220.41",
+        "ImageVersion": "",
+        "ControllerVersion": ""
+      },
+      "NumRowsExpected": 10
+    },
+    {
+      "StationID": "GYR1-AFE-107A",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-098dc987c796b305d",
+        "Name": "GYR1-AFE-107A",
+        "ComputerName": "GYR1-AFE-107A",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:49:49",
+        "RegistrationDate": "2021-01-12 00:46:34",
+        "IPAddress": "10.24.220.42",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-107B",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0689ec234714a9e99",
+        "Name": "GYR1-AFE-107B",
+        "ComputerName": "GYR1-AFE-107B",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:52",
+        "RegistrationDate": "2021-01-12 00:44:27",
+        "IPAddress": "10.24.220.43",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-107C",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-023597cbfa87ec46c",
+        "Name": "GYR1-AFE-107C",
+        "ComputerName": "GYR1-AFE-107C",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:54",
+        "RegistrationDate": "2021-01-12 00:29:23",
+        "IPAddress": "10.24.220.44",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-107D",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-01dc7e64d200c4496",
+        "Name": "GYR1-AFE-107D",
+        "ComputerName": "GYR1-AFE-107D",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:49:56",
+        "RegistrationDate": "2021-01-12 00:40:59",
+        "IPAddress": "192.168.0.250",
+        "ImageVersion": "",
+        "ControllerVersion": ""
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-108",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/10",
+      "InstanceInfo": {
+        "InstanceId": "mi-0f3cea1772a6c78da",
+        "Name": "GYR1-AFE-108",
+        "ComputerName": "GYR1-AFE-108",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:50:05",
+        "RegistrationDate": "2021-01-13 21:45:11",
+        "IPAddress": "10.24.220.46",
+        "ImageVersion": "",
+        "ControllerVersion": ""
+      },
+      "NumRowsExpected": 10
+    },
+    {
+      "StationID": "GYR1-AFE-108A",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-05e323bcdb59c16e3",
+        "Name": "GYR1-AFE-108A",
+        "ComputerName": "GYR1-AFE-108A",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:54:00",
+        "RegistrationDate": "2021-01-13 22:01:22",
+        "IPAddress": "10.24.220.47",
+        "ImageVersion": "UNKNOWN",
+        "ControllerVersion": "UNKNOWN"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-108B",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-019a0a0089918dd99",
+        "Name": "GYR1-AFE-108B",
+        "ComputerName": "GYR1-AFE-108B",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:50:59",
+        "RegistrationDate": "2021-01-13 21:34:25",
+        "IPAddress": "10.24.220.48",
+        "ImageVersion": "",
+        "ControllerVersion": ""
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-108C",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-03d37e5c6f6ad5aa7",
+        "Name": "GYR1-AFE-108C",
+        "ComputerName": "GYR1-AFE-108C",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:59",
+        "RegistrationDate": "2021-01-13 21:37:42",
+        "IPAddress": "10.24.220.49",
+        "ImageVersion": "",
+        "ControllerVersion": ""
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-108D",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-04a0ec18b57aa8b63",
+        "Name": "GYR1-AFE-108D",
+        "ComputerName": "GYR1-AFE-108D",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:03",
+        "RegistrationDate": "2021-01-13 21:39:55",
+        "IPAddress": "10.24.220.50",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-109",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/10",
+      "InstanceInfo": {
+        "InstanceId": "mi-06aa170eba353e13b",
+        "Name": "GYR1-AFE-109",
+        "ComputerName": "GYR1-AFE-109",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:49:30",
+        "RegistrationDate": "2021-01-09 13:38:33",
+        "IPAddress": "10.24.220.51",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 10
+    },
+    {
+      "StationID": "GYR1-AFE-109A",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0f7e72b0088eb082b",
+        "Name": "GYR1-AFE-109A",
+        "ComputerName": "GYR1-AFE-109A",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:51",
+        "RegistrationDate": "2021-01-08 13:27:17",
+        "IPAddress": "10.24.220.52",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-109B",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0b24cc438ea5827e3",
+        "Name": "GYR1-AFE-109B",
+        "ComputerName": "GYR1-AFE-109B",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:45",
+        "RegistrationDate": "2021-01-08 13:36:44",
+        "IPAddress": "10.24.220.53",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-109C",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0524b0fafacd110aa",
+        "Name": "GYR1-AFE-109C",
+        "ComputerName": "GYR1-AFE-109C",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:25",
+        "RegistrationDate": "2021-01-08 13:32:32",
+        "IPAddress": "10.24.220.54",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-109D",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0a162c8c6512bc527",
+        "Name": "GYR1-AFE-109D",
+        "ComputerName": "GYR1-AFE-109D",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:26",
+        "RegistrationDate": "2021-01-08 13:32:21",
+        "IPAddress": "10.24.220.55",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-110",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/10",
+      "InstanceInfo": {
+        "InstanceId": "mi-0dfebb39bf51e992e",
+        "Name": "GYR1-AFE-110",
+        "ComputerName": "GYR1-AFE-110",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:50:19",
+        "RegistrationDate": "2021-01-09 12:42:37",
+        "IPAddress": "10.24.220.56",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 10
+    },
+    {
+      "StationID": "GYR1-AFE-110A",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-07c7a06bd1c9eeda6",
+        "Name": "GYR1-AFE-110A",
+        "ComputerName": "GYR1-AFE-110A",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:01",
+        "RegistrationDate": "2021-01-13 00:10:00",
+        "IPAddress": "10.24.220.57",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-110B",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-012e8bbd23bdc3829",
+        "Name": "GYR1-AFE-110B",
+        "ComputerName": "GYR1-AFE-110B",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:43",
+        "RegistrationDate": "2021-01-13 00:09:55",
+        "IPAddress": "10.24.220.58",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-110C",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0dd12619e87b4b499",
+        "Name": "GYR1-AFE-110C",
+        "ComputerName": "GYR1-AFE-110C",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:53",
+        "RegistrationDate": "2021-01-13 00:19:15",
+        "IPAddress": "10.24.220.59",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-110D",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0e127cf71d213ba7f",
+        "Name": "GYR1-AFE-110D",
+        "ComputerName": "GYR1-AFE-110D",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:59",
+        "RegistrationDate": "2021-01-13 00:09:21",
+        "IPAddress": "10.24.220.60",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-111",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/10",
+      "InstanceInfo": {
+        "InstanceId": "mi-049e67e645b5c6a84",
+        "Name": "GYR1-AFE-111",
+        "ComputerName": "GYR1-AFE-111",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:19",
+        "RegistrationDate": "2021-01-05 16:41:24",
+        "IPAddress": "10.24.220.61",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 10
+    },
+    {
+      "StationID": "GYR1-AFE-111A",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-09a3d0be855de0527",
+        "Name": "GYR1-AFE-111A",
+        "ComputerName": "GYR1-AFE-111A",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:03",
+        "RegistrationDate": "2021-01-18 17:24:13",
+        "IPAddress": "10.24.220.62",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-111B",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-02af0263b2b444659",
+        "Name": "GYR1-AFE-111B",
+        "ComputerName": "GYR1-AFE-111B",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:53:54",
+        "RegistrationDate": "2021-01-18 17:32:26",
+        "IPAddress": "10.24.220.63",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-111C",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0cc7eef6192e20a33",
+        "Name": "GYR1-AFE-111C",
+        "ComputerName": "GYR1-AFE-111C",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:10",
+        "RegistrationDate": "2022-10-30 20:35:47",
+        "IPAddress": "10.24.220.64",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-111D",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0fc8c10bff8efd94e",
+        "Name": "GYR1-AFE-111D",
+        "ComputerName": "GYR1-AFE-111D",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:34",
+        "RegistrationDate": "2022-05-09 09:06:09",
+        "IPAddress": "10.24.220.65",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-112",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/10",
+      "InstanceInfo": {
+        "InstanceId": "mi-08baee55ac74eb7bb",
+        "Name": "GYR1-AFE-112",
+        "ComputerName": "GYR1-AFE-112",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:54:21",
+        "RegistrationDate": "2021-01-09 12:30:06",
+        "IPAddress": "10.24.220.66",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 10
+    },
+    {
+      "StationID": "GYR1-AFE-112A",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0096c0c299f277053",
+        "Name": "GYR1-AFE-112A",
+        "ComputerName": "GYR1-AFE-112A",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:20",
+        "RegistrationDate": "2021-01-09 13:03:23",
+        "IPAddress": "10.24.220.67",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-112B",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-093194032a985a3b2",
+        "Name": "GYR1-AFE-112B",
+        "ComputerName": "GYR1-AFE-112B",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:21",
+        "RegistrationDate": "2021-01-09 13:03:41",
+        "IPAddress": "10.24.220.68",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-112C",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0a2c91c2dbeabd762",
+        "Name": "GYR1-AFE-112C",
+        "ComputerName": "GYR1-AFE-112C",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:03",
+        "RegistrationDate": "2023-11-16 10:15:47",
+        "IPAddress": "10.24.220.69",
+        "ImageVersion": "UNKNOWN",
+        "ControllerVersion": "UNKNOWN"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-112D",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-079d3a379720ef3cc",
+        "Name": "GYR1-AFE-112D",
+        "ComputerName": "GYR1-AFE-112D",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:54:15",
+        "RegistrationDate": "2021-01-09 13:09:15",
+        "IPAddress": "10.24.220.70",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-113",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/10",
+      "InstanceInfo": {
+        "InstanceId": "mi-01a8f0ff3cb68efe6",
+        "Name": "GYR1-AFE-113",
+        "ComputerName": "GYR1-AFE-113",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:53:39",
+        "RegistrationDate": "2021-01-05 16:11:17",
+        "IPAddress": "10.24.220.71",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 10
+    },
+    {
+      "StationID": "GYR1-AFE-113A",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0a5d265f669808dcf",
+        "Name": "GYR1-AFE-113A",
+        "ComputerName": "GYR1-AFE-113A",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:53",
+        "RegistrationDate": "2021-01-18 17:16:26",
+        "IPAddress": "10.24.220.72",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-113B",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-07186577b8d862b29",
+        "Name": "GYR1-AFE-113B",
+        "ComputerName": "GYR1-AFE-113B",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:53:58",
+        "RegistrationDate": "2021-04-25 10:06:51",
+        "IPAddress": "10.24.220.73",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-113C",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0570d8da15664aac4",
+        "Name": "GYR1-AFE-113C",
+        "ComputerName": "GYR1-AFE-113C",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:47",
+        "RegistrationDate": "2021-01-05 16:17:01",
+        "IPAddress": "10.24.220.74",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-113D",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-062e27153aec7713a",
+        "Name": "GYR1-AFE-113D",
+        "ComputerName": "GYR1-AFE-113D",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:18",
+        "RegistrationDate": "2022-09-08 06:37:48",
+        "IPAddress": "10.24.220.75",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-114",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/10",
+      "InstanceInfo": {
+        "InstanceId": "mi-0950168765d80a4e6",
+        "Name": "GYR1-AFE-114",
+        "ComputerName": "GYR1-AFE-114",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:15",
+        "RegistrationDate": "2021-01-05 16:22:00",
+        "IPAddress": "10.24.220.76",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 10
+    },
+    {
+      "StationID": "GYR1-AFE-114A",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-09e5bc488145efd22",
+        "Name": "GYR1-AFE-114A",
+        "ComputerName": "GYR1-AFE-114A",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:53:35",
+        "RegistrationDate": "2021-01-19 17:05:13",
+        "IPAddress": "10.24.220.77",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-114B",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-06b263fd68e34177c",
+        "Name": "GYR1-AFE-114B",
+        "ComputerName": "GYR1-AFE-114B",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:53:37",
+        "RegistrationDate": "2021-01-05 16:26:10",
+        "IPAddress": "10.24.220.78",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-114C",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0eef23267e8e6db6a",
+        "Name": "GYR1-AFE-114C",
+        "ComputerName": "GYR1-AFE-114C",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:49:55",
+        "RegistrationDate": "2021-01-05 16:25:52",
+        "IPAddress": "10.24.220.79",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-114D",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-03a1b8c4cc1146900",
+        "Name": "GYR1-AFE-114D",
+        "ComputerName": "GYR1-AFE-114D",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:43",
+        "RegistrationDate": "2021-01-05 16:25:45",
+        "IPAddress": "10.24.220.80",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-115",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/10",
+      "InstanceInfo": {
+        "InstanceId": "mi-0da33dfaa96b44771",
+        "Name": "GYR1-AFE-115",
+        "ComputerName": "GYR1-AFE-115",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:54:06",
+        "RegistrationDate": "2021-01-21 08:28:20",
+        "IPAddress": "10.24.220.81",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 10
+    },
+    {
+      "StationID": "GYR1-AFE-115A",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-00ec8605ebf823a7c",
+        "Name": "GYR1-AFE-115A",
+        "ComputerName": "GYR1-AFE-115A",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:50:04",
+        "RegistrationDate": "2021-01-16 19:21:05",
+        "IPAddress": "10.24.220.82",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-115B",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-06bfefda069f1781f",
+        "Name": "GYR1-AFE-115B",
+        "ComputerName": "GYR1-AFE-115B",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:18",
+        "RegistrationDate": "2023-05-01 19:04:28",
+        "IPAddress": "192.168.0.250",
+        "ImageVersion": "UNKNOWN",
+        "ControllerVersion": "UNKNOWN"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-115C",
+      "Health": -1,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 0,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "Unknown",
+        "Name": "Unknown",
+        "ComputerName": "Unknown",
+        "PingStatus": "Unknown",
+        "LastPingDateTime": "Unknown",
+        "RegistrationDate": "Unknown",
+        "IPAddress": "Unknown"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-115D",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0e73d00a4af1fb17a",
+        "Name": "GYR1-AFE-115D",
+        "ComputerName": "GYR1-AFE-115D",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:50",
+        "RegistrationDate": "2021-01-05 15:59:39",
+        "IPAddress": "192.168.0.250",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-116",
+      "Health": 90,
+      "ActiveRowAlarms": [
+        "Button in row 5 is not responding, Button 0 is the farthest button seen. 2023/12/13 16:53:00"
+      ],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "1/10",
+      "InstanceInfo": {
+        "InstanceId": "mi-0ea4d120cc062237e",
+        "Name": "GYR1-AFE-116",
+        "ComputerName": "GYR1-AFE-116",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:49:58",
+        "RegistrationDate": "2021-01-05 15:48:03",
+        "IPAddress": "10.24.220.86",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 10
+    },
+    {
+      "StationID": "GYR1-AFE-116A",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0113ebd04f4c6fefb",
+        "Name": "GYR1-AFE-116A",
+        "ComputerName": "GYR1-AFE-116A",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:54:17",
+        "RegistrationDate": "2021-01-05 15:54:58",
+        "IPAddress": "10.24.220.87",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-116B",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0e8ca49019e064719",
+        "Name": "GYR1-AFE-116B",
+        "ComputerName": "GYR1-AFE-116B",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:16",
+        "RegistrationDate": "2021-01-05 15:53:13",
+        "IPAddress": "10.24.220.88",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-116C",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-00e3e7c0fd06d1968",
+        "Name": "GYR1-AFE-116C",
+        "ComputerName": "GYR1-AFE-116C",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:53:54",
+        "RegistrationDate": "2021-01-05 15:51:07",
+        "IPAddress": "10.24.220.89",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-116D",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-02aa057b4b4beb6de",
+        "Name": "GYR1-AFE-116D",
+        "ComputerName": "GYR1-AFE-116D",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:24",
+        "RegistrationDate": "2021-01-05 15:48:58",
+        "IPAddress": "10.24.220.90",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-201",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/10",
+      "InstanceInfo": {
+        "InstanceId": "mi-0658a182b7363ad45",
+        "Name": "GYR1-AFE-201",
+        "ComputerName": "GYR1-AFE-201",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:52",
+        "RegistrationDate": "2020-12-11 18:51:37",
+        "IPAddress": "10.24.220.111",
+        "ImageVersion": "",
+        "ControllerVersion": ""
+      },
+      "NumRowsExpected": 10
+    },
+    {
+      "StationID": "GYR1-AFE-201A",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0b9f8cf5b0f53a3aa",
+        "Name": "GYR1-AFE-201A",
+        "ComputerName": "GYR1-AFE-201A",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:52",
+        "RegistrationDate": "2023-11-07 14:04:45",
+        "IPAddress": "10.24.220.112",
+        "ImageVersion": "UNKNOWN",
+        "ControllerVersion": "UNKNOWN"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-201B",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0d4199ea6022ad789",
+        "Name": "GYR1-AFE-201B",
+        "ComputerName": "GYR1-AFE-201B",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:49:46",
+        "RegistrationDate": "2023-11-07 13:52:42",
+        "IPAddress": "10.24.220.113",
+        "ImageVersion": "1.1",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-201C",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0b5717060d9638c05",
+        "Name": "GYR1-AFE-201C",
+        "ComputerName": "GYR1-AFE-201C",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:31",
+        "RegistrationDate": "2023-11-07 13:41:05",
+        "IPAddress": "10.24.220.114",
+        "ImageVersion": "UNKNOWN",
+        "ControllerVersion": "UNKNOWN"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-201D",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0122652edbb639a1e",
+        "Name": "GYR1-AFE-201D",
+        "ComputerName": "GYR1-AFE-201D",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:50:18",
+        "RegistrationDate": "2023-11-07 13:22:57",
+        "IPAddress": "10.24.220.115",
+        "ImageVersion": "1.1",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-202",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/10",
+      "InstanceInfo": {
+        "InstanceId": "mi-04171160968a76059",
+        "Name": "GYR1-AFE-202",
+        "ComputerName": "GYR1-AFE-202",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:06",
+        "RegistrationDate": "2020-12-15 19:07:48",
+        "IPAddress": "10.24.220.116",
+        "ImageVersion": "",
+        "ControllerVersion": ""
+      },
+      "NumRowsExpected": 10
+    },
+    {
+      "StationID": "GYR1-AFE-202A",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0db45be3b8da86102",
+        "Name": "GYR1-AFE-202A",
+        "ComputerName": "GYR1-AFE-202A",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:50:42",
+        "RegistrationDate": "2020-12-11 23:20:49",
+        "IPAddress": "10.24.220.117",
+        "ImageVersion": "",
+        "ControllerVersion": ""
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-202B",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0731260a9e488e4ef",
+        "Name": "GYR1-AFE-202B",
+        "ComputerName": "GYR1-AFE-202B",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:46",
+        "RegistrationDate": "2020-12-11 20:22:57",
+        "IPAddress": "10.24.220.118",
+        "ImageVersion": "",
+        "ControllerVersion": ""
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-202C",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0cd1698d47d2778ec",
+        "Name": "GYR1-AFE-202C",
+        "ComputerName": "GYR1-AFE-202C",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:53:48",
+        "RegistrationDate": "2020-12-11 20:28:21",
+        "IPAddress": "192.168.0.250",
+        "ImageVersion": "",
+        "ControllerVersion": ""
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-202D",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0bf8e7b4b63e5e274",
+        "Name": "GYR1-AFE-202D",
+        "ComputerName": "GYR1-AFE-202D",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:49:50",
+        "RegistrationDate": "2020-12-11 20:31:27",
+        "IPAddress": "10.24.220.120",
+        "ImageVersion": "",
+        "ControllerVersion": ""
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-203",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/10",
+      "InstanceInfo": {
+        "InstanceId": "mi-0189c6b72fa8ecaaa",
+        "Name": "GYR1-AFE-203",
+        "ComputerName": "GYR1-AFE-203",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:49:55",
+        "RegistrationDate": "2020-12-11 20:28:02",
+        "IPAddress": "10.24.220.121",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 10
+    },
+    {
+      "StationID": "GYR1-AFE-203A",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0345295e791886857",
+        "Name": "GYR1-AFE-203A",
+        "ComputerName": "GYR1-AFE-203A",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:50:38",
+        "RegistrationDate": "2020-12-11 19:43:17",
+        "IPAddress": "10.24.220.122",
+        "ImageVersion": "",
+        "ControllerVersion": ""
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-203B",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0aa451f0a5abed190",
+        "Name": "GYR1-AFE-203B",
+        "ComputerName": "GYR1-AFE-203B",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:54",
+        "RegistrationDate": "2020-12-11 19:40:31",
+        "IPAddress": "10.24.220.123",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-203C",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0f5f4db1e13b666ec",
+        "Name": "GYR1-AFE-203C",
+        "ComputerName": "GYR1-AFE-203C",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:53:31",
+        "RegistrationDate": "2020-12-11 20:32:44",
+        "IPAddress": "10.24.220.124",
+        "ImageVersion": "UNKNOWN",
+        "ControllerVersion": "UNKNOWN"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-203D",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0d03061c876c2c795",
+        "Name": "GYR1-AFE-203D",
+        "ComputerName": "GYR1-AFE-203D",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:51",
+        "RegistrationDate": "2020-12-11 23:41:35",
+        "IPAddress": "10.24.220.125",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-204",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/10",
+      "InstanceInfo": {
+        "InstanceId": "mi-05b4eb657428a35b8",
+        "Name": "GYR1-AFE-204",
+        "ComputerName": "GYR1-AFE-204",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:37",
+        "RegistrationDate": "2020-12-11 20:36:36",
+        "IPAddress": "10.24.220.126",
+        "ImageVersion": "",
+        "ControllerVersion": ""
+      },
+      "NumRowsExpected": 10
+    },
+    {
+      "StationID": "GYR1-AFE-204A",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0573e97c62d92f846",
+        "Name": "GYR1-AFE-204A",
+        "ComputerName": "GYR1-AFE-204A",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:04",
+        "RegistrationDate": "2020-12-11 20:37:29",
+        "IPAddress": "10.24.220.127",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-204B",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-047d6423cb08a5b4c",
+        "Name": "GYR1-AFE-204B",
+        "ComputerName": "GYR1-AFE-204B",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:50:15",
+        "RegistrationDate": "2020-12-11 20:39:20",
+        "IPAddress": "10.24.220.128",
+        "ImageVersion": "",
+        "ControllerVersion": ""
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-204C",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-04c0b71b8ac4d88ce",
+        "Name": "GYR1-AFE-204C",
+        "ComputerName": "GYR1-AFE-204C",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:50:57",
+        "RegistrationDate": "2020-12-11 20:39:28",
+        "IPAddress": "10.24.220.129",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-204D",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-05e57f82b61139d9a",
+        "Name": "GYR1-AFE-204D",
+        "ComputerName": "GYR1-AFE-204D",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:53:43",
+        "RegistrationDate": "2020-12-11 22:59:11",
+        "IPAddress": "10.24.220.130",
+        "ImageVersion": "",
+        "ControllerVersion": ""
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-205",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/10",
+      "InstanceInfo": {
+        "InstanceId": "mi-04d9afeecb7ef0e78",
+        "Name": "GYR1-AFE-205",
+        "ComputerName": "GYR1-AFE-205",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:37",
+        "RegistrationDate": "2020-12-11 20:41:27",
+        "IPAddress": "10.24.220.131",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 10
+    },
+    {
+      "StationID": "GYR1-AFE-205A",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-080cf53af13757655",
+        "Name": "GYR1-AFE-205A",
+        "ComputerName": "GYR1-AFE-205A",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:08",
+        "RegistrationDate": "2020-12-11 20:48:52",
+        "IPAddress": "10.24.220.132",
+        "ImageVersion": "",
+        "ControllerVersion": ""
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-205B",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-08146357cc909b876",
+        "Name": "GYR1-AFE-205B",
+        "ComputerName": "GYR1-AFE-205B",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:53:42",
+        "RegistrationDate": "2020-12-11 20:49:44",
+        "IPAddress": "10.24.220.133",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-205C",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-043341bdfe1c95fbe",
+        "Name": "GYR1-AFE-205C",
+        "ComputerName": "GYR1-AFE-205C",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:06",
+        "RegistrationDate": "2020-12-11 20:50:41",
+        "IPAddress": "10.24.220.134",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-205D",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0c225707e4ce3100f",
+        "Name": "GYR1-AFE-205D",
+        "ComputerName": "GYR1-AFE-205D",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:49:24",
+        "RegistrationDate": "2021-06-16 15:50:54",
+        "IPAddress": "10.24.220.135",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-206",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/10",
+      "InstanceInfo": {
+        "InstanceId": "mi-0f88d7da7bb3ad429",
+        "Name": "GYR1-AFE-206",
+        "ComputerName": "GYR1-AFE-206",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:54:14",
+        "RegistrationDate": "2020-12-11 23:08:46",
+        "IPAddress": "10.24.220.136",
+        "ImageVersion": "",
+        "ControllerVersion": ""
+      },
+      "NumRowsExpected": 10
+    },
+    {
+      "StationID": "GYR1-AFE-206A",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0081467144e263753",
+        "Name": "GYR1-AFE-206A",
+        "ComputerName": "GYR1-AFE-206A",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:50:07",
+        "RegistrationDate": "2020-12-11 20:45:16",
+        "IPAddress": "10.24.220.137",
+        "ImageVersion": "UNKNOWN",
+        "ControllerVersion": "UNKNOWN"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-206B",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-076d1c688252919df",
+        "Name": "GYR1-AFE-206B",
+        "ComputerName": "GYR1-AFE-206B",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:57",
+        "RegistrationDate": "2020-12-11 20:45:35",
+        "IPAddress": "10.24.220.138",
+        "ImageVersion": "",
+        "ControllerVersion": ""
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-206C",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-08c56c33d8afb9bb1",
+        "Name": "GYR1-AFE-206C",
+        "ComputerName": "GYR1-AFE-206C",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:50:55",
+        "RegistrationDate": "2020-12-11 20:46:09",
+        "IPAddress": "10.24.220.139",
+        "ImageVersion": "UNKNOWN",
+        "ControllerVersion": "UNKNOWN"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-206D",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-05b91b7b7937f95d9",
+        "Name": "GYR1-AFE-206D",
+        "ComputerName": "GYR1-AFE-206D",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:13",
+        "RegistrationDate": "2020-12-11 23:12:28",
+        "IPAddress": "10.24.220.140",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-207",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/10",
+      "InstanceInfo": {
+        "InstanceId": "mi-0c574418f5bae2b6f",
+        "Name": "GYR1-AFE-207",
+        "ComputerName": "GYR1-AFE-207",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:50:27",
+        "RegistrationDate": "2020-12-11 20:50:04",
+        "IPAddress": "10.24.220.141",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 10
+    },
+    {
+      "StationID": "GYR1-AFE-207A",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-07337882f8a3427fb",
+        "Name": "GYR1-AFE-207A",
+        "ComputerName": "GYR1-AFE-207A",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:41",
+        "RegistrationDate": "2020-12-11 20:50:48",
+        "IPAddress": "10.24.220.142",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-207B",
+      "Health": -1,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 0,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "Unknown",
+        "Name": "Unknown",
+        "ComputerName": "Unknown",
+        "PingStatus": "Unknown",
+        "LastPingDateTime": "Unknown",
+        "RegistrationDate": "Unknown",
+        "IPAddress": "Unknown"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-207C",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-035267719f1c04fda",
+        "Name": "GYR1-AFE-207C",
+        "ComputerName": "GYR1-AFE-207C",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:49:43",
+        "RegistrationDate": "2020-12-11 20:51:43",
+        "IPAddress": "10.24.220.144",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-207D",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0ac99db21204e474a",
+        "Name": "GYR1-AFE-207D",
+        "ComputerName": "GYR1-AFE-207D",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:58",
+        "RegistrationDate": "2020-12-11 20:51:28",
+        "IPAddress": "10.24.220.145",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-208",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/10",
+      "InstanceInfo": {
+        "InstanceId": "mi-0a03085af84526060",
+        "Name": "GYR1-AFE-208",
+        "ComputerName": "GYR1-AFE-208",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:23",
+        "RegistrationDate": "2020-12-11 20:53:42",
+        "IPAddress": "192.168.0.250",
+        "ImageVersion": "",
+        "ControllerVersion": ""
+      },
+      "NumRowsExpected": 10
+    },
+    {
+      "StationID": "GYR1-AFE-208A",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0dbd7bc28a2eef918",
+        "Name": "GYR1-AFE-208A",
+        "ComputerName": "GYR1-AFE-208A",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:53:53",
+        "RegistrationDate": "2020-12-11 20:54:22",
+        "IPAddress": "10.24.220.147",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-208B",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-085db244f301452d5",
+        "Name": "GYR1-AFE-208B",
+        "ComputerName": "GYR1-AFE-208B",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:53",
+        "RegistrationDate": "2020-12-11 20:53:52",
+        "IPAddress": "10.24.220.148",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-208C",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-007c4d3b6cf4f212f",
+        "Name": "GYR1-AFE-208C",
+        "ComputerName": "GYR1-AFE-208C",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:09",
+        "RegistrationDate": "2021-10-27 12:13:27",
+        "IPAddress": "10.24.220.149",
+        "ImageVersion": "UNKNOWN",
+        "ControllerVersion": "UNKNOWN"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-208D",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0fcb5d7b839e193a0",
+        "Name": "GYR1-AFE-208D",
+        "ComputerName": "GYR1-AFE-208D",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:23",
+        "RegistrationDate": "2023-09-08 14:44:48",
+        "IPAddress": "10.24.220.150",
+        "ImageVersion": "1.1",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-209",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/10",
+      "InstanceInfo": {
+        "InstanceId": "mi-07b37e92b47530531",
+        "Name": "GYR1-AFE-209",
+        "ComputerName": "GYR1-AFE-209",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:33",
+        "RegistrationDate": "2020-11-10 16:59:52",
+        "IPAddress": "10.24.220.151",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 10
+    },
+    {
+      "StationID": "GYR1-AFE-209A",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-09fa9d393b9f5b976",
+        "Name": "GYR1-AFE-209A",
+        "ComputerName": "GYR1-AFE-209A",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:53:25",
+        "RegistrationDate": "2020-11-12 16:37:21",
+        "IPAddress": "10.24.220.152",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-209B",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0aabf006de97db2b0",
+        "Name": "GYR1-AFE-209B",
+        "ComputerName": "GYR1-AFE-209B",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:53:41",
+        "RegistrationDate": "2020-11-12 16:45:49",
+        "IPAddress": "10.24.220.153",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-209C",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-05f09eeb3ecc2e0b4",
+        "Name": "GYR1-AFE-209C",
+        "ComputerName": "GYR1-AFE-209C",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:50:15",
+        "RegistrationDate": "2020-11-12 16:36:40",
+        "IPAddress": "10.24.220.154",
+        "ImageVersion": "UNKNOWN",
+        "ControllerVersion": "UNKNOWN"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-209D",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-04004c6aad541091c",
+        "Name": "GYR1-AFE-209D",
+        "ComputerName": "GYR1-AFE-209D",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:50:40",
+        "RegistrationDate": "2022-03-15 06:47:56",
+        "IPAddress": "10.24.220.155",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-210",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/10",
+      "InstanceInfo": {
+        "InstanceId": "mi-017f3c2ff72d15d1e",
+        "Name": "GYR1-AFE-210",
+        "ComputerName": "GYR1-AFE-210",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:32",
+        "RegistrationDate": "2020-11-11 15:42:25",
+        "IPAddress": "10.24.220.156",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 10
+    },
+    {
+      "StationID": "GYR1-AFE-210A",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0b8a3684042d7d959",
+        "Name": "GYR1-AFE-210A",
+        "ComputerName": "GYR1-AFE-210A",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:53:31",
+        "RegistrationDate": "2020-11-12 16:41:04",
+        "IPAddress": "10.24.220.157",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-210B",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-08c2f3ae2e5e272f4",
+        "Name": "GYR1-AFE-210B",
+        "ComputerName": "GYR1-AFE-210B",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:50:39",
+        "RegistrationDate": "2020-11-12 16:47:47",
+        "IPAddress": "10.24.220.158",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-210C",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-042ef3300001d0ef4",
+        "Name": "GYR1-AFE-210C",
+        "ComputerName": "GYR1-AFE-210C",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:50:24",
+        "RegistrationDate": "2020-11-12 16:39:54",
+        "IPAddress": "10.24.220.159",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-210D",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-019fc68d78cf444da",
+        "Name": "GYR1-AFE-210D",
+        "ComputerName": "GYR1-AFE-210D",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:53:06",
+        "RegistrationDate": "2020-11-12 16:35:27",
+        "IPAddress": "10.24.220.160",
+        "ImageVersion": "UNKNOWN",
+        "ControllerVersion": "UNKNOWN"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-211",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/10",
+      "InstanceInfo": {
+        "InstanceId": "mi-0ee2491fc09bfe31b",
+        "Name": "GYR1-AFE-211",
+        "ComputerName": "GYR1-AFE-211",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:09",
+        "RegistrationDate": "2020-11-21 23:05:24",
+        "IPAddress": "10.24.220.161",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 10
+    },
+    {
+      "StationID": "GYR1-AFE-211A",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0d9d724b739ab7e70",
+        "Name": "GYR1-AFE-211A",
+        "ComputerName": "GYR1-AFE-211A",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:14",
+        "RegistrationDate": "2020-11-12 16:28:29",
+        "IPAddress": "10.24.220.162",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-211B",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0704119356864f6b1",
+        "Name": "GYR1-AFE-211B",
+        "ComputerName": "GYR1-AFE-211B",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:50:55",
+        "RegistrationDate": "2020-11-12 16:27:26",
+        "IPAddress": "10.24.220.163",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-211C",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-04d23fe5c1c77a182",
+        "Name": "GYR1-AFE-211C",
+        "ComputerName": "GYR1-AFE-211C",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:53:29",
+        "RegistrationDate": "2020-11-12 16:26:34",
+        "IPAddress": "10.24.220.164",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-211D",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0414e16789d68fc76",
+        "Name": "GYR1-AFE-211D",
+        "ComputerName": "GYR1-AFE-211D",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:54:00",
+        "RegistrationDate": "2020-11-12 16:33:50",
+        "IPAddress": "10.24.220.165",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-212",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/10",
+      "InstanceInfo": {
+        "InstanceId": "mi-0f79e0553856de990",
+        "Name": "GYR1-AFE-212",
+        "ComputerName": "GYR1-AFE-212",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:50:18",
+        "RegistrationDate": "2020-11-10 16:07:50",
+        "IPAddress": "10.24.220.166",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 10
+    },
+    {
+      "StationID": "GYR1-AFE-212A",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0b51fd2a62e1b3683",
+        "Name": "GYR1-AFE-212A",
+        "ComputerName": "GYR1-AFE-212A",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:53:20",
+        "RegistrationDate": "2020-11-12 16:33:14",
+        "IPAddress": "10.24.220.167",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-212B",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-042cd4275b6a76557",
+        "Name": "GYR1-AFE-212B",
+        "ComputerName": "GYR1-AFE-212B",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:54:01",
+        "RegistrationDate": "2020-11-12 16:37:20",
+        "IPAddress": "10.24.220.168",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-212C",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0c344aae636e9d99f",
+        "Name": "GYR1-AFE-212C",
+        "ComputerName": "GYR1-AFE-212C",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:49:26",
+        "RegistrationDate": "2020-11-12 16:29:51",
+        "IPAddress": "10.24.220.169",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-212D",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0c0a819f032e973ad",
+        "Name": "GYR1-AFE-212D",
+        "ComputerName": "GYR1-AFE-212D",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:37",
+        "RegistrationDate": "2020-11-12 16:27:34",
+        "IPAddress": "10.24.220.170",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-213",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/10",
+      "InstanceInfo": {
+        "InstanceId": "mi-0d5a02d14f453846f",
+        "Name": "GYR1-AFE-213",
+        "ComputerName": "GYR1-AFE-213",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:54:20",
+        "RegistrationDate": "2022-03-07 02:30:30",
+        "IPAddress": "10.24.220.171",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 10
+    },
+    {
+      "StationID": "GYR1-AFE-213A",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-022ed4186eb7f2952",
+        "Name": "GYR1-AFE-213A",
+        "ComputerName": "GYR1-AFE-213A",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:50:48",
+        "RegistrationDate": "2020-11-11 20:23:01",
+        "IPAddress": "10.24.220.172",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-213B",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0771d112862bfddbc",
+        "Name": "GYR1-AFE-213B",
+        "ComputerName": "GYR1-AFE-213B",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:50:10",
+        "RegistrationDate": "2020-11-11 20:23:23",
+        "IPAddress": "10.24.220.173",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-213C",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-02e088e14bdd8e04d",
+        "Name": "GYR1-AFE-213C",
+        "ComputerName": "GYR1-AFE-213C",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:14",
+        "RegistrationDate": "2020-11-11 20:22:59",
+        "IPAddress": "10.24.220.174",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-213D",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-035ee08c076259f6e",
+        "Name": "GYR1-AFE-213D",
+        "ComputerName": "GYR1-AFE-213D",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:50",
+        "RegistrationDate": "2020-11-11 20:21:56",
+        "IPAddress": "10.24.220.175",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-214",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/10",
+      "InstanceInfo": {
+        "InstanceId": "mi-062cb59f2c61cbebb",
+        "Name": "GYR1-AFE-214",
+        "ComputerName": "GYR1-AFE-214",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:50:53",
+        "RegistrationDate": "2020-11-12 16:51:54",
+        "IPAddress": "10.24.220.176",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 10
+    },
+    {
+      "StationID": "GYR1-AFE-214A",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0269b631c329a4775",
+        "Name": "GYR1-AFE-214A",
+        "ComputerName": "GYR1-AFE-214A",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:53:53",
+        "RegistrationDate": "2020-11-12 16:24:23",
+        "IPAddress": "10.24.220.177",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-214B",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0dce8d832dfa10ce9",
+        "Name": "GYR1-AFE-214B",
+        "ComputerName": "GYR1-AFE-214B",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:51",
+        "RegistrationDate": "2020-11-12 16:22:54",
+        "IPAddress": "10.24.220.178",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-214C",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-06eee76d8d886ecc3",
+        "Name": "GYR1-AFE-214C",
+        "ComputerName": "GYR1-AFE-214C",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:50:32",
+        "RegistrationDate": "2020-11-12 16:21:36",
+        "IPAddress": "10.24.220.179",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-214D",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0c2490dfbaa4af3cd",
+        "Name": "GYR1-AFE-214D",
+        "ComputerName": "GYR1-AFE-214D",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:02",
+        "RegistrationDate": "2020-11-12 16:22:38",
+        "IPAddress": "10.24.220.180",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-215",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/10",
+      "InstanceInfo": {
+        "InstanceId": "mi-0222619884cc4d712",
+        "Name": "GYR1-AFE-215",
+        "ComputerName": "GYR1-AFE-215",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:53:40",
+        "RegistrationDate": "2020-11-10 23:06:03",
+        "IPAddress": "10.24.220.181",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 10
+    },
+    {
+      "StationID": "GYR1-AFE-215A",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0c51fc0853ddd72b7",
+        "Name": "GYR1-AFE-215A",
+        "ComputerName": "GYR1-AFE-215A",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:49:54",
+        "RegistrationDate": "2020-11-11 22:58:22",
+        "IPAddress": "10.24.220.182",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-215B",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0253edc0160c88f7b",
+        "Name": "GYR1-AFE-215B",
+        "ComputerName": "GYR1-AFE-215B",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:26",
+        "RegistrationDate": "2020-11-11 22:58:16",
+        "IPAddress": "10.24.220.183",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-215C",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0f1468f96da0c46f8",
+        "Name": "GYR1-AFE-215C",
+        "ComputerName": "GYR1-AFE-215C",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:33",
+        "RegistrationDate": "2020-11-11 22:51:49",
+        "IPAddress": "10.24.220.184",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-215D",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0ff863c533c2ad0f5",
+        "Name": "GYR1-AFE-215D",
+        "ComputerName": "GYR1-AFE-215D",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:52:45",
+        "RegistrationDate": "2022-11-30 19:54:09",
+        "IPAddress": "192.168.0.250",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-216",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/10",
+      "InstanceInfo": {
+        "InstanceId": "mi-0f0d926857e02a69f",
+        "Name": "GYR1-AFE-216",
+        "ComputerName": "GYR1-AFE-216",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:49:24",
+        "RegistrationDate": "2020-11-06 00:58:44",
+        "IPAddress": "10.24.220.186",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 10
+    },
+    {
+      "StationID": "GYR1-AFE-216A",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-051ec4015cc4d8802",
+        "Name": "GYR1-AFE-216A",
+        "ComputerName": "GYR1-AFE-216A",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:51:48",
+        "RegistrationDate": "2020-11-11 23:33:11",
+        "IPAddress": "10.24.220.187",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-216B",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-0dedda18a1782866a",
+        "Name": "GYR1-AFE-216B",
+        "ComputerName": "GYR1-AFE-216B",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:53:08",
+        "RegistrationDate": "2020-11-11 23:33:24",
+        "IPAddress": "10.24.220.188",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-216C",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-00410ea1082a677bc",
+        "Name": "GYR1-AFE-216C",
+        "ComputerName": "GYR1-AFE-216C",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:53:17",
+        "RegistrationDate": "2020-11-11 23:44:50",
+        "IPAddress": "10.24.220.189",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    },
+    {
+      "StationID": "GYR1-AFE-216D",
+      "Health": 100,
+      "ActiveRowAlarms": [],
+      "ActiveMiscAlarms": [],
+      "HeartBeat": 1,
+      "Info": "0/1",
+      "InstanceInfo": {
+        "InstanceId": "mi-08c88dc88c319eb52",
+        "Name": "GYR1-AFE-216D",
+        "ComputerName": "GYR1-AFE-216D",
+        "PingStatus": "Online",
+        "LastPingDateTime": "2023-12-13 16:53:58",
+        "RegistrationDate": "2020-11-11 23:43:53",
+        "IPAddress": "10.24.220.190",
+        "ImageVersion": "1.0",
+        "ControllerVersion": "1.0"
+      },
+      "NumRowsExpected": 1
+    }
+  ]
+}

@@ -1,4 +1,3 @@
-import pprint
 from time import sleep
 
 from humanfriendly import format_timespan
