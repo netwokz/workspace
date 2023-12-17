@@ -268,13 +268,13 @@ class FCLM:
         """
 
         # Formats used for start and end dates: 2022-11-24T00:00:00-0500
-        url = "https://fclm-portal.amazon.com/employee/activityDetails"
+        url = "https://fclm-portal.amazon.com/employee/timeDetails"
         params = {
             "employeeId": employee_id,
             "warehouseId": self.fc,
             "startTime": start_datetime.format("YYYY-MM-DDTHH:mm:ssZZ"),
             "endTime": end_datetime.format("YYYY-MM-DDTHH:mm:ssZZ"),
-            "reportFormat": "CSV",
+            # "reportFormat": "CSV",
             "submit": "true",
         }
         tries = 1
@@ -282,8 +282,9 @@ class FCLM:
             try:
                 response = requests.get(url, params=params, auth=HTTPKerberosAuth(mutual_authentication=OPTIONAL), verify=False, cookies=self.cookie)
                 if response.status_code == 200:
-                    print("Response: " + response.text)
-                    return pd.read_csv(StringIO(response.text))
+                    # print("Response: " + response.text)
+                    # return pd.read_csv(StringIO(response.text))
+                    return response.text
                 else:
                     print(f"Failed to get activity details for {employee_id}")
                     self.reset_mw_cookie()
