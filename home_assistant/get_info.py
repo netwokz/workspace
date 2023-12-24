@@ -1,25 +1,20 @@
-import os
 import json as js
 from requests import post, get
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 URL = "http://10.10.10.7:8123/api/states/light.wled"
-
+token_path = os.path.expanduser("~\\Documents\\CODE\\workspace\\home_assistant\\")
+load_dotenv(dotenv_path=token_path)
+TOKEN = os.getenv("TOKEN")
 headers = {
-    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiI0ZmJhOWJiNDBmYTQ0OTM3OWIyYTZmYmY3NWFiYTQxNSIsImlhdCI6MTcwMzM1ODc1MCwiZXhwIjoyMDE4NzE4NzUwfQ.QUC8OEM9O7uW23LOanCWDXmR-hGfn-ajwJKthoBtRpc",
+    "Authorization": f"Bearer {TOKEN}",
     "content-type": "application/json",
 }
 
 data = {"entity_id": "light.study_light"}
-
-# response = get(URL, headers=headers)
-# print(js.dumps(response.json(), indent=2))
-
-# url = "https://MYURL/api/states/fred.bloggs"
-
-# data = {"state": "office"}
-
-# response = post(url, headers=headers, data=data)
-# print(response.text)
 
 
 # wled_shema = js.loads(
