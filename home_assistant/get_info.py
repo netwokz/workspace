@@ -1,8 +1,255 @@
 import os
-from homeassistant_api import Client
+import json as js
+from requests import post, get
 
-URL = '<API BASE URL>'
-TOKEN = '<LONG LIVED ACCESS TOKEN>'
+URL = "http://10.10.10.7:8123/api/states/light.wled"
 
-# Assigns the Client object to a variable and checks if it's running.
-client = Client(URL, TOKEN)
+headers = {
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiI0ZmJhOWJiNDBmYTQ0OTM3OWIyYTZmYmY3NWFiYTQxNSIsImlhdCI6MTcwMzM1ODc1MCwiZXhwIjoyMDE4NzE4NzUwfQ.QUC8OEM9O7uW23LOanCWDXmR-hGfn-ajwJKthoBtRpc",
+    "content-type": "application/json",
+}
+
+data = {"entity_id": "light.study_light"}
+
+# response = get(URL, headers=headers)
+# print(js.dumps(response.json(), indent=2))
+
+# url = "https://MYURL/api/states/fred.bloggs"
+
+# data = {"state": "office"}
+
+# response = post(url, headers=headers, data=data)
+# print(response.text)
+
+
+# wled_shema = js.loads(
+#     {
+#         "entity_id": "light.wled",
+#         "state": "on",
+#         "attributes": {
+#             "effect_list": [
+#                 "Akemi",
+#                 "Android",
+#                 "Aurora",
+#                 "Black Hole",
+#                 "Blends",
+#                 "Blink",
+#                 "Blink Rainbow",
+#                 "Blobs",
+#                 "Blurz",
+#                 "Bouncing Balls",
+#                 "Bpm",
+#                 "Breathe",
+#                 "Candle",
+#                 "Candle Multi",
+#                 "Chase",
+#                 "Chase 2",
+#                 "Chase 3",
+#                 "Chase Flash",
+#                 "Chase Flash Rnd",
+#                 "Chase Rainbow",
+#                 "Chase Random",
+#                 "Chunchun",
+#                 "Colored Bursts",
+#                 "Colorful",
+#                 "Colorloop",
+#                 "Colortwinkles",
+#                 "Colorwaves",
+#                 "Crazy Bees",
+#                 "DJ Light",
+#                 "DNA",
+#                 "DNA Spiral",
+#                 "Dancing Shadows",
+#                 "Dissolve",
+#                 "Dissolve Rnd",
+#                 "Distortion Waves",
+#                 "Drift",
+#                 "Drift Rose",
+#                 "Drip",
+#                 "Dynamic",
+#                 "Dynamic Smooth",
+#                 "Fade",
+#                 "Fairy",
+#                 "Fairytwinkle",
+#                 "Fill Noise",
+#                 "Fire 2012",
+#                 "Fire Flicker",
+#                 "Firenoise",
+#                 "Fireworks",
+#                 "Fireworks 1D",
+#                 "Fireworks Starburst",
+#                 "Flow",
+#                 "Flow Stripe",
+#                 "Freqmap",
+#                 "Freqmatrix",
+#                 "Freqpixels",
+#                 "Freqwave",
+#                 "Frizzles",
+#                 "Funky Plank",
+#                 "GEQ",
+#                 "Game Of Life",
+#                 "Ghost Rider",
+#                 "Glitter",
+#                 "Gradient",
+#                 "Gravcenter",
+#                 "Gravcentric",
+#                 "Gravfreq",
+#                 "Gravimeter",
+#                 "Halloween Eyes",
+#                 "Heartbeat",
+#                 "Hiphotic",
+#                 "ICU",
+#                 "Juggle",
+#                 "Juggles",
+#                 "Julia",
+#                 "Lake",
+#                 "Lighthouse",
+#                 "Lightning",
+#                 "Lissajous",
+#                 "Loading",
+#                 "Matripix",
+#                 "Matrix",
+#                 "Metaballs",
+#                 "Meteor",
+#                 "Meteor Smooth",
+#                 "Midnoise",
+#                 "Multi Comet",
+#                 "Noise 1",
+#                 "Noise 2",
+#                 "Noise 3",
+#                 "Noise 4",
+#                 "Noise Pal",
+#                 "Noise2D",
+#                 "Noisefire",
+#                 "Noisemeter",
+#                 "Noisemove",
+#                 "Octopus",
+#                 "Oscillate",
+#                 "Pacifica",
+#                 "Palette",
+#                 "Percent",
+#                 "Perlin Move",
+#                 "Phased",
+#                 "Phased Noise",
+#                 "Pixels",
+#                 "Pixelwave",
+#                 "Plasma",
+#                 "Plasma Ball",
+#                 "Plasmoid",
+#                 "Polar Lights",
+#                 "Popcorn",
+#                 "Pride 2015",
+#                 "Puddlepeak",
+#                 "Puddles",
+#                 "Pulser",
+#                 "RSVD",
+#                 "RSVD",
+#                 "RSVD",
+#                 "RSVD",
+#                 "RSVD",
+#                 "RSVD",
+#                 "RSVD",
+#                 "RSVD",
+#                 "Railway",
+#                 "Rain",
+#                 "Rainbow",
+#                 "Rainbow Runner",
+#                 "Random Colors",
+#                 "Ripple",
+#                 "Ripple Peak",
+#                 "Ripple Rainbow",
+#                 "Rocktaves",
+#                 "Rolling Balls",
+#                 "Running",
+#                 "Running Dual",
+#                 "Saw",
+#                 "Scan",
+#                 "Scan Dual",
+#                 "Scanner",
+#                 "Scanner Dual",
+#                 "Scrolling Text",
+#                 "Sindots",
+#                 "Sine",
+#                 "Sinelon",
+#                 "Sinelon Dual",
+#                 "Sinelon Rainbow",
+#                 "Soap",
+#                 "Solid",
+#                 "Solid Glitter",
+#                 "Solid Pattern",
+#                 "Solid Pattern Tri",
+#                 "Spaceships",
+#                 "Sparkle",
+#                 "Sparkle Dark",
+#                 "Sparkle+",
+#                 "Spots",
+#                 "Spots Fade",
+#                 "Squared Swirl",
+#                 "Stream",
+#                 "Stream 2",
+#                 "Strobe",
+#                 "Strobe Mega",
+#                 "Strobe Rainbow",
+#                 "Sun Radiation",
+#                 "Sunrise",
+#                 "Sweep",
+#                 "Sweep Random",
+#                 "Swirl",
+#                 "TV Simulator",
+#                 "Tartan",
+#                 "Tetrix",
+#                 "Theater",
+#                 "Theater Rainbow",
+#                 "Traffic Light",
+#                 "Tri Fade",
+#                 "Tri Wipe",
+#                 "Twinkle",
+#                 "Twinklecat",
+#                 "Twinklefox",
+#                 "Twinkleup",
+#                 "Two Dots",
+#                 "Washing Machine",
+#                 "Waterfall",
+#                 "Waverly",
+#                 "Wavesins",
+#                 "Waving Cell",
+#                 "Wipe",
+#                 "Wipe Random",
+#             ],
+#             "supported_color_modes": ["rgb"],
+#             "color_mode": "rgb",
+#             "brightness": 76,
+#             "hs_color": [218.906, 50.196],
+#             "rgb_color": [127, 172, 255],
+#             "xy_color": [0.208, 0.217],
+#             "effect": "Solid",
+#             "icon": "mdi:led-strip-variant",
+#             "friendly_name": "WLED",
+#             "supported_features": 36,
+#         },
+#         "last_changed": "2023-12-24T14:37:35.878236+00:00",
+#         "last_updated": "2023-12-24T14:37:45.914871+00:00",
+#         "context": {"id": "01HJE45CHTB9KJDAMXY245GWRN", "parent_id": null, "user_id": null},
+#     }
+# )
+
+
+def get_wled_status():
+    response = get(URL, headers=headers)
+    print(js.dumps(response.json(), indent=2))
+
+
+def set_wled_status(state):
+    if state == "on":
+        URL = "http://10.10.10.7:8123/api/services/light/turn_on"
+    else:
+        URL = "http://10.10.10.7:8123/api/services/light/turn_off"
+    data = {"entity_id": "light.wled", "rgb_color": [255, 0, 0], "brightness": 76}
+    response = post(URL, headers=headers, json=data)
+    print(response.status_code)
+    # print(js.dumps(response.json(), indent=2))
+
+
+# set_wled_status("off")
+
+set_wled_status("on")
