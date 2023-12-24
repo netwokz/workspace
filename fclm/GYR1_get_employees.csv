@@ -1,0 +1,60 @@
+Employee ID,User ID,Employee Name,Department ID,Employment Start Date,Manager Name,Job Title,Shift Pattern
+571328,hertaju,"Huerta,Juan",1712,Mon Dec 28 00:00:00 UTC 2020,"Jones,Austin",Service Technician III,DA0G0400
+605313,breadj,"Bread,Justin",1712,Sun Mar 02 00:00:00 UTC 2014,"Maynard,Chris",Control Systems Technician,NAX-1630
+100008143,melgozam,"Melgoza,Michael",1712,Sun Sep 01 00:00:00 UTC 2013,"Salas,Jude",Mechatronic Apprentice I,NAX-1630
+100118006,rodrreye,"Reyes,Rodrigo",1712,Sun Jul 05 00:00:00 UTC 2015,"McMahon,Gavin",Mechatronic Technician I,NBX-1630
+100405109,candruel,"Ruelas,Candelaria",1712,Sun Mar 01 00:00:00 UTC 2020,"Salas,Jude",Service Technician II,NA0G1600
+100409013,adelalba,"Alba,Adela",1712,Thu Nov 06 00:00:00 UTC 2014,"McMahon,Gavin",Mechatronic Technician I,NB0G1600
+101521162,rmgab,"Ramos,Gabriel",1712,Sun Sep 15 00:00:00 UTC 2019,"McMahon,Gavin",Service Technician III,NB0G1600
+101737703,mperezf,"Perez,Marco",1712,Sun Sep 01 00:00:00 UTC 2019,"Salas,Jude",Mechatronic Technician I,NA0G1600
+102381821,bennraym,"Bennett,Raymond K",1712,Mon Oct 12 00:00:00 UTC 2020,"Gresham,Kylon Alonzo",Service Technician III,DF6-0500
+102427130,wlnjon,"Williams,Jonathan",1712,Sat Jan 25 00:00:00 UTC 2020,"Salas,Jude",Mechatronic Technician I,NAX-1630
+102633982,sofranci,"Soto,Francisco Javier",1712,Mon Nov 02 00:00:00 UTC 2020,"Salas,Jude",Service Technician III,NA0G1600
+102919061,areaaron,"Arellano,Aaron",1712,Sun Jan 28 00:00:00 UTC 2018,"Barney,Matthew Blain",Mechatronic Technician I,DBX-0430
+105098394,jsonhu,"Hughes,Jason",1712,Mon Aug 24 00:00:00 UTC 2020,"Harris,Dan",Service Technician III,DBX-0400
+105923425,sauvrga,"Vargas Jr,Saul",1712,Mon Nov 02 00:00:00 UTC 2020,"Maynard,Chris",Control Systems Lead,DAX-0430
+106360434,isaiacon,"Contreras,Isaiah",1712,Sun May 24 00:00:00 UTC 2020,"Barney,Matthew Blain",Mechatronic Technician I,DBX-0430
+106570430,ixtaj,"Ixtabalan,Jorge Armando",1712,Sun Aug 02 00:00:00 UTC 2020,"Jones,Austin",Mechatronic Apprentice I,DA0G0400
+106642045,jopadeyi,"Opadeyi,James Babajide",1712,Sun Aug 02 00:00:00 UTC 2020,"Salas,Jude",Service Technician III,NA0G1600
+107166452,clejarod,"clements,jarod Stanley",1712,Sun Aug 30 00:00:00 UTC 2020,"Jones,Austin",Mechatronic Apprentice I,DA0G0400
+107363392,nateneal,"Mekasha,Nateneal Taye",1712,Mon Oct 03 00:00:00 UTC 2022,"McMahon,Gavin",Mechatronic Technician I,NBX-1630
+107521890,larochm,"LaRochelle,Matt",1712,Mon Aug 10 00:00:00 UTC 2020,"Strom,Gary",Facilities Coordinator IV,DA0-0530
+107568098,felsolon,"Solon,Felix",1712,Mon Jul 12 00:00:00 UTC 2021,"Barney,Matthew Blain",Service Technician II,DBX-0430
+107599862,kieclar,"Clark,Kieran",1712,Mon Jan 25 00:00:00 UTC 2021,"Jones,Austin",Service Technician II,DAX-0430
+107931284,kalebria,"Kalen,Brian",1712,Mon Oct 26 00:00:00 UTC 2020,"Strom,Gary",Facilities Coordinator IV,AAAA
+108075332,ashpfaf,"Pfaff,Ash",1712,Mon Sep 28 00:00:00 UTC 2020,"Jones,Austin",Service Technician III,DA0G0400
+108405269,stuartyl,"Stuart,Tyler",1712,Thu Oct 15 00:00:00 UTC 2020,"Salas,Jude",Mechatronic Apprentice I,NAX-1630
+108580310,boehmert,"Boehmer,Timothy",1712,Mon Nov 21 00:00:00 UTC 2022,"Maynard,Chris",Control Systems Lead,DBX-0430
+108662628,vanbuc,"Vanbuskirk,Carlos",1712,Mon Nov 09 00:00:00 UTC 2020,"Barney,Matthew Blain",Service Technician III,DBX-0400
+109080644,clarkssi,"Clarkson,Simon",1712,Thu Dec 17 00:00:00 UTC 2020,"Jones,Austin",Service Technician II,DAX-0430
+109130479,winnemic,"Winner,Michael",1712,Thu Dec 31 00:00:00 UTC 2020,"Jones,Austin",Service Technician III,DA0G0400
+109215104,kkamerjo,"Jones,Kam",1712,Sun Jan 17 00:00:00 UTC 2021,"Barney,Matthew Blain",Service Technician II,DBX-0430
+109225238,acasjaco,"Castillo,Jacob",1712,Wed Jan 20 00:00:00 UTC 2021,"McMahon,Gavin",Mechatronic Apprentice I,NB0G1600
+109266642,rirssel,"Richardson,Russell",1712,Mon Feb 01 00:00:00 UTC 2021,"Strom,Gary",Facilities Coordinator IV,DK7-0530
+109380875,shatprat,"Pratt,Shane",1712,Thu Feb 25 00:00:00 UTC 2021,"Salas,Jude",Service Technician III,NAX-1630
+109650827,phamduke,"Pham,Steven",1712,Mon Apr 26 00:00:00 UTC 2021,"Strom,Gary",Facilities Coordinator IV,DK7-0530
+109909653,angelahf,"Haro,Angela",1712,Sat May 29 00:00:00 UTC 2021,"Barney,Matthew Blain",Mechatronic Apprentice I,DBX-0430
+110820792,qmoychri,"Moya,Chris",1712,Mon Sep 20 00:00:00 UTC 2021,"Salas,Jude",Service Technician II,NAX-1630
+111260532,reyesbju,"Reyes-Bueno,Juan Manuel",1712,Fri Oct 22 00:00:00 UTC 2021,"McMahon,Gavin",Mechatronic Apprentice I,NB0G1600
+111341292,hryatayl,"Taylor,Ryan Evereleigh",1712,Mon Nov 01 00:00:00 UTC 2021,"Jones,Austin",Service Technician II,DAX-0430
+111341298,deanejst,"Deane,Steve",1712,Mon Nov 01 00:00:00 UTC 2021,"Maynard,Chris",Control Systems Lead,DAX-0430
+111967620,ausnmajo,"Major,Austin",1712,Sun Jan 09 00:00:00 UTC 2022,"Barney,Matthew Blain",Service Technician II,DAX-0430
+112342454,gsalaedw,"Salas,Eduardo",1712,Mon Mar 21 00:00:00 UTC 2022,"Jones,Austin",Service Technician II,DAX-0430
+112354889,tjkiel,"Kiel,TJ",1712,Mon Mar 21 00:00:00 UTC 2022,"Gresham,Kylon Alonzo",Service Technician III,DK7-0500
+112355050,ahuertaj,"Huerta Jimenez,Alexi",1712,Mon Mar 21 00:00:00 UTC 2022,"Maynard,Chris",Control Systems Technician,NBX-1630
+112362288,littrede,"Littrell,Wayne",1712,Mon Mar 21 00:00:00 UTC 2022,"Barney,Matthew Blain",Service Technician II,DBX-0430
+112378554,butleebr,"Butler,Brad",1712,Mon Mar 28 00:00:00 UTC 2022,"McMahon,Gavin",Service Technician III,NB0G1600
+112502620,esterase,"Esteras,Erik",1712,Thu Apr 28 00:00:00 UTC 2022,"Huntington,Daniel",Mechatronic Apprentice I,DE0-ACOM
+112729115,joverotl,"JOVERO,THOMAS",1712,Mon Jun 27 00:00:00 UTC 2022,"McMahon,Gavin",Service Technician III,NB0G1600
+113144700,gemckeag,"McKeague Jr,George",1712,Mon Oct 03 00:00:00 UTC 2022,"Maynard,Chris",Control Systems Technician,NBX-1630
+201521863,paqjessi,"Paquette-Maxwell,Jessica",1711,Thu Jun 01 00:00:00 UTC 2023,"Huntington,Daniel",Service Technician III (OSP),
+201521865,obenmosk,"Moskovich,Ben",1711,Thu Jun 01 00:00:00 UTC 2023,"Huntington,Daniel",Service Technician III (OSP),
+201521866,shroberi,"Sheldon,Robert",1711,Thu Jun 01 00:00:00 UTC 2023,"Huntington,Daniel",Service Technician III (OSP),
+201521867,pmkurley,"Kurley,Mike",1711,Thu Jun 01 00:00:00 UTC 2023,"Huntington,Daniel",Service Technician III (OSP),
+201521868,rdavcham,"Chamberlin,David",1711,Thu Jun 01 00:00:00 UTC 2023,"Huntington,Daniel",Service Technician III (OSP),
+201521869,isabchri,"Isabelle,Chris",1711,Thu Jun 01 00:00:00 UTC 2023,"Huntington,Daniel",Service Technician III (OSP),
+202276534,neeeks,"Padilla,Nyko",1712,Mon Oct 16 00:00:00 UTC 2023,"Jones,Austin",Service Technician II,DAX-0430
+202276569,mdelalam,"Delalama,Mark",1712,Mon Oct 16 00:00:00 UTC 2023,"McMahon,Gavin",Service Technician II,NBX-1630
+202659333,landrga,"Garcia,Andrew Paul",1712,Mon Nov 13 00:00:00 UTC 2023,"Huntington,Daniel",Maintenance Tech II (TEMP),AAAA
+202707227,brazchin,"Ching,Bradley",1712,Mon Nov 27 00:00:00 UTC 2023,"Huntington,Daniel",Maintenance Tech III (TEMP),AAAA
+202762961,atfergus,"Ferguson,Todd",1712,Mon Dec 04 00:00:00 UTC 2023,"Strom,Gary",Service Technician II,AAAA
