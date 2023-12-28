@@ -4,6 +4,8 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
+ON = "on"
+OFF = "off"
 
 URL = "http://10.10.10.7:8123/api/states/light.wled"
 token_path = os.path.expanduser("~\\Documents\\CODE\\workspace\\home_assistant\\")
@@ -13,9 +15,6 @@ headers = {
     "Authorization": f"Bearer {TOKEN}",
     "content-type": "application/json",
 }
-
-data = {"entity_id": "light.study_light"}
-
 
 # wled_shema = js.loads(
 #     {
@@ -234,17 +233,19 @@ def get_wled_status():
     print(js.dumps(response.json(), indent=2))
 
 
-def set_wled_status(state):
-    if state == "on":
-        URL = "http://10.10.10.7:8123/api/services/light/turn_on"
-    else:
-        URL = "http://10.10.10.7:8123/api/services/light/turn_off"
-    data = {"entity_id": "light.wled", "rgb_color": [255, 0, 0], "brightness": 76}
+def wled_on(brightness=76, color=[255, 0, 0]):
+    URL = "http://10.10.10.7:8123/api/services/light/turn_on"
+    data = {"entity_id": "light.wled", "rgb_color": color, "brightness": brightness}
     response = post(URL, headers=headers, json=data)
-    print(response.status_code)
-    # print(js.dumps(response.json(), indent=2))
+    # print(response.status_code)
+
+
+def wled_off():
+    URL = "http://10.10.10.7:8123/api/services/light/turn_off"
+    data = {"entity_id": "light.wled"}
+    response = post(URL, headers=headers, json=data)
 
 
 # set_wled_status("off")
 
-set_wled_status("on")
+wled_on(60, [172, 164, 97])
