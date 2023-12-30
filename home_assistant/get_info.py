@@ -20,18 +20,21 @@ headers = {
 def get_wled_status():
     response = get("http://10.10.10.7:8123/api/states", headers=headers).json()
     for state in response:
-        if state["entity_id"] == "light.desk_rgb":
+        if state["entity_id"] == "light.kitchen_under_cabinet_led_2":
+            # temp = state["entity_id"]
+            # if temp.startswith("light.kitchen_under"):
+            print(state["entity_id"])
             print(state["state"])
-            print(state["attributes"]["rgb_color"])
-            print(state["attributes"]["effect"])
-            print(state["attributes"]["brightness"])
+            # print(state["attributes"]["rgb_color"])
+            # print(state["attributes"]["effect"])
+            # print(state["attributes"]["brightness"])
 
 
 get_wled_status()
 
 
 def wled_on(brightness=76, color=[255, 0, 0]):
-    URL = "http://homeassistant.computeerror.com:8123/api/services/light/turn_on"
+    URL = "http://10.10.10.7:8123/api/services/light/turn_on"
     data = {"entity_id": "light.wled", "rgb_color": color, "brightness": brightness}
     response = post(URL, headers=headers, json=data)
     # print(response.status_code)
