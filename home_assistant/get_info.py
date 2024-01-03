@@ -20,14 +20,17 @@ headers = {
 def get_wled_status():
     response = get("http://10.10.10.7:8123/api/states", headers=headers).json()
     for state in response:
-        if state["entity_id"] == "light.kitchen_under_cabinet_led_2":
+        if state["entity_id"] == "light.kitchen_under_cabinet_led ":
             # temp = state["entity_id"]
             # if temp.startswith("light.kitchen_under"):
             print(state["entity_id"])
             print(state["state"])
-            # print(state["attributes"]["rgb_color"])
-            # print(state["attributes"]["effect"])
-            # print(state["attributes"]["brightness"])
+            print(state["attributes"]["rgb_color"])
+            print(state["attributes"]["effect"])
+            print(state["attributes"]["brightness"])
+        if state["entity_id"] == "sensor.temp":
+            # print(state)
+            pass
 
 
 get_wled_status()

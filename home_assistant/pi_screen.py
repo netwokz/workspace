@@ -24,14 +24,14 @@ class SimMon(Tk):
         WIDTH = 1024
         HEIGHT = 600
 
-        self.desk_default_color = "#ff0000"
-        self.kitchen_under_cabinet_led_default_color = "#546E7A"
+        self.desk_default_color = "#66ccff"
+        self.kitchen_under_cabinet_led_default_color = "#66ccff"
 
         self.desk_wled_color = "#ff0000"
         self.kitchen_lower_wled_color = "#546E7A"
 
         # configure the root window
-        self.title("Simpile Monitor") 
+        self.title("Simpile Monitor")
         self.resizable(0, 0)
         self.geometry("1024x600")
         self["bg"] = "#26242f"
@@ -79,6 +79,7 @@ class SimMon(Tk):
 
     def refresh_data(self):
         """update the data every 3 seconds"""
+        print("-" * 30, " refreshing data ", "-" * 30)
         # self.label.configure(text=self.time_string())
         response = get("http://10.10.10.7:8123/api/states", headers=self.headers).json()
         for state in response:
@@ -106,7 +107,7 @@ class SimMon(Tk):
                     # global wled_color
                     self.kitchen_lower_wled_color = self.kitchen_under_cabinet_led_default_color
         self.update_gui()
-        self.after(1000, self.refresh_data)
+        self.after(2000, self.refresh_data)
 
 
 if __name__ == "__main__":
