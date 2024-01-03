@@ -1,7 +1,8 @@
 import json as js
-from requests import post, get
 import os
+
 from dotenv import load_dotenv
+from requests import get, post
 
 load_dotenv()
 ON = "on"
@@ -18,19 +19,17 @@ headers = {
 
 
 def get_wled_status():
-    response = get("http://10.10.10.7:8123/api/states", headers=headers).json()
-    for state in response:
-        if state["entity_id"] == "light.kitchen_under_cabinet_led ":
-            # temp = state["entity_id"]
-            # if temp.startswith("light.kitchen_under"):
-            print(state["entity_id"])
-            print(state["state"])
-            print(state["attributes"]["rgb_color"])
-            print(state["attributes"]["effect"])
-            print(state["attributes"]["brightness"])
-        if state["entity_id"] == "sensor.temp":
-            # print(state)
-            pass
+    response = get("http://homeassistant.computeerror.com?external_auth=1/api/states", headers=headers)
+    print(response.text)
+    # for state in response:
+    #     if state["entity_id"] == "light.kitchen_under_cabinet_led_2":
+    #         # temp = state["entity_id"]
+    #         # if temp.startswith("light.kitchen_under"):
+    #         print(state["entity_id"])
+    #         print(state["state"])
+    #         # print(state["attributes"]["rgb_color"])
+    #         # print(state["attributes"]["effect"])
+    #         # print(state["attributes"]["brightness"])
 
 
 get_wled_status()
@@ -51,4 +50,4 @@ def wled_off():
 
 # set_wled_status("off")
 
-wled_on(60, [172, 164, 97])
+# wled_on(60, [172, 164, 97])
