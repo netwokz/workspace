@@ -25,8 +25,8 @@ def parse_employee_csv():
     rslt_df = rslt_df.sort_values(by="Employee ID", ascending=True)
     rslt_df.reset_index(inplace=True, drop=True)
     final_rslt = tabulate(rslt_df, tablefmt="pipe", headers="keys", showindex=False)
-    # print(final_rslt)
-    # print(f"Total Techs: {len(rslt_df)}")
+    print(final_rslt)
+    print(f"Total Techs: {len(rslt_df)}")
     rslt_df.to_csv("GYR1_parse_csv.csv", index=False)
     func1_et = time.time()
     elapsed_time = func1_et - func1_st
@@ -46,12 +46,14 @@ def get_employees():
     rslt_df = rslt_df.sort_values(by="Employee ID", ascending=True)
     rslt_df.reset_index(inplace=True, drop=True)
     final_rslt = tabulate(rslt_df, tablefmt="pipe", headers="keys", showindex=False)
-    # print(final_rslt)
-    # print(f"Total Techs: {len(rslt_df)}")
+    print(final_rslt)
+    print(f"Total Techs: {len(rslt_df)}")
     rslt_df.to_csv("GYR1_get_employees.csv", index=False)
     func2_et = time.time()
     elapsed_time = func2_et - func2_st
     print(f"get_employees() Execution time: {elapsed_time} seconds")
 
 
-parse_employee_csv()
+# parse_employee_csv()
+result = fclm.get_roster()
+print(len(result))
