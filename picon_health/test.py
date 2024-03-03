@@ -77,7 +77,7 @@ def parse_health_report():
         wall_id = parse_wall_name(wall["StationID"])
         wall_health = wall["Health"]
         if wall_health < 100 and wall_health > 0:
-            print(f"{wall_id} : {wall_health}")
+            print(f"{wall_id}: {wall_health}")
         if wall_health == -1:
             print(f"{wall_id} PiCon is Offline")
 

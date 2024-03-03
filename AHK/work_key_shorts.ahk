@@ -74,7 +74,6 @@
             Sleep 2000
             WinActivate("Password")
             WinWaitActive("Password")
-            ; Sleep 1000
             Send "User1"
             Send "{Tab down}{Tab up}"
             Send "Moaust"
@@ -82,4 +81,104 @@
 
         }
     Return
+}
+
++F1::
+{
+    win_name := "C:\Users\deanejst\Desktop\HMIs\RemoteHMI_IP=[10.79.218.230_8080] SLAM101.exe"
+    win_prog := "ahk_exe RemoteHMI_IP=[10.79.218.230_8080] SLAM101.exe"
+    Run win_name
+    WinWait("Password")
+    Send "User1"
+    Send "{Enter down} {Enter up}"
+}
++F2::
+{
+    win_name := "C:\Users\deanejst\Desktop\HMIs\RemoteHMI_IP=[10.79.218.231_8080] SLAM302.exe"
+    win_prog := "ahk_exe RemoteHMI_IP=[10.79.218.231_8080] SLAM302.exe"
+    Run win_name
+    WinWait("Password")
+    Send "User1"
+    Send "{Enter down} {Enter up}"
+}
++F3::
+{
+    win_name := "C:\Users\deanejst\Desktop\HMIs\RemoteHMI_IP=[10.79.218.232_8080] SLAM103.exe"
+    win_prog := "ahk_exe RemoteHMI_IP=[10.79.218.232_8080] SLAM103.exe"
+    Run win_name
+    WinWait("Password")
+    Send "User1"
+    Send "{Enter down} {Enter up}"
+}
++F4::
+{
+    win_name := "C:\Users\deanejst\Desktop\HMIs\RemoteHMI_IP=[10.79.218.233_8080] SLAM304.exe"
+    win_prog := "ahk_exe RemoteHMI_IP=[10.79.218.233_8080] SLAM304.exe"
+    Run win_name
+    WinWait("Password")
+    Send "User1"
+    Send "{Enter down} {Enter up}"
+}
++F5::
+{
+    win_name := "C:\Users\deanejst\Desktop\HMIs\RemoteHMI_IP=[10.79.218.234_8080] SLAM305.exe"
+    win_prog := "ahk_exe RemoteHMI_IP=[10.79.218.234_8080] SLAM305.exe"
+    Run win_name
+    WinWait("Password")
+    Send "User1"
+    Send "{Enter down} {Enter up}"
+}
++F6::
+{
+    win_name := "C:\Users\deanejst\Desktop\HMIs\RemoteHMI_IP=[10.79.218.235_8080] SLAM206.exe"
+    win_prog := "ahk_exe RemoteHMI_IP=[10.79.218.235_8080] SLAM206.exe"
+    Run win_name
+    WinWait("Password")
+    Send "User1"
+    Send "{Enter down} {Enter up}"
+}
++F7::
+{
+    win_name := "C:\Users\deanejst\Desktop\HMIs\RemoteHMI_IP=[10.79.218.236_8080] SLAM207.exe"
+    win_prog := "ahk_exe RemoteHMI_IP=[10.79.218.236_8080] SLAM207.exe"
+    Run win_name
+    WinWait("Password")
+    Send "User1"
+    Send "{Enter down} {Enter up}"
+}
++F8::
+{
+    win_name := "C:\Users\deanejst\Desktop\HMIs\RemoteHMI_IP=[10.79.218.237_8080] SLAM208.exe"
+    win_prog := "ahk_exe RemoteHMI_IP=[10.79.218.237_8080] SLAM208.exe"
+    Run win_name
+    WinWait("Password")
+    Send "User1"
+    Send "{Enter down} {Enter up}"
+}
++F9::
+{
+    win_name := "C:\Users\deanejst\Desktop\HMIs\RemoteHMI_IP=[10.79.218.238_8080] SLAM109.exe"
+    win_prog := "ahk_exe RemoteHMI_IP=[10.79.218.238_8080] SLAM109.exe"
+    Run win_name
+    WinWait("Password")
+    Send "User1"
+    Send "{Enter down} {Enter up}"
+}
++F10::
+{
+    win_name := "C:\Users\deanejst\Desktop\HMIs\RemoteHMI_IP=[10.79.218.239_8080] SLAM210.exe"
+    win_prog := "ahk_exe RemoteHMI_IP=[10.79.218.239_8080] SLAM210.exe"
+    Run win_name
+    WinWait("Password")
+    Send "User1"
+    Send "{Enter down} {Enter up}"
+}
++F11::
+{
+    win_name := "C:\Users\deanejst\Desktop\HMIs\RemoteHMI_IP=[10.79.218.240_8080] SLAM111.exe"
+    win_prog := "ahk_exe RemoteHMI_IP=[10.79.218.240_8080] SLAM111.exe"
+    Run win_name
+    WinWaitActive("Password")
+    Send "User1"
+    Send "{Enter down} {Enter up}"
 }
