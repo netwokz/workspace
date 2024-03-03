@@ -6,6 +6,6 @@
         "editor.formatOnSaveMode": "file",
         "oneDarkPro.vivid": true
     },
-    "editor.scrollBeyondLastLine": false
-
+    "editor.scrollBeyondLastLine": false,
+    "python.terminal.executeInFileDir": true
 }

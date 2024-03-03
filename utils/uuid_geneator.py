@@ -35,4 +35,4 @@ def generate_my_uuid(count=1):
 
 
 # generate_uuid(6)
-generate_my_uuid(60)
+generate_my_uuid(1)
