@@ -1,0 +1,14 @@
+# import requests module
+import requests
+
+# Making a get request
+
+
+def get_random_quote():
+    response = requests.get("https://zenquotes.io/api/random").json()
+    quote = response[0]["q"] + " - " + response[0]["a"]
+    # print(f"{quote}")
+    return quote
+
+
+print(get_random_quote())

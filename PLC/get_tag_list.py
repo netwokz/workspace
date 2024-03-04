@@ -2,7 +2,7 @@ from pylogix import PLC
 
 tag_list = []
 
-with PLC("10.79.217.250") as comm:
+with PLC("10.79.216.201") as comm:
     tags = comm.GetTagList()
     for tag in tags.Value:
         tag_list.append(tag.TagName)
@@ -12,7 +12,7 @@ with PLC("10.79.217.250") as comm:
 
 tag_list.sort()
 
-with open("525_temp_cabinet.txt", "w") as file1:
+with open("vfd_cabinet.txt", "w") as file1:
     # Writing data to a file
     # file1.write("Hello \n")
     for line in tag_list:
