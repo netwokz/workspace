@@ -8,7 +8,7 @@ from fleet_health_checker import FleetHealthCheck as fhc
 json_response = None
 folder_path = os.path.expanduser(r"~\Documents\CODE\workspace\picon_health")
 # network_folder_path = r"\\ant\dept-na\GYR1\Support\NACF-AE\Master_IP_Addresses"
-re_pattern = "(\d+-\d+-\d+)"
+re_pattern = r"(\d+-\d+-\d+)"
 # re_pattern_op = "(\d{8})"
 
 
@@ -34,7 +34,7 @@ def parse_file_name(filename):
 
 
 def parse_wall_name(wall_name):
-    match = re.search("\d\d.*", wall_name)
+    match = re.search(r"\d\d.*", wall_name)
     return match.group(0)
 
 
