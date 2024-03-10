@@ -9,15 +9,11 @@ date = date - datetime.timedelta(days=1)
 new_format = "%m/%d/%Y"
 current_date = date.strftime(new_format)
 
-current_date = "01/31/2024"
-
-# get hourly totals
+# current_date = "01/31/2024"
 
 
 # import urllib library
 from urllib.request import urlopen
-
-daily_data = ""
 
 
 def get_data_json(date):
@@ -28,14 +24,9 @@ def get_data_json(date):
     # storing the JSON response
     # from url in data
     data_json = json.loads(response.read())
-    global daily_data
-    daily_data = data_json
-    # for item in daily_data:
-    #     print(item)
-    return daily_data
-
-
-# get_data_json()
+    # for item in data_json:
+    # print(item)
+    return data_json
 
 
 def convert(datetime_str):
@@ -43,7 +34,7 @@ def convert(datetime_str):
     date_format = "%Y-%m-%dT%H:%M:%S"
     date_obj = datetime.datetime.strptime(datetime_str, date_format)
     # new_format = "%b %d, %Y"
-    new_format = "%H:%M"
+    new_format = "%Y-%m-%d%H:%M:%S"
     new_date = date_obj.strftime(new_format)
     return new_date
 
@@ -55,7 +46,7 @@ def parse_daily_data(date):
         if item["Usage"] is not None:
             usage = int((float(item["Usage"]) * 1000))
             if usage > 0:
-                date = convert(item["Date"])
+                date = item["Date"]
                 daily_data_list.append([date, usage])
 
     return daily_data_list
@@ -70,7 +61,11 @@ def get_month_day():
 
 
 def write_data(data, date: datetime.datetime):
-    filename = f"C:\\Users\\deanejst\\Desktop\\csv_data\\{date.year}\\{date.month}\\{date.day}.csv"
+    months = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "nov", "december"]
+    displayMonth = months[date.month - 1]
+    filename = f"C:\\Users\\deanejst\\Desktop\\csv_data\\{date.year}\\{displayMonth}\\{date.month}-{date.day}.csv"
+    if os.path.exists(filename):
+        return
     os.makedirs(os.path.dirname(filename), exist_ok=True)
     print(filename)
     fields = ["Date", "Gallons"]
@@ -85,9 +80,9 @@ def write_data(data, date: datetime.datetime):
         writer.writerows(data)
 
 
-for day in range(13, 14):
+for day in range(13, 31):
     new_date = datetime.datetime(2023, 11, day)
-    new_format = "%Y_%b_%d"
+    new_format = "%d/%b/%Y"
     new = new_date.strftime(new_format)
     data = parse_daily_data(new)
     # print(data)
@@ -95,6 +90,6 @@ for day in range(13, 14):
 
 
 # data = parse_daily_data(current_date)
-# print(data)
+# print(current_date)
 # print(get_month_day())
 # write_data(data)
