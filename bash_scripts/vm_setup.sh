@@ -5,7 +5,7 @@ set -e
 # check if not running as root
 test "$UID" -gt 0 || { info "don't run this as root!"; exit; }
 # ask for user password once, set timestamp. see sudo(8)
-info "setting / verifying sudo timestamp"
+# info "setting / verifying sudo timestamp"
 # sudo -v
 
 
