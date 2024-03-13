@@ -14,7 +14,7 @@ sudo -v
 # save current working directory
 workdir=$PWD
 
-packages=("micro" "neofetch" "git" "exa" "qemu-guest-agent")
+packages=("micro" "neofetch" "exa" "qemu-guest-agent")
 
 # ----------------------------------
 # Colors
@@ -50,11 +50,11 @@ function install_pkgs(){
     done
 }
 
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
+# # You may want to put all your additions into a separate file like
+# # ~/.bash_aliases, instead of adding them here directly.
+# if [ -f ~/.bash_aliases ]; then
+#     . ~/.bash_aliases
+# fi
 
 function edit_bash(){
     echo "alias ls='exa -la --icons --group-directories-first'" >>~/.bashrc
@@ -63,3 +63,4 @@ function edit_bash(){
 
 
 install_pkgs
+edit_bash
