@@ -8,9 +8,6 @@ test "$UID" -gt 0 || { info "don't run this as root!"; exit; }
 # info "setting / verifying sudo timestamp"
 # sudo -v
 
-
-
-
 # save current working directory
 workdir=$PWD
 
@@ -38,7 +35,7 @@ WHITE='\033[1;37m'
 
 
 function install_pkgs(){
-    apt-get update  # To get the latest package lists
+    sudo apt update  # To get the latest package lists
     for pkg in ${packages[@]};do
         if [[ $(command -v $pkg) ]]; then
             echo -e "${GREEN}$pkg is already installed${NOCOLOR}"
