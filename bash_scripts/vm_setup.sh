@@ -5,11 +5,8 @@ set -e
 # check if not running as root
 test "$UID" -gt 0 || { info "don't run this as root!"; exit; }
 # ask for user password once, set timestamp. see sudo(8)
-info "setting / verifying sudo timestamp"
-sudo -v
-
-
-
+# info "setting / verifying sudo timestamp"
+# sudo -v
 
 # save current working directory
 workdir=$PWD
@@ -38,7 +35,7 @@ WHITE='\033[1;37m'
 
 
 function install_pkgs(){
-    apt-get update  # To get the latest package lists
+    sudo apt update  # To get the latest package lists
     for pkg in ${packages[@]};do
         if [[ $(command -v $pkg) ]]; then
             echo -e "${GREEN}$pkg is already installed${NOCOLOR}"
@@ -48,22 +45,6 @@ function install_pkgs(){
             sudo apt install $pkg -qq
         fi
     done
-}
-
-function copy_custom_files(){
-    mkdir -p ~/Downloads
-    sudo mkdir -p /usr/local/share/fonts/ttf
-    sudo cp -a $workdir/JetBrains.ttf /usr/local/share/fonts/ttf/
-    sudo cp -a $workdir/weathericons.ttf /usr/local/share/fonts/ttf/
-    cp -a $workdir/neofetch/. ~/.config/neofetch/
-}
-
-function setup_shell(){
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" --unattended
-    touch ~/.histfile
-    cp -a $workdir/starship/starship.toml ~/.config/starship.toml
-    cp -a $workdir/zsh/zshrc ~/.zshrc
-    chsh -s $(which zsh)
 }
 
 # # You may want to put all your additions into a separate file like
@@ -79,7 +60,4 @@ function edit_bash(){
 
 
 install_pkgs
-sudo cp -a $workdir/.bash_aliases ~/
-# copy_custom_files
-# setup_shell
-# edit_bash
+edit_bash
