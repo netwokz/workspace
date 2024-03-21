@@ -14,7 +14,7 @@ sudo -v
 # save current working directory
 workdir=$PWD
 
-packages=("micro" "neofetch" "git" "exa" "qemu-guest-agent")
+packages=("micro" "neofetch" "exa" "qemu-guest-agent")
 
 # ----------------------------------
 # Colors
@@ -50,11 +50,27 @@ function install_pkgs(){
     done
 }
 
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
+function copy_custom_files(){
+    mkdir -p ~/Downloads
+    sudo mkdir -p /usr/local/share/fonts/ttf
+    sudo cp -a $workdir/JetBrains.ttf /usr/local/share/fonts/ttf/
+    sudo cp -a $workdir/weathericons.ttf /usr/local/share/fonts/ttf/
+    cp -a $workdir/neofetch/. ~/.config/neofetch/
+}
+
+function setup_shell(){
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" --unattended
+    touch ~/.histfile
+    cp -a $workdir/starship/starship.toml ~/.config/starship.toml
+    cp -a $workdir/zsh/zshrc ~/.zshrc
+    chsh -s $(which zsh)
+}
+
+# # You may want to put all your additions into a separate file like
+# # ~/.bash_aliases, instead of adding them here directly.
+# if [ -f ~/.bash_aliases ]; then
+#     . ~/.bash_aliases
+# fi
 
 function edit_bash(){
     echo "alias ls='exa -la --icons --group-directories-first'" >>~/.bashrc
@@ -63,3 +79,7 @@ function edit_bash(){
 
 
 install_pkgs
+sudo cp -a $workdir/.bash_aliases ~/
+# copy_custom_files
+# setup_shell
+# edit_bash
