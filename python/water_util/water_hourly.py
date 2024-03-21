@@ -3,39 +3,45 @@ import datetime
 import json
 import os
 from textwrap import indent
+from urllib.request import urlopen
 
 date = datetime.datetime.now()
 date = date - datetime.timedelta(days=1)
 new_format = "%m/%d/%Y"
 current_date = date.strftime(new_format)
-
+# working_dir = "C:\\Users\\deanejst\\Desktop\\csv_data"
+working_dir = r"C:\Users\netwokz\Documents\CODE\workspace\python\water_util\csv_data"
 current_date = "01/31/2024"
-
-# get hourly totals
-
-
-# import urllib library
-from urllib.request import urlopen
-
 daily_data = ""
 
 
-def get_data_json(date):
-    URL = f"https://beaz-p-ia-wb.itron-hosting.com/AnalyticsCustomerPortal_BEAZ_PROD/PortalServices/api/UsageData/Interval/?servicePointId=26329&accountId=988503-522366&skipHours=0&takeHours=24&endDate={date}"
+def get_data_json(daily_date):
+    URL = f"https://beaz-p-ia-wb.itron-hosting.com/AnalyticsCustomerPortal_BEAZ_PROD/PortalServices/api/UsageData/Interval/?servicePointId=26329&accountId=988503-522366&skipHours=0&takeHours=24&endDate={daily_date}"
     # store the response of URL
     response = urlopen(URL)
 
     # storing the JSON response
     # from url in data
     data_json = json.loads(response.read())
-    global daily_data
-    daily_data = data_json
+    # global daily_data
+    # daily_data = data_json
     # for item in daily_data:
     #     print(item)
-    return daily_data
+    return data_json
 
 
-# get_data_json()
+def get_last_data_date():
+    for root, dirs, files in os.walk(working_dir):
+        print(root)
+        for filename in files:
+            # Do Something With File
+            print(os.path.join(root, filename))
+        for dirname in dirs:
+            # Do Something With Dir
+            print(os.path.join(root, dirname))
+
+
+# get_last_data_date()
 
 
 def convert(datetime_str):
@@ -70,24 +76,21 @@ def get_month_day():
 
 
 def write_data(data, date: datetime.datetime):
-    filename = f"C:\\Users\\deanejst\\Desktop\\csv_data\\{date.year}\\{date.month}\\{date.day}.csv"
+    filename = f"{working_dir}\\{date.year}\\{date.month}\\{date.day}.csv"
     os.makedirs(os.path.dirname(filename), exist_ok=True)
-    print(filename)
-    fields = ["Date", "Gallons"]
+    # print(filename)
+    # fields = ["Date", "Gallons"]
     with open(filename, "w", newline="") as csvfile:
         # creating a csv dict writer object
         writer = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
-
-        # writing headers (field names)
-        writer.writerow(fields)
 
         # writing data rows
         writer.writerows(data)
 
 
-for day in range(13, 14):
-    new_date = datetime.datetime(2023, 11, day)
-    new_format = "%Y_%b_%d"
+for day in range(1, 20):
+    new_date = datetime.datetime(2024, 3, day)
+    new_format = "%Y-%b-%d"
     new = new_date.strftime(new_format)
     data = parse_daily_data(new)
     # print(data)
