@@ -1,0 +1,29 @@
+#cloud-config
+
+# Update timezone
+#timezone: "America/Phoenix"
+
+# These might not be needed as cloud-init updates the packages
+package_update: true
+package_upgrade: true
+package_reboot_if_required: true
+
+# Install packages
+#packages:
+#    - qemu-guest-agent
+#    - micro
+#    - exa
+#    - git
+
+write_files:
+- path: /run/scripts/test-script.sh
+  content: |
+    #!/bin/bash
+
+    echo 'Script executed successfully!' >> /run/testing.txt
+  permissions: '0755'
+
+# Make sure qemu-guest-agent is running
+runcmd:
+- echo "alias ls='exa -la --icons --group-directories-first'" >>/home/netwokz/.bashrc
+- [sh, "/run/scripts/test-script.sh"]

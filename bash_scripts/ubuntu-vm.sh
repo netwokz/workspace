@@ -60,11 +60,11 @@ function cleanup() {
 
 TEMP_DIR=$(mktemp -d)
 pushd $TEMP_DIR >/dev/null
-if whiptail --backtitle "Proxmox VE Helper Scripts" --title "Ubuntu 22.04 VM" --yesno "This will create a New Ubuntu 22.04 VM. Proceed?" 10 58; then
-  :
-else
-  header_info && echo -e "⚠ User exited script \n" && exit
-fi
+# if whiptail --backtitle "Proxmox VE Helper Scripts" --title "Ubuntu 22.04 VM" --yesno "This will create a New Ubuntu 22.04 VM. Proceed?" 10 58; then
+#   :
+# else
+#   header_info && echo -e "⚠ User exited script \n" && exit
+# fi
 
 function msg_info() {
   local msg="$1"
@@ -136,7 +136,7 @@ function default_settings() {
   DISK_CACHE=""
   HN="ubuntu"
   CPU_TYPE=""
-  CORE_COUNT="4"
+  CORE_COUNT="2"
   RAM_SIZE="2048"
   BRG="vmbr0"
   MAC="$GEN_MAC"
@@ -173,8 +173,16 @@ function default_settings() {
     exit-script
   fi
 
+  if (whiptail --backtitle "Proxmox VE Helper Scripts" --title "START VIRTUAL MACHINE" --yesno "Start VM when completed?" 10 58); then
+    echo -e "${DGN}Start VM when completed: ${BGN}yes${CL}"
+    START_VM="yes"
+  else
+    echo -e "${DGN}Start VM when completed: ${BGN}no${CL}"
+    START_VM="no"
+  fi
+
   echo -e "${DGN}Using Virtual Machine ID: ${BGN}${VMID}${CL}"
-  echo -e "${DGN}Using Machine Type: ${BGN}i440fx${CL}"
+  echo -e "${DGN}Using Machine Type: ${BGN}q35${CL}"
   echo -e "${DGN}Using Disk Cache: ${BGN}None${CL}"
   echo -e "${DGN}Using Hostname: ${BGN}${HN}${CL}"
   echo -e "${DGN}Using CPU Model: ${BGN}KVM64${CL}"
@@ -184,7 +192,7 @@ function default_settings() {
   echo -e "${DGN}Using MAC Address: ${BGN}${MAC}${CL}"
   echo -e "${DGN}Using VLAN: ${BGN}Default${CL}"
   echo -e "${DGN}Using Interface MTU Size: ${BGN}Default${CL}"
-  echo -e "${DGN}Start VM when completed: ${BGN}no${CL}"
+  echo -e "${DGN}Start VM when completed: ${BGN}${START_VM}${CL}"
   echo -e "${BL}Creating an Ubuntu 22.04 VM using the above default settings${CL}"
 }
 
@@ -226,14 +234,23 @@ else
 fi
 msg_ok "Using ${CL}${BL}$STORAGE${CL} ${GN}for Storage Location."
 msg_ok "Virtual Machine ID is ${CL}${BL}$VMID${CL}."
-msg_info "Retrieving the URL for the Ubuntu 23.10 Disk Image"
-URL=https://cloud-images.ubuntu.com/releases/23.10/release/ubuntu-23.10-server-cloudimg-amd64.img
+msg_info "Retrieving the URL for the Ubuntu 22.04 Disk Image"
+URL=https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img
+# URL=https://cloud-images.ubuntu.com/mantic/current/mantic-server-cloudimg-amd64.img
 sleep 2
-msg_ok "${CL}${BL}${URL}${CL}"
-wget -q --show-progress $URL
-echo -en "\e[1A\e[0K"
 FILE=$(basename $URL)
-msg_ok "Downloaded ${CL}${BL}${FILE}${CL}"
+if [ -f /root/$FILE ]; then
+  msg_ok "Using existing file."
+  cp /root/$FILE .
+else
+  msg_ok "${CL}${BL}${URL}${CL}"
+  wget -P /root/ -q --show-progress $URL
+  echo -en "\e[1A\e[0K"
+  msg_ok "Downloaded ${CL}${BL}${FILE}${CL}"
+  cp /root/$FILE .
+fi
+
+virt-customize -a $FILE --install qemu-guest-agent,micro,git,exa,neofetch,btop
 
 STORAGE_TYPE=$(pvesm status -storage $STORAGE | awk 'NR>1 {print $2}')
 case $STORAGE_TYPE in
@@ -257,7 +274,7 @@ for i in {0,1}; do
   eval DISK${i}_REF=${STORAGE}:${DISK_REF:-}${!disk}
 done
 
-msg_info "Creating a Ubuntu 23.10 VM"
+msg_info "Creating a Ubuntu 22.04 VM"
 qm create $VMID -agent 1${MACHINE} -tablet 0 -localtime 1 -bios ovmf${CPU_TYPE} -cores $CORE_COUNT -memory $RAM_SIZE \
   -name $HN -tags proxmox-helper-scripts -net0 virtio,bridge=$BRG,macaddr=$MAC$VLAN$MTU -onboot 1 -ostype l26 -scsihw virtio-scsi-pci
 pvesm alloc $STORAGE $VMID $DISK0 4M 1>&/dev/null
@@ -270,12 +287,21 @@ qm set $VMID \
   -serial0 socket \
   -description "<div align='center'><a href='https://Helper-Scripts.com'><img src='https://raw.githubusercontent.com/tteck/Proxmox/main/misc/images/logo-81x112.png'/></a>
 
-  # Ubuntu 23.10 VM
+  # Ubuntu 22.04 VM
 
   <a href='https://ko-fi.com/D1D7EP4GF'><img src='https://img.shields.io/badge/&#x2615;-Buy me a coffee-blue' /></a>
   </div>" >/dev/null
-msg_ok "Created a Ubuntu 23.10 VM ${CL}${BL}(${HN})"
-msg_ok "Completed Successfully!\n"
-echo -e "Setup Cloud-Init before starting \n
 
-More info at https://github.com/tteck/Proxmox/discussions/2072 \n"
+qm set $VMID --cicustom "vendor=local:snippets/vendor.yaml"
+qm set $VMID --ciuser netwokz
+qm set $VMID --cipassword $(openssl passwd -6 $CLEARTEXT_PASSWORD)
+# qm set $VMID --sshkeys ~/.ssh/authorized_keys
+qm set $VMID --ipconfig0 ip=dhcp
+
+msg_ok "Created a Ubuntu 22.04 VM ${CL}${BL}(${HN})"
+if [ "$START_VM" == "yes" ]; then
+  msg_info "Starting Ubuntu 22.04 VM"
+  qm start $VMID
+  msg_ok "Started Ubuntu 22.04 VM"
+fi
+msg_ok "Completed Successfully!\n"
